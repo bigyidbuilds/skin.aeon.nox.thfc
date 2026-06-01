@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1136" type="dialog">
+	<defaultcontrol always="false">90203</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>240</top>
+		<origin x="777" y="240">String.IsEqual(Skin.AspectRatio,21:9)</origin>
+	</coordinates>
+	<include>DialogOpenCloseAnimation</include>
+	<controls>
+		<control type="image">
+			<top>0</top>
+			<left>0</left>
+			<height>700</height>
+			<width>1920</width>
+			<texture border="40">dialogs/default/bg.png</texture>
+		</control>
+		<control type="textbox">
+			<top>50</top>
+			<left>50</left>
+			<height>100</height>
+			<width>1820</width>
+			<font>font15_textbox</font>
+			<textcolor>white</textcolor>
+			<label>$LOCALIZE[31969]</label>
+			<align>center</align>
+		</control>
+		<control type="label">
+			<top>150</top>
+			<left>50</left>
+			<height>100</height>
+			<width>1820</width>
+			<font>font15_textbox</font>
+			<textcolor>white</textcolor>
+			<label>$LOCALIZE[31971]</label>
+			<align>center</align>
+		</control>
+		<control type="label">
+			<top>400</top>
+			<left>50</left>
+			<height>100</height>
+			<width>1820</width>
+			<font>font15_textbox</font>
+			<textcolor>white</textcolor>
+			<label>$LOCALIZE[31972]</label>
+			<align>center</align>
+		</control>
+		<control type="group">
+			<top>200</top>
+			<include>HomeMenuBack</include>
+			<control type="group">
+				<top>42</top>
+				<left>192</left>
+				<width>1536</width>
+				<height>80</height>
+				<control type="group">
+					<description>pos 0</description>
+					<width>80</width>
+					<!-- <left>28</left> -->
+					<left>-672</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<animation effect="slide" start="0" end="700,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_0)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<description>pos 1</description>
+					<width>80</width>
+					<!-- <left>228</left> -->
+					<left>-272</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<animation effect="slide" start="0" end="500,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_1)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<description>pos 2</description>
+					<width>80</width>
+					<left>128</left>
+					<animation effect="slide" start="0" end="-168,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="300,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_2)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>	
+				</control>
+				<control type="group">
+					<description>pos 3</description>
+					<width>80</width>
+					<left>528</left>
+					<animation effect="slide" start="0" end="-60,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="100,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_3)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<description>pos 4</description>
+					<width>80</width>
+					<left>928</left>
+					<animation effect="slide" start="0" end="60,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="-100,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_4)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<description>pos 5</description>
+					<width>80</width>
+					<left>1328</left>
+					<animation effect="slide" start="0" end="168,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="-300,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_5)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<description>pos 6</description>
+					<width>80</width>
+					<left>1228</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_6)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<description>pos 7</description>
+					<width>80</width>
+					<left>1428</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_7)]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<top>450</top>
+			<include>HomeMenuBack</include>
+			<control type="group">
+				<top>42</top>
+				<left>192</left>
+				<width>1536</width>
+				<height>80</height>
+				<control type="group">
+					<description>pos 0</description>
+					<width>80</width>
+					<!-- <left>28</left> -->
+					<left>-672</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<animation effect="slide" start="0" end="700,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90200)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90100</param>
+						<param name="onright">90201</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90200)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 1</description>
+					<width>80</width>
+					<!-- <left>228</left> -->
+					<left>-272</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<animation effect="slide" start="0" end="500,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90201)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90101</param>
+						<param name="onleft">90200</param>
+						<param name="onright">90202</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90201)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 2</description>
+					<width>80</width>
+					<left>128</left>
+					<animation effect="slide" start="0" end="-168,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="300,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90202)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90102</param>
+						<param name="onleft">90201</param>
+						<param name="onright">90203</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90202)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 3</description>
+					<width>80</width>
+					<!-- <left>648</left> -->
+					<left>528</left>
+					<animation effect="slide" start="0" end="-60,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="100,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90203)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90103</param>
+						<param name="onleft">90202</param>
+						<param name="onright">90204</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90203)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 4</description>
+					<width>80</width>
+					<left>928</left>
+					<animation effect="slide" start="0" end="60,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+						<animation effect="slide" start="0" end="-100,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90204)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90104</param>
+						<param name="onleft">90203</param>
+						<param name="onright">90205</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90204)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 5</description>
+					<width>80</width>
+					<left>1328</left>
+					<animation effect="slide" start="0" end="168,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="-300,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90205)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90105</param>
+						<param name="onleft">90204</param>
+						<param name="onright">90206</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90205)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 6</description>
+					<width>80</width>
+					<left>1228</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90206)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90106</param>
+						<param name="onleft">90205</param>
+						<param name="onright">90207</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90206)">Conditional</animation>
+				</control>
+				<control type="group">
+					<description>pos 7</description>
+					<width>80</width>
+					<left>1428</left>
+					<visible>Skin.HasSetting(mainmenuicons)</visible>
+					<include content="ClubbadgeBg">
+						<param name="visible">Control.HasFocus(90207)</param>
+					</include>
+					<include content="ClubBadgeWrapList">
+						<param name="id">90107</param>
+						<param name="onleft">90206</param>
+					</include>
+					<animation effect="zoom" end="150" center="auto" time="320" tween="cubic" easing="inout"condition="Control.HasFocus(90207)">Conditional</animation>
+				</control>
+			</control>
+		</control>
+		<control type="button" id="90200">
+			<include>HiddenObject</include>
+			<onright>90201</onright>
+			<onup>Control.Move(90100,-1)</onup>
+			<ondown>Control.Move(90100,1)</ondown>
+			<visible>Skin.HasSetting(mainmenuicons)</visible>
+			<onclick>SendCLick(90100)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_0)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_0,$INFO[Container(90100).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90201">
+			<include>HiddenObject</include>
+			<onright>90202</onright>
+			<onleft>90200</onleft>
+			<onup>Control.Move(90101,-1)</onup>
+			<ondown>Control.Move(90101,1)</ondown>
+			<visible>Skin.HasSetting(mainmenuicons)</visible>
+			<onclick>SendCLick(90101)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_1)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_1,$INFO[Container(90101).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90202">
+			<include>HiddenObject</include>
+			<onright>90203</onright>
+			<onleft>90201</onleft>
+			<onup>Control.Move(90102,-1)</onup>
+			<ondown>Control.Move(90102,1)</ondown>
+			<onclick>SendCLick(90102)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_2)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_2,$INFO[Container(90102).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90203">
+			<include>HiddenObject</include>
+			<onright>90204</onright>
+			<onleft>90202</onleft>
+			<onup>Control.Move(90103,-1)</onup>
+			<ondown>Control.Move(90103,1)</ondown>
+			<onclick>SendCLick(90103)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_3)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_3,$INFO[Container(90103).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90204">
+			<include>HiddenObject</include>
+			<onright>90205</onright>
+			<onleft>90203</onleft>
+			<onup>Control.Move(90104,-1)</onup>
+			<ondown>Control.Move(90104,1)</ondown>
+			<onclick>SendCLick(90104)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_4)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_4,$INFO[Container(90104).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90205">
+			<include>HiddenObject</include>
+			<onright>90206</onright>
+			<onleft>90204</onleft>
+			<onup>Control.Move(90105,-1)</onup>
+			<ondown>Control.Move(90105,1)</ondown>
+			<onclick>SendCLick(90105)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_5)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_5,$INFO[Container(90105).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90206">
+			<include>HiddenObject</include>
+			<onright>90207</onright>
+			<onleft>90205</onleft>
+			<onup>Control.Move(90106,-1)</onup>
+			<ondown>Control.Move(90106,1)</ondown>
+			<visible>Skin.HasSetting(mainmenuicons)</visible>
+			<onclick>SendCLick(90106)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_6)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_6,$INFO[Container(90106).ListItem.ActualIcon])</onclick>
+		</control>
+		<control type="button" id="90207">
+			<include>HiddenObject</include>
+			<onright></onright>
+			<onleft>90206</onleft>
+			<onup>Control.Move(90107,-1)</onup>
+			<ondown>Control.Move(90107,1)</ondown>
+			<visible>Skin.HasSetting(mainmenuicons)</visible>
+			<onclick>SendCLick(90107)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge_7)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge_7,$INFO[Container(90102).ListItem.ActualIcon])</onclick>
+		</control>
+	</controls>
+</window>

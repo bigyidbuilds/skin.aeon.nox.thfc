@@ -487,6 +487,21 @@
 			<filename>webhostinghub-glyphs.ttf</filename>
 			<size>20</size>
 		</font>
+		<!-- THFC Fonts -->
+		<font>
+			<name>thfc_font13_title</name>
+			<filename>spurs.ttf</filename>
+			<style>uppercase</style>
+			<size>30</size>
+		</font>
+		<font>
+			<name>thfc_font_MainMenu</name>
+			<filename>spurs.ttf</filename>
+			<style>uppercase bold</style>
+			<aspect>0.70</aspect>
+			<linespacing>0</linespacing>
+			<size>108</size>
+		</font>
 	</fontset>
 	<fontset id="NoTo" idloc="31964">
 		<font>
@@ -970,6 +985,13 @@
 			<name>CloseButton</name>
 			<filename>webhostinghub-glyphs.ttf</filename>
 			<size>20</size>
+		</font>
+		<!-- THFC Fonts -->
+		<font>
+			<name>thfc_font13_title</name>
+			<filename>spurs.ttf</filename>
+			<style>uppercase</style>
+			<size>30</size>
 		</font>
 	</fontset>
 </fonts>

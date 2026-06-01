@@ -94,6 +94,11 @@
 						<onclick>noop</onclick>
 						<icon />
 					</item>
+					<item id="5">
+						<label>31967</label>
+						<onclick>noop</onclick>
+						<icon/>
+					</item>
 				</content>
 			</control>
 			<control type="image">
@@ -160,6 +165,15 @@
 						<label>31913</label>
 						<label2>[COLOR themecolor]$VAR[lowermainmenuVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="107">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>31965</label>
+						<onclick>ActivateWindow(1135)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="106">
@@ -447,6 +461,28 @@
 						<label>31961</label>
 						<onclick>Skin.ToggleSetting(Enable.HideRatings)</onclick>
 						<selected>Skin.HasSetting(Enable.HideRatings)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+				</control>
+				<control type="grouplist" id="9004">
+					<description>control area</description>
+					<left>522</left>
+					<top>32</top>
+					<width>1316</width>
+					<height>720</height>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9004</onup>
+					<ondown>9004</ondown>
+					<visible>Container(9000).HasFocus(5)</visible>
+					<control type="button" id="501">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>31968</label>
+						<onclick>ReloadSkin()</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
 				</control>

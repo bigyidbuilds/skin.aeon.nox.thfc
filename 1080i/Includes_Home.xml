@@ -3,7 +3,7 @@
 	<!-- Main Menu Includes -->
 	<include name="MainMenuListContent">
 		<left>-290</left>
-		<top>62</top>
+		<top>60</top>
 		<right>-590</right>
 		<height>100</height>
 		<onleft>9000</onleft>
@@ -23,28 +23,31 @@
 		<animation effect="slide" start="0" end="126,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 		<itemlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
 			<control type="label">
-				<width>500</width>
+				<left>50</left>
+				<width>400</width>
 				<height>90</height>
-				<font>font_MainMenu</font>
-				<textcolor>grey3</textcolor>
+				<font>thfc_font_MainMenu</font>
+				<textcolor>thfc_blue</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
 		<focusedlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
 			<control type="label">
-				<width>500</width>
+				<left>50</left>
+				<width>400</width>
 				<height>90</height>
-				<font>font_MainMenu</font>
-				<textcolor>grey3</textcolor>
+				<font>thfc_font_MainMenu</font>
+				<textcolor>thfc_blue</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<width>500</width>
+				<left>50</left>
+				<width>400</width>
 				<height>90</height>
-				<font>font_MainMenu</font>
-				<textcolor>white</textcolor>
+				<font>thfc_font_MainMenu</font>
+				<textcolor>gold</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Control.HasFocus(9000)</visible>
@@ -53,28 +56,28 @@
 		</focusedlayout>
 		<itemlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
 			<control type="label">
-				<width>640</width>
+				<width>590</width>
 				<height>90</height>
-				<font>font_MainMenu</font>
-				<textcolor>grey3</textcolor>
+				<font>thfc_font_MainMenu</font>
+				<textcolor>thfc_blue</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
 		<focusedlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
 			<control type="label">
-				<width>640</width>
+				<width>590</width>
 				<height>90</height>
-				<font>font_MainMenu</font>
-				<textcolor>grey3</textcolor>
+				<font>thfc_font_MainMenu</font>
+				<textcolor>thfc_blue</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 			<control type="label">
-				<width>640</width>
+				<width>590</width>
 				<height>90</height>
-				<font>font_MainMenu</font>
-				<textcolor>white</textcolor>
+				<font>thfc_font_MainMenu</font>
+				<textcolor>gold</textcolor>
 				<align>center</align>
 				<label>$INFO[ListItem.Label]</label>
 				<visible>Control.HasFocus(9000)</visible>
@@ -88,7 +91,7 @@
 				<width>105</width>
 				<height>105</height>
 				<texture background="true">$INFO[ListItem.ActualIcon]</texture>
-				<colordiffuse>grey3</colordiffuse>
+				<colordiffuse>thfc_blue</colordiffuse>
 			</control>
 		</itemlayout>
 		<focusedlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
@@ -98,6 +101,7 @@
 				<width>105</width>
 				<height>105</height>
 				<texture background="true">$INFO[ListItem.ActualIcon]</texture>
+				<colordiffuse>gold</colordiffuse>
 			</control>
 		</focusedlayout>
 		<include>FallbackMenu</include>

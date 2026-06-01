@@ -16,4 +16,6 @@
 	<color name="dialogheader">FF606060</color>
 	<color name="labelheader">FF6db9e5</color>
 	<color name="shadow">AA000000</color>
+	<color name="thfc_blue">FF132257</color>
+	<color name="thfc_pruple">6f00ff</color>
 </colors>

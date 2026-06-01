@@ -32,6 +32,7 @@
 	<include file="View_510_BigList.xml" />
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
+	<include file="Includes_Settings.xml"/>
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="MaxDepth">0.30</constant>

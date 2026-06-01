@@ -1127,3 +1127,50 @@ msgstr ""
 msgctxt "#31964"
 msgid "NoTo"
 msgstr ""
+
+####### Added for mod to THFC ######
+
+msgctxt "#31965"
+msgid "Set club badges in Main menu bar"
+msgstr ""
+
+
+msgctxt "#31966"
+msgid "Customize which club badges are shown in which position on the main menu bar"
+msgstr ""
+
+msgctxt "#31967"
+msgid "Developer"
+msgstr ""
+
+msgctxt "#31968"
+msgid "Reload skin"
+msgstr ""
+
+msgctxt "#31969"
+msgid "To select the image click/enter on the image"
+msgstr ""
+
+msgctxt "#31970"
+msgid "Set Club badges for main menu bar"
+msgstr ""
+
+msgctxt "#31971"
+msgid "Current lay out"
+msgstr ""
+
+msgctxt "#31972"
+msgid "Lay out selector"
+msgstr ""
+
+msgctxt "#31973"
+msgid "Random Club badge on"
+msgstr ""
+
+msgctxt "#31974"
+msgid "Manually set"
+msgstr ""
+
+msgctxt "#31975"
+msgid "Random Club badge off"
+msgstr ""

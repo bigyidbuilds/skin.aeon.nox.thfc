@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="ClubBadgeContent">
+		<item>
+			<icon>badges/badge_1.png</icon>
+		</item>
+		<item>
+			<icon>badges/badge_2.png</icon>
+		</item>
+		<item>
+			<icon>badges/badge_3.png</icon>
+		</item>
+		<item>
+			<icon>badges/badge_4.png</icon>
+		</item>
+		<item>
+			<icon>badges/badge_5.png</icon>
+		</item>
+		<item>
+			<icon>badges/badge_6.png</icon>
+		</item>
+		<item>
+			<icon>badges/badge_7.png</icon>
+		</item>
+	</include>
+	<include name="ClubBadgeWrapList">
+		<param name="id"/>
+		<param name="onright"/>
+		<param name="onleft"/>
+		<param name="visible">true</param>
+		<param name="setting"/>
+		<definition>
+			<control type="wraplist" id="$PARAM[id]">
+				<height>80</height>
+				<onup></onup>
+				<ondown></ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<orientation>vertical</orientation>
+				<focusposition>0</focusposition>
+				<scrolltime tween="quadratic" easing="out">200</scrolltime>
+				<itemlayout width="80" height="80">
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="160" height="80">
+					<control type="image">
+						<left>2</left>
+						<top>2</top>
+						<width>78</width>
+						<height>78</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</focusedlayout>
+				<content>plugin://script.aeon.nox.thfc?mode=dynamiclist&amp;method=clubbadgelist</content>
+				<!-- <content>
+					<include>ClubBadgeContent</include>
+				</content> -->
+			</control>
+		</definition>
+	</include>
+	<include name="ClubbadgeBg">
+		<param name="visible">true</param>
+		<definition>
+			<control type="image">
+				<width>80</width>
+				<height>80</height>
+				<texture>thfc_purple60_block.png</texture>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="HomeMenuBack">
+		<control type="image">
+			<left>192</left>
+			<width>1536</width>
+			<height>155</height>
+			<texture >homemenu_back.png</texture>
+		</control>
+	</include>
+</includes>
