@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.aeon.nox.thfc" version="0.0.1" name="Aeon Nox THFC" provider-name="BigNoid,BigYid">
+<addon id="skin.aeon.nox.thfc" version="0.0.1" name="Aeon Nox THFC" provider-name="BigYid">
 	<requires>.
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="script.grab.fanart" version="0.12.8"/>
@@ -46,7 +46,7 @@
 		<summary lang="zh">Aeon Nox 5: Redux</summary>
 		<description lang="de">Redux: Komplett neu designed für ein modernes Aussehen und das klassische Aeon-Feeling beizubehalten.</description>
 		<description lang="el">Redux: Πλήρως επανασχεδιασμένο για να προσφέρει μια μοντέρνα αισθητική, διατηρώντας ταυτόχρονα την κλασική ομορφιά του Aeon.</description>
-		<description lang="en_GB">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_GB">THFC: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="en_AU">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="en_NZ">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
 		<description lang="en_US">Redux: Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>

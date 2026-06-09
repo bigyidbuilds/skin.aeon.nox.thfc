@@ -90,6 +90,7 @@
 			</focusedlayout>
 			<content>
 				<item>
+					<description>Reset</description>
 					<label>$LOCALIZE[13007]</label>
 					<onclick>Skin.Reset(ItemToEdit.MultiFanart)</onclick>
 					<onclick>Skin.Reset(ItemToEdit.BGType)</onclick>
@@ -98,18 +99,27 @@
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
+					<description>Set single image background</description>
 					<label>$LOCALIZE[31023]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,1)</onclick>
 					<onclick>Skin.SetImage(ItemToEdit.MultiFanart)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
+					<description>Set multi image background</description>
 					<label>$LOCALIZE[31022]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,2)</onclick>
 					<onclick>Skin.SetPath(ItemToEdit.MultiFanart)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
+					<description>Set single image from THFC images</description>
+					<label>$LOCALIZE[31976]</label>
+					<onclick>RunScript(script.aeon.nox.thfc,mode=fanartselect&amp;method=selectsingle)</onclick>
+					<onclick>Dialog.Close(1122)</onclick>
+				</item>
+				<item>
+					<description>Random movie fanart</description>
 					<label>$LOCALIZE[31062]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,1)</onclick>
@@ -117,6 +127,7 @@
 					<visible>System.HasAddon(script.grab.fanart)</visible>
 				</item>
 				<item>
+					<description>Random TV show fanart</description>
 					<label>$LOCALIZE[31063]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,2)</onclick>
@@ -124,6 +135,7 @@
 					<visible>System.HasAddon(script.grab.fanart)</visible>
 				</item>
 				<item>
+					<description>Random video fanart</description>
 					<label>$LOCALIZE[31064]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,3)</onclick>
@@ -131,6 +143,7 @@
 					<visible>System.HasAddon(script.grab.fanart)</visible>
 				</item>
 				<item>
+					<description>Random music fanart</description>
 					<label>$LOCALIZE[31065]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,4)</onclick>
@@ -138,6 +151,7 @@
 					<visible>System.HasAddon(script.grab.fanart)</visible>
 				</item>
 				<item>
+					<description>Random fanart</description>
 					<label>$LOCALIZE[31066]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,5)</onclick>
@@ -145,6 +159,7 @@
 					<visible>System.HasAddon(script.grab.fanart)</visible>
 				</item>
 				<item>
+					<description>Live DVD Cases : Recent movies</description>
 					<label>$LOCALIZE[31028]: $LOCALIZE[31029]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,7)</onclick>
@@ -152,6 +167,7 @@
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
+					<description>Live DVD Cases : Recent episodes</description>
 					<label>$LOCALIZE[31028]: $LOCALIZE[31030]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,8)</onclick>
@@ -159,6 +175,7 @@
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
+					<description>Live DVD Cases : video playlists</description>
 					<label>$LOCALIZE[31028]: $LOCALIZE[20012]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,5)</onclick>
 					<onclick>Skin.SetFile(ItemToEdit.MultiFanart,.xsp,special://profile/playlists/video/)</onclick>
@@ -166,6 +183,7 @@
 					<visible>String.IsEmpty(Window(Home).Property(No.Cases))</visible>
 				</item>
 				<item>
+					<description>Live DVD Cases : Random songs</description>
 					<label>$LOCALIZE[31028]: $LOCALIZE[31035]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,9)</onclick>
@@ -174,6 +192,7 @@
 					<visible>System.HasAddon(service.library.data.provider)</visible>
 				</item>
 				<item>
+					<description>Live DVD Cases : Random albums</description>
 					<label>$LOCALIZE[31028]: $LOCALIZE[31036]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,4)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,10)</onclick>
@@ -182,6 +201,7 @@
 					<visible>System.HasAddon(service.library.data.provider)</visible>
 				</item>
 				<item>
+					<description>Conditional weather</description>
 					<label>$LOCALIZE[31084]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,6)</onclick>
 					<onclick>Skin.SetString(ItemToEdit.MultiFanart,6)</onclick>
@@ -189,6 +209,7 @@
 					<visible>!String.IsEmpty(Skin.String(weatherfanart.path))</visible>
 				</item>
 				<item>
+					<description>video playlist</description>
 					<label>$LOCALIZE[20012]</label>
 					<onclick>Skin.SetString(ItemToEdit.BGType,7)</onclick>
 					<onclick>Skin.SetFile(ItemToEdit.MultiFanart,.xsp,special://profile/playlists/video/)</onclick>

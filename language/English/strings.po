@@ -1174,3 +1174,8 @@ msgstr ""
 msgctxt "#31975"
 msgid "Random Club badge off"
 msgstr ""
+
+msgctxt "#31976"
+msgid "Set Image from THFC Scrapers"
+msgstr ""
+

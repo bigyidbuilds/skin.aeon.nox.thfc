@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1100" type="dialog">
+	<defaultcontrol always="true">90100</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+		<!-- <origin x="777" y="240">String.IsEqual(Skin.AspectRatio,21:9)</origin> -->
+	</coordinates>
+	<include>DialogOpenCloseAnimation</include>
+	<controls>
+		<control type="image">
+			<aspectratio align="center">scale</aspectratio>
+			<include>FullscreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture>$INFO(Container(90100).ListItem.Art(fanart))</texture>
+		</control>
+		<control type="group">
+			<top>424</top>
+			<depth>MaxDepth</depth>
+			<control type="group">
+				<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<animation type="WindowClose" reversible="false">
+					<effect type="slide" end="-1870" time="240" />
+					<effect type="fade" end="0" time="240" />
+				</animation>
+				<animation type="WindowOpen" reversible="false" condition="!Window.Previous(startup)">
+					<effect type="slide" start="-1870" time="240" delay="300" />
+					<effect type="fade" end="100" time="240" delay="300"/>
+				</animation>
+				<control type="image">
+					<right>140</right>
+					<height>67</height>
+					<texture flipy="true">submenu_bar.png</texture>
+				</control>
+				<control type="image">
+					<right>50</right>
+					<width>90</width>
+					<height>67</height>
+					<texture flipx="true" flipy="true">submenu_end.png</texture>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<top>433</top>
+			<depth>MaxDepth</depth>
+			<animation effect="slide" end="0,338" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation type="WindowOpen" reversible="false" condition="!Window.Previous(Startup)">
+				<effect type="zoom" start="150" end="100" center="CenterWidth,CenterHeight" time="300" tween="cubic" />
+				<effect type="fade" start="50" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="zoom" start="100" end="130" center="CenterWidth,CenterHeight" time="300" tween="cubic" easing="in" />
+			</animation>
+			<control type="group" id="9001">
+				<top>159</top>
+				<include condition="system.getbool(lookandfeel.enablerssfeeds)">SubMenuAnimation</include>
+				<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+				<control type="image" id="90101">
+					<left>50</left>
+					<width>90</width>
+					<height>67</height>
+					<texture>submenu_end.png</texture>
+				</control>
+				<control type="image">
+					<left>140</left>
+					<height>67</height>
+					<texture>submenu_bar.png</texture>
+				</control>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>102%</width>
+				<height>193</height>
+				<texture>homemenu_back.png</texture>
+			</control>
+			<!-- Main Menu (Includes_Home.xml) -->
+			<control type="image">
+				<left>-4</left>
+				<top>58</top>
+				<width>100</width>
+				<height>104</height>
+				<texture border="1">side_fade.png</texture>
+			</control>
+			<control type="image">
+				<right>-2</right>
+				<top>58</top>
+				<width>100</width>
+				<height>104</height>
+				<texture flipx="true" border="1">side_fade.png</texture>
+			</control>
+			<control type="image">
+				<top>90</top>
+				<width>100%</width>
+				<height>72</height>
+				<texture border="1">gradient_floor.png</texture>
+			</control>
+			<control type="image">
+				<top>56</top>
+				<width>102%</width>
+				<height>4</height>
+				<texture>thfc_blue_block.png</texture>
+			</control>
+			<control type="image">
+				<top>160</top>
+				<width>102%</width>
+				<height>6</height>
+				<texture>thfc_blue_block.png</texture>
+			</control>
+			<control type="group">
+				<height>100</height>
+				<top>60</top>
+				<control type="image">
+					<description>big ## icon 35</description>
+					<width>98</width>
+					<left>-840</left>
+					<texture fallback="badges/badge_1.png">$INFO[Skin.String(HomeMenuClubBadge_0)]</texture>
+					<aspectratio>keep</aspectratio>
+					<!-- <animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
+					<animation effect="slide" start="0" end="875,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>big ## icon 285</description>
+					<width>98</width>
+					<left>-340</left>
+					<texture fallback="badges/badge_2.png">$INFO[Skin.String(HomeMenuClubBadge_1)]</texture>
+					<aspectratio>keep</aspectratio>
+					<!-- <animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
+					<animation effect="slide" start="0" end="625,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>big ## icon 535</description>
+					<width>98</width>
+					<left>160</left>
+					<texture fallback="badges/badge_3.png">$INFO[Skin.String(HomeMenuClubBadge_2)]</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="375,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>left center badge big ## icon 785</description>
+					<width>98</width>
+					<left>660</left>
+					<texture fallback="badges/badge_4.png">$INFO[Skin.String(HomeMenuClubBadge_3)]</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="slide" start="0" end="-70,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="125,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>right center badge big ##  icon 1035</description>
+					<width>98</width>
+					<left>1160</left>
+					<texture fallback="badges/badge_5.png">$INFO[Skin.String(HomeMenuClubBadge_4)]</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="slide" start="0" end="70,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="-125,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>big ## icon 1285</description>
+					<width>98</width>
+					<left>1660</left>
+					<texture fallback="badges/badge_6.png">$INFO[Skin.String(HomeMenuClubBadge_5)]</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+					<animation effect="slide" start="0" end="-375,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>big ## icon 1535</description>
+					<width>98</width>
+					<left>2160</left>
+					<texture fallback="badges/badge_7.png">$INFO[Skin.String(HomeMenuClubBadge_6)]</texture>
+					<aspectratio>keep</aspectratio>
+					<!-- <animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
+					<animation effect="slide" start="0" end="-625,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<description>big ## icon 1785</description>
+					<width>98</width>
+					<left>2660</left>
+					<texture fallback="badges/badge_8.png">$INFO[Skin.String(HomeMenuClubBadge_7)]</texture>
+					<aspectratio>keep</aspectratio>
+					<!-- <animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
+					<animation effect="slide" start="0" end="-875,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				</control>
+			</control>
+		</control>
+		<control type="wraplist" id="9000">
+			<left>-290</left>
+			<top>60</top>
+			<right>-590</right>
+			<height>100</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<movement>1</movement>
+			<ondown>9001</ondown>
+			<pagecontrol />
+			<scrolltime tween="quadratic" easing="out">300</scrolltime>
+			<include condition="Skin.HasSetting(mainmenuicons)">FocusPosition4</include>
+			<include condition="!Skin.HasSetting(mainmenuicons)">FocusPosition2</include>
+			<orientation>Horizontal</orientation>
+			<animation effect="slide" start="0" end="-180" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
+			<animation effect="slide" start="0" end="-350,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+			<animation effect="slide" start="0" end="126,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+			<itemlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
+				<control type="image">
+					<left>50</left>
+					<width>400</width>
+					<height>90</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$INFO[ListItem.icon]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
+				<control type="image">
+					<left>50</left>
+					<width>400</width>
+					<height>90</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$INFO[ListItem.icon]</texture>
+				</control>
+			</focusedlayout>
+			<itemlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
+				<control type="image">
+					<width>590</width>
+					<height>90</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$INFO[ListItem.icon]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
+				<control type="image">
+					<width>590</width>
+					<height>90</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$INFO[ListItem.icon]</texture>
+				</control>
+			</focusedlayout>
+			<itemlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
+				<control type="image">
+					<left>72</left>
+					<top>-2</top>
+					<width>105</width>
+					<height>105</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$INFO[ListItem.icon]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
+				<control type="image">
+					<left>72</left>
+					<top>-2</top>
+					<width>105</width>
+					<height>105</height>
+					<aspectratio align="center">keep</aspectratio>
+					<texture>$INFO[ListItem.icon]</texture>
+				</control>
+			</focusedlayout>
+		</control>
+	</controls>
+</window>

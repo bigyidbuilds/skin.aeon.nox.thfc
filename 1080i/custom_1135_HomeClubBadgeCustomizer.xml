@@ -8,9 +8,6 @@
 		<origin x="777" y="240">String.IsEqual(Skin.AspectRatio,21:9)</origin>
 	</coordinates>
 	<include>DialogOpenCloseAnimation</include>
-	<!-- <onunload condition="!String.IsEmpty(Skin.String(ItemToEdit.MultiFanart))">Skin.SetString($INFO[Window(Home).Property(Nox.Temp)],$INFO[Skin.String(ItemToEdit.MultiFanart)])</onunload> -->
-	<!-- <onunload condition="!String.IsEmpty(Skin.String(ItemToEdit.BGType))">Skin.SetString($INFO[Window(Home).Property(Nox.BGType)],$INFO[Skin.String(ItemToEdit.BGType)])</onunload> -->
-	<!-- <onunload>ClearProperty(No.Cases,Home)</onunload> -->
 	<controls>
 		<control type="image">
 			<left>157</left>
@@ -23,7 +20,7 @@
 			<top>86</top>
 			<width>632</width>
 			<height>482</height>
-			<texture border="5">dialogs/default/inner.png</texture>
+			<texture border="5">dialogs/default/inner4.png</texture>
 		</control>
 		<control type="label" id="1">
 			<left>30</left>
@@ -33,7 +30,7 @@
 			<font>font15_title</font>
 			<label>$LOCALIZE[31970]</label>
 			<align>center</align>
-			<textcolor>dialogheader</textcolor>
+			<textcolor>white</textcolor>
 		</control>
 		<control type="list" id="90100">
 			<left>189</left>
@@ -50,31 +47,7 @@
 				<control type="image">
 					<width>628</width>
 					<height>60</height>
-					<texture border="1">separator2.png</texture>
-				</control>
-				<control type="label">
-					<width>628</width>
-					<height>60</height>
-					<textoffsetx>15</textoffsetx>
-					<font>font14</font>
-					<textcolor>grey2</textcolor>
-					<selectedcolor>selected</selectedcolor>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-			</itemlayout>
-			<focusedlayout height="60" width="628">
-				<control type="image">
-					<width>628</width>
-					<height>60</height>
-					<texture border="1">separator2.png</texture>
-					<include>VisibleFadeAnimation</include>
-				</control>
-				<control type="image">
-					<width>629</width>
-					<height>60</height>
-					<texture border="5">listselect_fo.png</texture>
-					<visible>Control.HasFocus(90100)</visible>
-					<include>VisibleFadeAnimation</include>
+					<texture border="1">separator7.png</texture>
 				</control>
 				<control type="label">
 					<width>628</width>
@@ -83,6 +56,31 @@
 					<font>font14</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="628">
+				<control type="image">
+					<width>628</width>
+					<height>60</height>
+					<texture border="1">separator7.png</texture>
+					<include>VisibleFadeAnimation</include>
+				</control>
+				<control type="image">
+					<width>629</width>
+					<height>60</height>
+					<texture border="5">listselect_fo2.png</texture>
+					<visible>Control.HasFocus(90100)</visible>
+					<include>VisibleFadeAnimation</include>
+				</control>
+				<control type="label">
+					<width>628</width>
+					<height>60</height>
+					<textoffsetx>15</textoffsetx>
+					<font>font14</font>
+					<textcolor>thfc_blue</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<shadowcolor>white</shadowcolor>
 					<scroll>true</scroll>
 					<label>$INFO[ListItem.Label]</label>
 					<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90100)">Conditional</animation>
@@ -105,20 +103,21 @@
 				<item>
 					<label>$VAR[RandomClubBagde]</label>
 					<onclick>Skin.ToggleSetting(HomeMenuClubBadgeRandom)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_0)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_1)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_2)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_3)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_4)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_5)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_6)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_7)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_0)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_1)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_2)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_3)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_4)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_5)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_6)</onclick>
+					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_7)</onclick>
+					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">RunScript(script.aeon.nox.thfc,mode=settings&amp;method=randomclubbadge)</onclick>
 					<onclick>Dialog.Close(1135)</onclick>
 				</item>
 				<item>
 					<label>$LOCALIZE[31974]</label>
-					<onclick>ActivateWindow(1136)</onclick>
 					<onclick>Skin.Reset(HomeMenuClubBadgeRandom)</onclick>
+					<onclick>ActivateWindow(1136)</onclick>
 					<onclick>Dialog.Close(1135)</onclick>
 				</item>
 			</content>
