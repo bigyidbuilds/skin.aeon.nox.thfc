@@ -547,6 +547,21 @@
 			<texture border="40">listpanel_back.png</texture>
 		</control>
 	</include>
+	<include name="SystemTopPanel">
+		<control type="image">
+			<left>0</left>
+			<top>70</top>
+			<width>100%</width>
+			<height>500</height>
+			<texture border="40">panel_reflect.png</texture>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<width>100%</width>
+			<height>100</height>
+			<texture border="40">listpanel_back.png</texture>
+		</control>
+	</include>
 	<!-- Extras -->
 	<include name="PlayListStatsList">
 		<control type="list" id="43260">

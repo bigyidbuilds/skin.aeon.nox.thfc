@@ -23,6 +23,46 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,4)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,5)">$INFO[Window(Home).Property(script.grab.fanart.Global.FanArt)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,6)">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$VAR[WeatherBackgroundTypeVar]</value>
+
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Videos)">$INFO[Window(Home).Property(background.random.fixed.VideosHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Custom1)">$INFO[Window(Home).Property(background.random.fixed.Custom1HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Custom2)">$INFO[Window(Home).Property(background.random.fixed.Custom2HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Custom3)">$INFO[Window(Home).Property(background.random.fixed.Custom3HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Custom4)">$INFO[Window(Home).Property(background.random.fixed.Custom4HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Custom5)">$INFO[Window(Home).Property(background.random.fixed.Custom5HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Custom6)">$INFO[Window(Home).Property(background.random.fixed.Custom6HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Programs)">$INFO[Window(Home).Property(background.random.fixed.ProgramsHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Shutdown)">$INFO[Window(Home).Property(background.random.fixed.ShutdownHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Games)">$INFO[Window(Home).Property(background.random.fixed.GamesHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),MusicVideo)">$INFO[Window(Home).Property(background.random.fixed.MusicVideoHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Weather)">$INFO[Window(Home).Property(background.random.fixed.WeatherHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Movie)">$INFO[Window(Home).Property(background.random.fixed.MovieHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),TVShow)">$INFO[Window(Home).Property(background.random.fixed.TVShowHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Settings)">$INFO[Window(Home).Property(background.random.fixed.SettingsHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Favorites)">$INFO[Window(Home).Property(background.random.fixed.FavoritesHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Music)">$INFO[Window(Home).Property(background.random.fixed.MusicHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),LiveTV)">$INFO[Window(Home).Property(background.random.fixed.LiveTVHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)+String.IsEqual(Container(9000).ListItem.Property(item),Pictures)">$INFO[Window(Home).Property(background.random.fixed.PicturesHomeItem)]</value>
+
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Videos)">$INFO[Window(Home).Property(background.random.random.VideosHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Custom1)">$INFO[Window(Home).Property(background.random.random.Custom1HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Custom2)">$INFO[Window(Home).Property(background.random.random.Custom2HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Custom3)">$INFO[Window(Home).Property(background.random.random.Custom3HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Custom4)">$INFO[Window(Home).Property(background.random.random.Custom4HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Custom5)">$INFO[Window(Home).Property(background.random.random.Custom5HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Custom6)">$INFO[Window(Home).Property(background.random.random.Custom6HomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Programs)">$INFO[Window(Home).Property(background.random.random.ProgramsHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Shutdown)">$INFO[Window(Home).Property(background.random.random.ShutdownHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Games)">$INFO[Window(Home).Property(background.random.random.GamesHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),MusicVideo)">$INFO[Window(Home).Property(background.random.random.MusicVideoHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Weather)">$INFO[Window(Home).Property(background.random.random.WeatherHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Movie)">$INFO[Window(Home).Property(background.random.random.MovieHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),TVShow)">$INFO[Window(Home).Property(background.random.random.TVShowHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Settings)">$INFO[Window(Home).Property(background.random.random.SettingsHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Favorites)">$INFO[Window(Home).Property(background.random.random.FavoritesHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Music)">$INFO[Window(Home).Property(background.random.random.MusicHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),LiveTV)">$INFO[Window(Home).Property(background.random.random.LiveTVHomeItem)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)+String.IsEqual(Container(9000).ListItem.Property(item),Pictures)">$INFO[Window(Home).Property(background.random.random.PicturesHomeItem)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(BGType),7)">$INFO[Container(9034).ListItem.Art(fanart)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(BGType),4) | String.IsEqual(Container(9000).ListItem.Property(BGType),5)">special://skin/backgrounds/default_livecases.jpg</value>
 		<value condition="String.IsEmpty(Container(9000).ListItem.Thumb)">$INFO[Window(home).Property(fakelabel)]</value>
@@ -424,6 +464,9 @@
 		<value condition="Control.HasFocus(404)">$LOCALIZE[31944]</value>
 		<value condition="Control.HasFocus(405)">$LOCALIZE[31945]</value>
 		<value condition="Control.HasFocus(406)">$LOCALIZE[31962]</value>
+		<value condition="Control.HasFocus(407)">$LOCALIZE[31988]</value>
+		<value condition="Control.HasFocus(501)">$LOCALIZE[31989]</value>
+		<value condition="Control.HasFocus(502)">$LOCALIZE[31990]</value>
 		<value condition="Control.HasFocus(90000) + String.IsEmpty(Container(90000).ListItem.Property(Path))">$LOCALIZE[31923]</value>
 		<value condition="Control.HasFocus(90012)">$LOCALIZE[31925]</value>
 		<value condition="Control.HasFocus(90013) | Control.HasFocus(90021)">$LOCALIZE[31926]</value>
@@ -488,6 +531,8 @@
 		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,8)">$LOCALIZE[31028]: $LOCALIZE[31030]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,9)">$LOCALIZE[31028]: $LOCALIZE[31035]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,10)">$LOCALIZE[31028]: $LOCALIZE[31036]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,11)">$LOCALIZE[31986]</value>
+		<value condition="String.IsEqual(Container(90000).ListItem.Thumb,12)">$LOCALIZE[31987]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Property(BGType),4) | String.IsEqual(Container(90000).ListItem.Property(BGType),5)">$INFO[Container(90000).ListItem.Thumb,$LOCALIZE[31028]: ]</value>
 		<value condition="String.IsEqual(Container(90000).ListItem.Property(BGType),7)">$INFO[Container(90000).ListItem.Thumb,$LOCALIZE[20012]: ]</value>
 		<value>$INFO[Container(90000).ListItem.Thumb]</value>
@@ -717,6 +762,8 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,3)">$INFO[Window(Home).Property(script.grab.fanart.Video.Title)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,4)">$INFO[Window(Home).Property(script.grab.fanart.Music.Artist)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,5)">$INFO[Window(Home).Property(script.grab.fanart.Global.Title)]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)">$INFO[Window(Home).Propert(background.random.fixed),,.$INFO[ListItem.Property(item)]HomeItem]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)">$INFO[Window(Home).Propert(background.random.random),,.$INFO[ListItem.Property(item)]HomeItem]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(BGType),7)">$INFO[Container(9034).ListItem.Title]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">

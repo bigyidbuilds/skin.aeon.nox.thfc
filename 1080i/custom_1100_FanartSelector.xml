@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="1100" type="dialog">
-	<defaultcontrol always="true">90100</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<left>0</left>
@@ -10,10 +10,102 @@
 	<include>DialogOpenCloseAnimation</include>
 	<controls>
 		<control type="image">
+			<left>0</left>
+			<top>0</top>
 			<aspectratio align="center">scale</aspectratio>
 			<include>FullscreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture>$INFO(Container(90100).ListItem.Art(fanart))</texture>
+			<texture>$INFO[Container(9000).ListItem.Art(fanart)]</texture>
+		</control>
+		<include>SystemTopPanel</include>
+		<control type="wraplist" id="9100">
+			<left>30</left>
+			<top>30</top>
+			<width>1840</width>
+			<height>60</height>
+			<ondown>9000</ondown>
+			<orientation>horizontal</orientation>
+			<focusposition>4</focusposition>
+			<scrolltime tween="quadratic" easing="out">200</scrolltime>
+			<include>SettingsFadeAnimation</include>
+			<itemlayout height="38" width="205">
+				<control type="image">
+					<top>0</top>
+					<width>3</width>
+					<height>38</height>
+					<texture border="1">separator3.png</texture>
+				</control>
+				<control type="label">
+					<top>1</top>
+					<width>205</width>
+					<height>38</height>
+					<font>font13</font>
+					<textoffsetx></textoffsetx>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="38" width="205">
+				<control type="image">
+					<top>0</top>
+					<width>3</width>
+					<height>38</height>
+					<texture border="1">separator3.png</texture>
+				</control>
+				<control type="image">
+					<top>1</top>
+					<width>205</width>
+					<height>36</height>
+					<texture border="4">listselect_fo.png</texture>
+					<visible>Control.HasFocus(9100)</visible>
+					<include>VisibleFadeAnimation</include>
+				</control>
+				<control type="label">
+					<top>1</top>
+					<width>205</width>
+					<height>38</height>
+					<font>font13</font>
+					<textoffsetx></textoffsetx>
+					<textcolor>white</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<label>$INFO[ListItem.Label]</label>
+					<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9100)">Conditional</animation>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group" id="9200">
+			<control type="grouplist">
+				<left>30</left>
+				<top>30</top>
+				<width>1840</width>
+				<height>60</height>
+				<ondown>9000</ondown>
+				<align>center</align>
+				<orientation>horizontal</orientation>
+				<itemgap>0</itemgap>
+				<control type="image">
+					<width>3</width>
+					<height>38</height>
+					<texture border="1">separator3.png</texture>
+				</control>
+				<control type="button" id="9210">
+					<width>205</width>
+					<height>38</height>
+					<texturefocus>listselect_fo.png</texturefocus>
+					<label>$LOCALIZE[31979]</label>
+					<font>font13</font>
+					<textcolor>white</textcolor>
+					<focusedcolor>selected</focusedcolor>
+				</control>
+				<control type="image">
+					<width>3</width>
+					<height>38</height>
+					<texture border="1">separator3.png</texture>
+				</control>
+			</control>
 		</control>
 		<control type="group">
 			<top>424</top>
@@ -39,6 +131,26 @@
 					<height>67</height>
 					<texture flipx="true" flipy="true">submenu_end.png</texture>
 				</control>
+				<control type="grouplist">
+					<right>140</right>
+					<top>26</top>
+					<width>1780</width>
+					<height>41</height>
+					<align>right</align>
+					<orientation>horizontal</orientation>
+					<itemgap>20</itemgap>
+					<control type="label">
+						<width min="100" max="1780">auto</width>
+						<height>41</height>
+						<label>$INFO[Container(9000).ListItem.label], $LOCALIZE[31980]:$INFO[Container(9000).ListItem.Property(source)]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>thfc_font13_title</font>
+						<textcolor>themecolor</textcolor>
+						<shadowcolor>shadow</shadowcolor>
+						<scroll>true</scroll>
+					</control>
+				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -57,7 +169,7 @@
 				<top>159</top>
 				<include condition="system.getbool(lookandfeel.enablerssfeeds)">SubMenuAnimation</include>
 				<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
-				<control type="image" id="90101">
+				<control type="image">
 					<left>50</left>
 					<width>90</width>
 					<height>67</height>
@@ -68,6 +180,37 @@
 					<height>67</height>
 					<texture>submenu_bar.png</texture>
 				</control>
+				<control type="grouplist" id="9300">
+					<left>140</left>
+					<top>-4</top>
+					<width>1700</width>
+					<height>41</height>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<itemgap>10</itemgap>
+					<onup>9000</onup>
+					<ondown condition="Control.IsVisible(9400)+!Skin.HasSetting(lowermainmenu)">9400</ondown>
+					<control type="button" id="9310">
+						<width>250</width>
+						<height>38</height>
+						<label></label>
+						<font>thfc_font13_title</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="button" id="9311">
+						<width>250</width>
+						<height>38</height>
+						<label>$LOCALIZE[31984]</label>
+						<font>thfc_font13_title</font>
+						<textcolor>white</textcolor>
+						<focusedcolor>selected</focusedcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</control>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -75,7 +218,6 @@
 				<height>193</height>
 				<texture>homemenu_back.png</texture>
 			</control>
-			<!-- Main Menu (Includes_Home.xml) -->
 			<control type="image">
 				<left>-4</left>
 				<top>58</top>
@@ -108,6 +250,82 @@
 				<height>6</height>
 				<texture>thfc_blue_block.png</texture>
 			</control>
+			<control type="wraplist" id="9000">
+				<left>-290</left>
+				<top>65</top>
+				<right>-590</right>
+				<height>100</height>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<movement>1</movement>
+				<ondown condition="Control.IsVisible(9310)">9300</ondown>
+				<onup condition="!Control.IsVisible(9400)+Control.IsVisible(9100)">9100</onup>
+				<onup condition="!Control.IsVisible(9400)+Control.IsVisible(9200)">9200</onup>
+				<onup condition="Control.IsVisible(9400)+Skin.HasSetting(lowermainmenu)">9400</onup>
+				<pagecontrol />
+				<scrolltime tween="quadratic" easing="out">300</scrolltime>
+				<include condition="Skin.HasSetting(mainmenuicons)">FocusPosition4</include>
+				<include condition="!Skin.HasSetting(mainmenuicons)">FocusPosition2</include>
+				<orientation>Horizontal</orientation>
+				<animation effect="slide" start="0" end="-180" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
+				<animation effect="slide" start="0" end="-350,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
+				<animation effect="slide" start="0" end="126,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
+				<animation effect="fade" time="100" start="100" end="80" condition="!Control.HasFocus(9000)">Conditional</animation>
+				<itemlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
+					<control type="image">
+						<left>50</left>
+						<width>400</width>
+						<height>90</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
+					<control type="image">
+						<left>50</left>
+						<width>400</width>
+						<height>90</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.icon]</texture>
+					</control>
+				</focusedlayout>
+				<itemlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
+					<control type="image">
+						<width>590</width>
+						<height>90</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
+					<control type="image">
+						<width>590</width>
+						<height>90</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.icon]</texture>
+					</control>
+				</focusedlayout>
+				<itemlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
+					<control type="image">
+						<left>72</left>
+						<top>-2</top>
+						<width>105</width>
+						<height>105</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.icon]</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
+					<control type="image">
+						<left>72</left>
+						<top>-2</top>
+						<width>105</width>
+						<height>105</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[ListItem.icon]</texture>
+					</control>
+				</focusedlayout>
+			</control>
 			<control type="group">
 				<height>100</height>
 				<top>60</top>
@@ -117,7 +335,6 @@
 					<left>-840</left>
 					<texture fallback="badges/badge_1.png">$INFO[Skin.String(HomeMenuClubBadge_0)]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="875,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -126,7 +343,6 @@
 					<left>-340</left>
 					<texture fallback="badges/badge_2.png">$INFO[Skin.String(HomeMenuClubBadge_1)]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="625,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -171,7 +387,6 @@
 					<left>2160</left>
 					<texture fallback="badges/badge_7.png">$INFO[Skin.String(HomeMenuClubBadge_6)]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="-625,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 				<control type="image">
@@ -180,82 +395,77 @@
 					<left>2660</left>
 					<texture fallback="badges/badge_8.png">$INFO[Skin.String(HomeMenuClubBadge_7)]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="-875,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 			</control>
 		</control>
-		<control type="wraplist" id="9000">
-			<left>-290</left>
-			<top>60</top>
-			<right>-590</right>
-			<height>100</height>
-			<onleft>9000</onleft>
-			<onright>9000</onright>
-			<movement>1</movement>
-			<ondown>9001</ondown>
-			<pagecontrol />
-			<scrolltime tween="quadratic" easing="out">300</scrolltime>
-			<include condition="Skin.HasSetting(mainmenuicons)">FocusPosition4</include>
-			<include condition="!Skin.HasSetting(mainmenuicons)">FocusPosition2</include>
-			<orientation>Horizontal</orientation>
-			<animation effect="slide" start="0" end="-180" time="320" tween="cubic" easing="inout" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
-			<animation effect="slide" start="0" end="-350,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
-			<animation effect="slide" start="0" end="126,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
-			<itemlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
-				<control type="image">
-					<left>50</left>
-					<width>400</width>
-					<height>90</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture>$INFO[ListItem.icon]</texture>
-				</control>
-			</itemlayout>
-			<focusedlayout height="100" width="500" condition="![Skin.HasSetting(biggergap) | Skin.HasSetting(mainmenuicons)]">
-				<control type="image">
-					<left>50</left>
-					<width>400</width>
-					<height>90</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture>$INFO[ListItem.icon]</texture>
-				</control>
-			</focusedlayout>
-			<itemlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
-				<control type="image">
-					<width>590</width>
-					<height>90</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture>$INFO[ListItem.icon]</texture>
-				</control>
-			</itemlayout>
-			<focusedlayout height="100" width="640" condition="Skin.HasSetting(biggergap)">
-				<control type="image">
-					<width>590</width>
-					<height>90</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture>$INFO[ListItem.icon]</texture>
-				</control>
-			</focusedlayout>
-			<itemlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
-				<control type="image">
-					<left>72</left>
-					<top>-2</top>
-					<width>105</width>
-					<height>105</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture>$INFO[ListItem.icon]</texture>
-				</control>
-			</itemlayout>
-			<focusedlayout height="100" width="250" condition="Skin.HasSetting(mainmenuicons)">
-				<control type="image">
-					<left>72</left>
-					<top>-2</top>
-					<width>105</width>
-					<height>105</height>
-					<aspectratio align="center">keep</aspectratio>
-					<texture>$INFO[ListItem.icon]</texture>
-				</control>
-			</focusedlayout>
+		<control type="group" id="9400">
+			<top>150</top>
+			<left>50</left>
+			<control type="image">
+				<width>1820</width>
+				<height>355</height>
+				<texture border="40">listpanel_back.png</texture>
+			</control>
+			<control type="image">
+				<left>32</left>
+				<top>223</top>
+				<width>1756</width>
+				<height>60</height>
+				<texture border="1">separator4.png</texture>
+			</control>
+			<control type="label">
+				<left>40</left>
+				<top>285</top>
+				<width>1756</width>
+				<height>38</height>
+				<label>$LOCALIZE[31983] $LOCALIZE[31981]: $INFO[Container(9410).NumItems],  $LOCALIZE[31982]: $INFO[Container(9410).Position]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+			</control>
+			<animation effect="slide" end="0,520" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<control type="list" id="9410">
+				<left>32</left>
+				<top>32</top>
+				<height>291</height>
+				<width>1756</width>
+				<onleft></onleft>
+				<onright></onright>
+				<onup condition="Control.IsVisible(9100)+Skin.HasSetting(lowermainmenu)">9100</onup>
+				<onup condition="Control.IsVisible(9200)+Skin.HasSetting(lowermainmenu)">9200</onup>
+				<onup condition="Control.IsVisible(9310)+!Skin.HasSetting(lowermainmenu)">9300</onup>
+				<onup condition="!Control.IsVisible(9400)+!Skin.HasSetting(lowermainmenu)">9000</onup>
+				<ondown condition="Skin.HasSetting(lowermainmenu)">9000</ondown>
+				<orientation>horizontal</orientation>
+				<itemlayout width="439" height="251">
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>429</width>
+						<height>241</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center">scale</aspectratio>
+					</control>
+				</itemlayout>
+				<focusedlayout width="439" height="251">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>439</width>
+						<height>251</height>
+						<texture>thfc_purple_block.png</texture>
+						<visible>Control.HasFocus(9410)</visible>
+					</control>
+					<control type="image">
+						<left>5</left>
+						<top>5</top>
+						<width>429</width>
+						<height>241</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center">scale</aspectratio>
+					</control>
+				</focusedlayout>
+			</control>
 		</control>
 	</controls>
 </window>

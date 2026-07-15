@@ -83,6 +83,13 @@
 						<label>21340</label>
 						<font>font15</font>
 					</control>
+					<control type="button" id="10">
+						<description>Dependencies button</description>
+						<width>356</width>
+						<height>68.57</height>
+						<label>39024</label>
+						<font>font15</font>
+					</control>
 				</control>
 			</control>
 			<control type="group">

@@ -16,33 +16,40 @@
 			<width>1920</width>
 			<texture border="40">dialogs/default/bg.png</texture>
 		</control>
-		<control type="textbox">
-			<top>50</top>
+		<control type="image">
+			<left>30</left>
+			<top>86</top>
+			<width>1860</width>
+			<height>582</height>
+			<texture border="5">dialogs/default/inner.png</texture>
+		</control>
+		<control type="label">
 			<left>50</left>
-			<height>100</height>
+			<top>32</top>
 			<width>1820</width>
-			<font>font15_textbox</font>
-			<textcolor>white</textcolor>
+			<height>40</height>
+			<font>font15_title</font>
+			<textcolor>dialogheader</textcolor>
 			<label>$LOCALIZE[31969]</label>
 			<align>center</align>
 		</control>
 		<control type="label">
 			<top>150</top>
 			<left>50</left>
-			<height>100</height>
+			<height>40</height>
 			<width>1820</width>
-			<font>font15_textbox</font>
-			<textcolor>white</textcolor>
+			<font>font15_title</font>
+			<textcolor>dialogtext</textcolor>
 			<label>$LOCALIZE[31971]</label>
 			<align>center</align>
 		</control>
 		<control type="label">
 			<top>400</top>
 			<left>50</left>
-			<height>100</height>
+			<height>40</height>
 			<width>1820</width>
-			<font>font15_textbox</font>
-			<textcolor>white</textcolor>
+			<font>font15_title</font>
+			<textcolor>dialogtext</textcolor>
 			<label>$LOCALIZE[31972]</label>
 			<align>center</align>
 		</control>

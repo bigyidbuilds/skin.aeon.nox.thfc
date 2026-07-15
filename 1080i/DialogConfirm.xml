@@ -78,31 +78,31 @@
 			<itemgap>14</itemgap>
 			<control type="button" id="11">
 				<description>Yes button</description>
-				<width>421</width>
+				<width>287</width>
 				<height>60</height>
 				<label>107</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>11</onup>
-				<ondown>11</ondown>
 				<texturefocus border="5">button_fo.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 			</control>
 			<control type="button" id="10">
 				<description>No button</description>
-				<left>465</left>
-				<top>402</top>
-				<width>421</width>
+				<width>287</width>
 				<height>60</height>
 				<label>106</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<onleft>11</onleft>
-				<onright>11</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
+				<texturefocus border="5">button_fo.png</texturefocus>
+				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+			</control>
+			<control type="button" id="12">
+				<description>Settings button</description>
+				<width>287</width>
+				<height>60</height>
+				<label>106</label>
+				<font>font15_title</font>
+				<align>center</align>
 				<texturefocus border="5">button_fo.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 			</control>

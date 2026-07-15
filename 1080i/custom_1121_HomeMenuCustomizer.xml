@@ -28,8 +28,8 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>grey2</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>thfc_purple</textcolor>
+						<selectedcolor>thfc_gold</selectedcolor>
 						<align>right</align>
 						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 					</control>
@@ -52,8 +52,8 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>white</textcolor>
-						<selectedcolor>selected</selectedcolor>
+						<textcolor>thfc_blue</textcolor>
+						<selectedcolor>thfc_gold</selectedcolor>
 						<align>right</align>
 						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90000)">Conditional</animation>
@@ -102,7 +102,7 @@
 				<width>1256</width>
 				<height>115</height>
 				<font>font15_textbox</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>thfc_orange</textcolor>
 				<label>$VAR[SkinSettingsDescriptionVar]</label>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
@@ -143,7 +143,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font15</font>
 					<label>$LOCALIZE[13334]</label>
-					<label2>$INFO[Container(90000).ListItem.Label,[COLOR labelheader],[/COLOR]]</label2>
+					<label2>$INFO[Container(90000).ListItem.Label,[COLOR thfc_green],[/COLOR]]</label2>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<onclick>Skin.SetString($INFO[Container(90000).ListItem.Property(Item),,HomeItem.Label])</onclick>
 				</control>
@@ -154,12 +154,13 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font15</font>
 					<label>$LOCALIZE[31027]</label>
-					<label2>$VAR[BackgroundLabel2Var,[COLOR labelheader],[/COLOR]]</label2>
+					<label2>$VAR[BackgroundLabel2Var,[COLOR thfc_green],[/COLOR]]</label2>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<onfocus>Skin.Reset(ItemToEdit.MultiFanart)</onfocus>
 					<onfocus>Skin.Reset(ItemToEdit.BGType)</onfocus>
 					<onclick>SetProperty(Nox.Temp,$INFO[Container(90000).ListItem.Property(Item),,HomeItem.MultiFanart],home)</onclick>
 					<onclick>SetProperty(Nox.BGType,$INFO[Container(90000).ListItem.Property(Item),,HomeItem.BGType],home)</onclick>
+					<onclick>SetProperty(FanartSelector.Folder.Name,$INFO[Container(90000).ListItem.Property(item),,HomeItem],home)</onclick>
 					<onclick>ActivateWindow(1122)</onclick>
 				</control>
 				<control type="button" id="90013">
@@ -169,7 +170,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font15</font>
 					<label>$LOCALIZE[22079]</label>
-					<label2>$INFO[Container(90000).ListItem.Property(Path),[COLOR labelheader],[/COLOR]]</label2>
+					<label2>$INFO[Container(90000).ListItem.Property(Path),[COLOR thfc_green],[/COLOR]]</label2>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<onfocus>Skin.Reset(ItemToEdit.Path)</onfocus>
 					<onfocus>Skin.Reset(ItemToEdit.Label)</onfocus>
@@ -185,7 +186,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font15</font>
 					<label>$LOCALIZE[22079]</label>
-					<label2>$INFO[Container(90000).ListItem.Property(Path),[COLOR labelheader],[/COLOR]]</label2>
+					<label2>$INFO[Container(90000).ListItem.Property(Path),[COLOR thfc_green],[/COLOR]]</label2>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<onclick>RunScript(script.skinshortcuts,type=shortcuts&amp;custom=True&amp;showNone=True&amp;skinLabel=$INFO[Container(90000).ListItem.Property(Item),,HomeItem.Label]&amp;skinAction=$INFO[Container(90000).ListItem.Property(Item),,HomeItem.Path])</onclick>
 					<visible>System.HasAddon(script.skinshortcuts)</visible>
@@ -197,7 +198,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font15</font>
 					<label>$LOCALIZE[31041]</label>
-					<label2>$INFO[Container(90000).ListItem.Property(WidgetLabel),[COLOR labelheader],[/COLOR]]</label2>
+					<label2>$INFO[Container(90000).ListItem.Property(WidgetLabel),[COLOR thfc_green],[/COLOR]]</label2>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<onfocus>Skin.Reset(ItemToEdit.Widget)</onfocus>
 					<onfocus>Skin.Reset(ItemToEdit.WidgetLabel)</onfocus>
@@ -226,7 +227,7 @@
 					<textoffsetx>30</textoffsetx>
 					<font>font15</font>
 					<label>$LOCALIZE[31049]</label>
-					<label2>$VAR[InfoLineLabelVar,[COLOR labelheader],[/COLOR]]</label2>
+					<label2>$VAR[InfoLineLabelVar,[COLOR thfc_green],[/COLOR]]</label2>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<onfocus>Skin.Reset(ItemToEdit.InfoLine)</onfocus>
 					<onclick>SetProperty(Nox.InfoLine,$INFO[Container(90000).ListItem.Property(Item),,HomeItem.InfoLine],home)</onclick>

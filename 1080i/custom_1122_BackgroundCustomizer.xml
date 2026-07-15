@@ -33,7 +33,7 @@
 			<font>font15_title</font>
 			<label>$LOCALIZE[31027]</label>
 			<align>center</align>
-			<textcolor>dialogheader</textcolor>
+			<textcolor>thfc_blue</textcolor>
 		</control>
 		<control type="list" id="90100">
 			<left>189</left>
@@ -57,7 +57,7 @@
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>white2</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -72,7 +72,7 @@
 				<control type="image">
 					<width>629</width>
 					<height>60</height>
-					<texture border="5">listselect_fo.png</texture>
+					<texture border="5" colordiffuse="thfc_blue">listselect_fo.png</texture>
 					<visible>Control.HasFocus(90100)</visible>
 					<include>VisibleFadeAnimation</include>
 				</control>
@@ -113,10 +113,32 @@
 					<onclick>Dialog.Close(1122)</onclick>
 				</item>
 				<item>
-					<description>Set single image from THFC images</description>
+					<description>Set single image background from THFC images</description>
 					<label>$LOCALIZE[31976]</label>
 					<onclick>RunScript(script.aeon.nox.thfc,mode=fanartselect&amp;method=selectsingle)</onclick>
+					<visible>System.HasAddon(script.aeon.nox.thfc)</visible>
+				</item>
+				<item>
+					<description>Set multi image background from THFC images</description>
+					<label>$LOCALIZE[31977]</label>
+					<onclick>RunScript(script.aeon.nox.thfc,mode=fanartselect&amp;method=selectmulti)</onclick>
+					<visible>System.HasAddon(script.aeon.nox.thfc)</visible>
+				</item>
+				<item>
+					<description>Set random from THFC selected</description>
+					<label>$LOCALIZE[31986]</label>
+					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
+					<onclick>Skin.SetString(ItemToEdit.MultiFanart,11)</onclick>
 					<onclick>Dialog.Close(1122)</onclick>
+					<visible>System.HasAddon(script.aeon.nox.thfc)</visible>
+				</item>
+				<item>
+					<description>Set random from THFC random</description>
+					<label>$LOCALIZE[31987]</label>
+					<onclick>Skin.SetString(ItemToEdit.BGType,3)</onclick>
+					<onclick>Skin.SetString(ItemToEdit.MultiFanart,12)</onclick>
+					<onclick>Dialog.Close(1122)</onclick>
+					<visible>System.HasAddon(script.aeon.nox.thfc)</visible>
 				</item>
 				<item>
 					<description>Random movie fanart</description>
@@ -229,8 +251,8 @@
 			<onup>60</onup>
 			<showonepage>false</showonepage>
 			<texturesliderbackground />
-			<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-			<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+			<texturesliderbar colordiffuse="thfc_green" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
+			<texturesliderbarfocus border="4">scrollbar/texturesliderbar4.png</texturesliderbarfocus>
 		</control>
 	</controls>
 </window>

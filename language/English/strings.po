@@ -1176,6 +1176,77 @@ msgid "Random Club badge off"
 msgstr ""
 
 msgctxt "#31976"
-msgid "Set Image from THFC Scrapers"
+msgid "Set single image background from THFC images"
 msgstr ""
+
+msgctxt "#31977"
+msgid "Set multi-image background from THFC images"
+msgstr ""
+
+msgctxt "#31978"
+msgid "Script Aeon Nox THFC settings for backgrounds"
+msgstr ""
+
+#: /1080i/custom_1100_FanartSelctor.xml
+msgctxt "#31979"
+msgid "Clear filter"
+msgstr ""
+
+#: /1080i/custom_1100_FanartSelctor.xml
+msgctxt "#31980"
+msgid "Source"
+msgstr ""
+
+#: /1080i/custom_1100_FanartSelctor.xml
+msgctxt "#32981"
+msgid "Total items selcected"
+msgstr ""
+
+#: /1080i/custom_1100_FanartSelctor.xml
+msgctxt "#31982"
+msgid "List position"
+msgstr ""
+
+#: /1080i/custom_1100_FanartSelctor.xml
+msgctxt "#31983"
+msgid "Click to remove"
+msgstr ""
+
+
+#: /1080i/custom_1100_FanartSelctor.xml
+msgctxt "#31984"
+msgid "Set images"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31985"
+msgid "Set images for THFC Random from selected"
+msgstr ""
+
+#: /1080i/custom_1122_BackgroundCustomizer.xml
+msgctxt "#31986"
+msgid "Random THFC image from selected images"
+msgstr ""
+
+#: /1080i/custom_1122_BackgroundCustomizer.xml
+msgctxt "#31987"
+msgid "Random THFC image from random images"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31988"
+msgid "Reload skin"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31989"
+msgid "Open background settings for Script Aeon Nox THFC\nSettings including for refresh rate of random  and filtering of images for random"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31990"
+msgid "Select images to be used in random when using [I]Random THFC image from selected images[/I]"
+msgstr ""
+
+
+
 

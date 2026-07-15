@@ -10,6 +10,7 @@
 	<onload condition="String.IsEqual(Skin.String(Overlay.Toggle),3)">SetProperty(Overlay.Path,overlays/showcase/3/,home)</onload>
 	<onload condition="Skin.HasSetting(Disable.Resumable)">SetProperty(Overlay.Resumable,True,home)</onload>
 	<onload condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">RunScript(script.aeon.nox.thfc,mode=settings&amp;method=randomclubbadge)</onload>
+	<onload>RunScript(script.aeon.nox.thfc,mode=loadaction&amp;method=home)</onload>
 	<onload>ReplaceWindow($INFO[System.StartupWindow])</onload>
 	<controls />
 </window>

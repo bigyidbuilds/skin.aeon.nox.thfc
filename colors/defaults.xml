@@ -13,9 +13,13 @@
 	<color name="themecolor_transparent">886db9e5</color>
 	<color name="ICS_Blue_Text">ff33B5E5</color>
 	<color name="ICS_Blue_Textures">ff0099CC</color>
-	<color name="dialogheader">FF606060</color>
+	<color name="dialogheader">FF132257</color>
+	<color name="dialogtext">FFFFFFFF</color>
 	<color name="labelheader">FF6db9e5</color>
 	<color name="shadow">AA000000</color>
 	<color name="thfc_blue">FF132257</color>
-	<color name="thfc_pruple">6f00ff</color>
+	<color name="thfc_purple">FFA24FF9</color>
+	<color name="thfc_gold">FFF9E606</color>
+	<color name="thfc_green">FF05F975</color>
+	<color name="thfc_orange">FFFA6606</color>
 </colors>
