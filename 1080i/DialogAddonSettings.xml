@@ -75,8 +75,8 @@
 				<width>14</width>
 				<height>480</height>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
 				<onleft>5</onleft>
 				<onright>9001</onright>
 				<showonepage>false</showonepage>
@@ -111,16 +111,25 @@
 					<description>OK Button</description>
 					<width>310</width>
 					<label>186</label>
+					<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
 				</control>
 				<control type="button" id="29">
 					<description>Cancel Button</description>
 					<width>310</width>
 					<label>222</label>
+					<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
 				</control>
 				<control type="button" id="30">
 					<description>Defaults Button</description>
 					<width>310</width>
 					<label>409</label>
+					<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
 				</control>
 			</control>
 		</control>
@@ -130,25 +139,36 @@
 			<width>310</width>
 			<align>right</align>
 			<font>font14</font>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 			<textoffsetx>20</textoffsetx>
-			<textcolor>grey2</textcolor>
+			<textcolor>white</textcolor>
+			<focusedcolor>white</focusedcolor>
 		</control>
 		<control type="button" id="7">
 			<description>Default Button</description>
 			<width>960</width>
 			<height>60</height>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+			<textcolor>white</textcolor>
+			<focusedcolor>white</focusedcolor>
 		</control>
 		<control type="radiobutton" id="8">
 			<description>Default RadioButton</description>
 			<width>960</width>
 			<height>60</height>
 			<textwidth>880</textwidth>
+			<textcolor>white</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default spincontrolex</description>
 			<width>960</width>
 			<height>60</height>
 			<reverse>true</reverse>
+			<textcolor>white</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 		</control>
 		<control type="label" id="14">
 			<width>960</width>
@@ -175,6 +195,7 @@
 			<description>Default Slider</description>
 			<width>960</width>
 			<height>60</height>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 		</control>
 	</controls>
 </window>

@@ -41,8 +41,8 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>thfc_purple</textcolor>
-						<selectedcolor>thfc_gold</selectedcolor>
+						<textcolor>windowlabelnofocus</textcolor>
+						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -66,8 +66,8 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>thfc_blue</textcolor>
-						<selectedcolor>thfc_gold</selectedcolor>
+						<textcolor>windowlabelfocus</textcolor>
+						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
@@ -96,6 +96,11 @@
 					</item>
 					<item id="5">
 						<label>31102</label>
+						<onclick>noop</onclick>
+						<icon/>
+					</item>
+					<item id="6">
+						<label>31991</label>
 						<onclick>noop</onclick>
 						<icon/>
 					</item>
@@ -165,15 +170,6 @@
 						<label>31913</label>
 						<label2>[COLOR thfc_green]$VAR[lowermainmenuVar][/COLOR]</label2>
 						<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
-						<texturenofocus border="1">separator5.png</texturenofocus>
-					</control>
-					<control type="button" id="107">
-						<width>1316</width>
-						<height>90</height>
-						<textoffsetx>30</textoffsetx>
-						<font>font15</font>
-						<label>31965</label>
-						<onclick>ActivateWindow(1135)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="106">
@@ -482,8 +478,8 @@
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
 					<onright>60</onright>
-					<onup>9004</onup>
-					<ondown>9004</ondown>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
 					<visible>Container(9000).HasFocus(5)</visible>
 					<control type="button" id="501">
 						<width>1316</width>
@@ -491,10 +487,9 @@
 						<textoffsetx>30</textoffsetx>
 						<font>font15</font>
 						<label>31978</label>
-						<!-- <onclick>Addon.OpenSettings(script.aeon.nox.thfc)</onclick> -->
 						<onclick>RunScript(script.aeon.nox.thfc,mode=executebuiltin&amp;method=opensettings&amp;properties=%7B%27addon%27%3A+%27script.aeon.nox.thfc%27%2C+%27category%27%3A+%271%27%7D)</onclick>
-						<!-- <onclick>SetFocus(3,1)</onclick> -->
 						<texturenofocus border="1">separator5.png</texturenofocus>
+						<visible>System.HasAddon(script.aeon.nox.thfc)</visible>
 					</control>
 					<control type="button" id="502">
 						<width>1316</width>
@@ -504,6 +499,69 @@
 						<label>31985</label>
 						<onclick>RunScript(script.aeon.nox.thfc,mode=fanartselect&amp;method=selectrandom)</onclick>
 						<texturenofocus border="1">separator5.png</texturenofocus>
+						<visible>System.HasAddon(script.aeon.nox.thfc)</visible>
+					</control>
+				</control>
+				<control type="grouplist" id="9006">
+					<description>control area</description>
+					<left>522</left>
+					<top>32</top>
+					<width>1316</width>
+					<height>720</height>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9006</onup>
+					<ondown>9006</ondown>
+					<visible>Container(9000).HasFocus(6)</visible>
+					<control type="button" id="601">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[13007]</label>
+						<onclick>Skin.Reset(HomeMenuClubBadge.0)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.1)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.2)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.3)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.4)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.5)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.6)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.7)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.Random)</onclick>
+						<onclick>Skin.Reset(HomeMenuClubBadge.Random.mode)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="602">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>31992</label>
+						<label2>[COLOR thfc_green]$VAR[HomeMenuClubBadgeRandomVar][/COLOR]</label2>
+						<onclick>Skin.ToggleSetting(HomeMenuClubBadge.Random)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="603">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31974]</label>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+						<onclick>ActivateWindow(1136)</onclick>
+						<visible>!Skin.HasSetting(HomeMenuClubBadge.Random)</visible>
+					</control>
+					<control type="button" id="604">
+						<width>1316</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31997]</label>
+						<label2>[COLOR thfc_green]$VAR[ClubBadgeModeLabelVar][/COLOR]</label2>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+						<onclick>ActivateWindow(1135)</onclick>
+						<visible>Skin.HasSetting(HomeMenuClubBadge.Random)</visible>
 					</control>
 				</control>
 			</control>

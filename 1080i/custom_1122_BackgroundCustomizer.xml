@@ -33,7 +33,7 @@
 			<font>font15_title</font>
 			<label>$LOCALIZE[31027]</label>
 			<align>center</align>
-			<textcolor>thfc_blue</textcolor>
+			<textcolor>dialogheader</textcolor>
 		</control>
 		<control type="list" id="90100">
 			<left>189</left>
@@ -57,7 +57,7 @@
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>white2</textcolor>
+					<textcolor>dialogcontrollabel</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -81,7 +81,7 @@
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>white</textcolor>
+					<textcolor>dialogcontrollabel</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<scroll>true</scroll>
 					<label>$INFO[ListItem.Label]</label>

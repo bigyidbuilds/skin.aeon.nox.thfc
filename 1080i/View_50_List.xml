@@ -1856,7 +1856,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1873,7 +1873,7 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -1884,7 +1884,7 @@
 							<width>985</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -1894,7 +1894,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -1919,7 +1919,7 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
-							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<texture background="true" colordiffuse="windowiconfocus">$INFO[ListItem.Icon,views/list/]</texture>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1936,7 +1936,7 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -1947,7 +1947,7 @@
 							<width>985</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -1957,7 +1957,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>

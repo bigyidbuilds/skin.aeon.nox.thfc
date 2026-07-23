@@ -73,7 +73,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_0)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.0)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -89,7 +89,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_1)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.1)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -104,7 +104,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_2)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.2)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>	
 				</control>
@@ -119,7 +119,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_3)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.3)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -134,7 +134,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_4)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.4)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -149,7 +149,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_5)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.5)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -163,7 +163,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_6)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.6)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -177,7 +177,7 @@
 						<top>2</top>
 						<width>78</width>
 						<height>78</height>
-						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge_7)]</texture>
+						<texture fallback="checkbox_x.png">$INFO[Skin.String(HomeMenuClubBadge.7)]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</control>
@@ -327,8 +327,8 @@
 			<ondown>Control.Move(90100,1)</ondown>
 			<visible>Skin.HasSetting(mainmenuicons)</visible>
 			<onclick>SendCLick(90100)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_0)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_0,$INFO[Container(90100).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.0)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.0,$INFO[Container(90100).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90201">
 			<include>HiddenObject</include>
@@ -338,8 +338,8 @@
 			<ondown>Control.Move(90101,1)</ondown>
 			<visible>Skin.HasSetting(mainmenuicons)</visible>
 			<onclick>SendCLick(90101)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_1)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_1,$INFO[Container(90101).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.1)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.1,$INFO[Container(90101).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90202">
 			<include>HiddenObject</include>
@@ -348,8 +348,8 @@
 			<onup>Control.Move(90102,-1)</onup>
 			<ondown>Control.Move(90102,1)</ondown>
 			<onclick>SendCLick(90102)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_2)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_2,$INFO[Container(90102).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.2)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.2,$INFO[Container(90102).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90203">
 			<include>HiddenObject</include>
@@ -358,8 +358,8 @@
 			<onup>Control.Move(90103,-1)</onup>
 			<ondown>Control.Move(90103,1)</ondown>
 			<onclick>SendCLick(90103)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_3)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_3,$INFO[Container(90103).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.3)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.3,$INFO[Container(90103).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90204">
 			<include>HiddenObject</include>
@@ -368,7 +368,7 @@
 			<onup>Control.Move(90104,-1)</onup>
 			<ondown>Control.Move(90104,1)</ondown>
 			<onclick>SendCLick(90104)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_4)</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.4)</onclick>
 			<onclick>Skin.SetString(HomeMenuClubBadge_4,$INFO[Container(90104).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90205">
@@ -378,8 +378,8 @@
 			<onup>Control.Move(90105,-1)</onup>
 			<ondown>Control.Move(90105,1)</ondown>
 			<onclick>SendCLick(90105)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_5)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_5,$INFO[Container(90105).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.5)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.5,$INFO[Container(90105).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90206">
 			<include>HiddenObject</include>
@@ -389,8 +389,8 @@
 			<ondown>Control.Move(90106,1)</ondown>
 			<visible>Skin.HasSetting(mainmenuicons)</visible>
 			<onclick>SendCLick(90106)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_6)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_6,$INFO[Container(90106).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.6)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.6,$INFO[Container(90106).ListItem.ActualIcon])</onclick>
 		</control>
 		<control type="button" id="90207">
 			<include>HiddenObject</include>
@@ -400,8 +400,8 @@
 			<ondown>Control.Move(90107,1)</ondown>
 			<visible>Skin.HasSetting(mainmenuicons)</visible>
 			<onclick>SendCLick(90107)</onclick>
-			<onclick>Skin.Reset(HomeMenuClubBadge_7)</onclick>
-			<onclick>Skin.SetString(HomeMenuClubBadge_7,$INFO[Container(90102).ListItem.ActualIcon])</onclick>
+			<onclick>Skin.Reset(HomeMenuClubBadge.7)</onclick>
+			<onclick>Skin.SetString(HomeMenuClubBadge.7,$INFO[Container(90102).ListItem.ActualIcon])</onclick>
 		</control>
 	</controls>
 </window>

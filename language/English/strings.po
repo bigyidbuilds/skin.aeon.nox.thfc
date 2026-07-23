@@ -1130,6 +1130,50 @@ msgstr ""
 
 ####### Added for mod to THFC ######
 
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31180"
+msgid "Randomize once on skin load all identical"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31181"
+msgid "Randomize once on skin load all different"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31182"
+msgid "Randomize constantly all identical"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31183"
+msgid "Randomize constantly all different"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31184"
+msgid "Will randomize once on loading of skin and stay like until next load, each badge will be the same"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31185"
+msgid "Will randomize once on loading of skin and stay like until next load, each badge will be the different to the others"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31186"
+msgid "Will randomize constantly at the time specified in the setting for change interval, each badge will be the same"
+msgstr ""
+
+#: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
+msgctxt "#31187"
+msgid "Will randomize constantly at the time specified in the setting for change interval, each badge will be the different to the others"
+msgstr ""
+
+msgctxt "#31188"
+msgid "No setting set"
+msgstr ""
+
 msgctxt "#31965"
 msgid "Set club badges in Main menu bar"
 msgstr ""
@@ -1168,7 +1212,7 @@ msgid "Random Club badge on"
 msgstr ""
 
 msgctxt "#31974"
-msgid "Manually set"
+msgid "Set selection"
 msgstr ""
 
 msgctxt "#31975"
@@ -1246,6 +1290,53 @@ msgid "Open background settings for Script Aeon Nox THFC\nSettings including for
 msgctxt "#31990"
 msgid "Select images to be used in random when using [I]Random THFC image from selected images[/I]"
 msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31991"
+msgid "Main menu badges"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31992"
+msgid "Random or Selected"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31993"
+msgid "Choose whether to have to have the club badge picked at random from club badges or make your own selection from club badges"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31994"
+msgid "Random"
+msgstr ""
+
+#: /1080i/SkinSettings.xml /1080i/custom_1122_BackgroundCustomizer.xml
+msgctxt "#31995"
+msgid "Selected"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31996"
+msgid "Manually set club badge and positions on the main menu bar relative to Main Menu settings"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31997"
+msgid "Select random mode"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31998"
+msgid "Select from a list of available modes for the randomization of the club badges"
+msgstr ""
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31999"
+msgid ""
+msgstr ""
+
+
 
 
 

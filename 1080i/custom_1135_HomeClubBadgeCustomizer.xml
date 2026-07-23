@@ -4,7 +4,7 @@
 	<coordinates>
 		<system>1</system>
 		<left>457</left>
-		<top>240</top>
+		<top>170</top>
 		<origin x="777" y="240">String.IsEqual(Skin.AspectRatio,21:9)</origin>
 	</coordinates>
 	<include>DialogOpenCloseAnimation</include>
@@ -12,15 +12,15 @@
 		<control type="image">
 			<left>157</left>
 			<width>692</width>
-			<height>600</height>
+			<height>740</height>
 			<texture border="40">dialogs/default/bg.png</texture>
 		</control>
 		<control type="image">
 			<left>187</left>
 			<top>86</top>
 			<width>632</width>
-			<height>482</height>
-			<texture border="5">dialogs/default/inner4.png</texture>
+			<height>622</height>
+			<texture border="5">dialogs/default/inner.png</texture>
 		</control>
 		<control type="label" id="1">
 			<left>30</left>
@@ -28,9 +28,9 @@
 			<width>940</width>
 			<height>40</height>
 			<font>font15_title</font>
-			<label>$LOCALIZE[31970]</label>
+			<label>$LOCALIZE[31027]</label>
 			<align>center</align>
-			<textcolor>white</textcolor>
+			<textcolor>dialogheader</textcolor>
 		</control>
 		<control type="list" id="90100">
 			<left>189</left>
@@ -47,14 +47,14 @@
 				<control type="image">
 					<width>628</width>
 					<height>60</height>
-					<texture border="1">separator7.png</texture>
+					<texture border="1">separator2.png</texture>
 				</control>
 				<control type="label">
 					<width>628</width>
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>white</textcolor>
+					<textcolor>white2</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -63,13 +63,13 @@
 				<control type="image">
 					<width>628</width>
 					<height>60</height>
-					<texture border="1">separator7.png</texture>
+					<texture border="1">separator2.png</texture>
 					<include>VisibleFadeAnimation</include>
 				</control>
 				<control type="image">
 					<width>629</width>
 					<height>60</height>
-					<texture border="5">listselect_fo2.png</texture>
+					<texture border="5" colordiffuse="thfc_blue">listselect_fo.png</texture>
 					<visible>Control.HasFocus(90100)</visible>
 					<include>VisibleFadeAnimation</include>
 				</control>
@@ -78,49 +78,47 @@
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>thfc_blue</textcolor>
+					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>
-					<shadowcolor>white</shadowcolor>
 					<scroll>true</scroll>
 					<label>$INFO[ListItem.Label]</label>
 					<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(90100)">Conditional</animation>
 				</control>
 			</focusedlayout>
 			<content>
-				<item>
-					<label>$LOCALIZE[13007]</label>
-					<onclick>Skin.Reset(HomeMenuClubBadge_0)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_1)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_2)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_3)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_4)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_5)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_6)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadge_7)</onclick>
-					<onclick>Skin.Reset(HomeMenuClubBadgeRandom)</onclick>
+				<item id="100">
+					<label>$LOCALIZE[31180]</label>
+					<onclick>Skin.SetString(HomeMenuClubBadge.Random.mode,0)</onclick>
 					<onclick>Dialog.Close(1135)</onclick>
 				</item>
-				<item>
-					<label>$VAR[RandomClubBagde]</label>
-					<onclick>Skin.ToggleSetting(HomeMenuClubBadgeRandom)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_0)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_1)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_2)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_3)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_4)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_5)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_6)</onclick>
-					<onclick condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">Skin.Reset(HomeMenuClubBadge_7)</onclick>
-					<onclick condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">RunScript(script.aeon.nox.thfc,mode=settings&amp;method=randomclubbadge)</onclick>
+				<item id="101">
+					<label>$LOCALIZE[31181]</label>
+					<onclick>Skin.SetString(HomeMenuClubBadge.Random.mode,1)</onclick>
 					<onclick>Dialog.Close(1135)</onclick>
 				</item>
-				<item>
-					<label>$LOCALIZE[31974]</label>
-					<onclick>Skin.Reset(HomeMenuClubBadgeRandom)</onclick>
-					<onclick>ActivateWindow(1136)</onclick>
+				<item id="102">
+					<label>$LOCALIZE[31182]</label>
+					<onclick>Skin.SetString(HomeMenuClubBadge.Random.mode,2)</onclick>
+					<onclick>Dialog.Close(1135)</onclick>
+				</item>
+				<item id="103">
+					<label>$LOCALIZE[31183]</label>
+					<onclick>Skin.SetString(HomeMenuClubBadge.Random.mode,3)</onclick>
 					<onclick>Dialog.Close(1135)</onclick>
 				</item>
 			</content>
+		</control>
+		<control type="textbox">
+			<left>194</left>
+			<top>572</top>
+			<width>598</width>
+			<height>115</height>
+			<font>font15_textbox</font>
+			<textcolor>thfc_orange</textcolor>
+			<label>$VAR[ClubBadgeModeDescriptionVar]</label>
+			<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
 		</control>
 		<control type="scrollbar" id="60">
 			<left>819</left>
@@ -133,8 +131,8 @@
 			<onup>60</onup>
 			<showonepage>false</showonepage>
 			<texturesliderbackground />
-			<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-			<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+			<texturesliderbar colordiffuse="thfc_green" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
+			<texturesliderbarfocus border="4">scrollbar/texturesliderbar4.png</texturesliderbarfocus>
 		</control>
 	</controls>
 </window>

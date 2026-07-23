@@ -467,6 +467,9 @@
 		<value condition="Control.HasFocus(407)">$LOCALIZE[31988]</value>
 		<value condition="Control.HasFocus(501)">$LOCALIZE[31989]</value>
 		<value condition="Control.HasFocus(502)">$LOCALIZE[31990]</value>
+		<value condition="Control.HasFocus(602)">$LOCALIZE[31993]</value>
+		<value condition="Control.HasFocus(603)">$LOCALIZE[31996]</value>
+		<value condition="Control.HasFocus(604)">$LOCALIZE[31998]</value>
 		<value condition="Control.HasFocus(90000) + String.IsEmpty(Container(90000).ListItem.Property(Path))">$LOCALIZE[31923]</value>
 		<value condition="Control.HasFocus(90012)">$LOCALIZE[31925]</value>
 		<value condition="Control.HasFocus(90013) | Control.HasFocus(90021)">$LOCALIZE[31926]</value>
@@ -478,6 +481,10 @@
 	<variable name="lowermainmenuVar">
 		<value condition="Skin.HasSetting(lowermainmenu)">$LOCALIZE[418]</value>
 		<value>$LOCALIZE[571]</value>
+	</variable>
+	<variable name="HomeMenuClubBadgeRandomVar">
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)">$LOCALIZE[31994]</value>
+		<value>$LOCALIZE[31995]</value>
 	</variable>
 	<variable name="HorizontalListNavVar">
 		<value condition="Skin.HasSetting(HorizontalListNav)">$LOCALIZE[31005]</value>
@@ -762,8 +769,8 @@
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,3)">$INFO[Window(Home).Property(script.grab.fanart.Video.Title)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,4)">$INFO[Window(Home).Property(script.grab.fanart.Music.Artist)]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,5)">$INFO[Window(Home).Property(script.grab.fanart.Global.Title)]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)">$INFO[Window(Home).Propert(background.random.fixed),,.$INFO[ListItem.Property(item)]HomeItem]</value>
-		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)">$INFO[Window(Home).Propert(background.random.random),,.$INFO[ListItem.Property(item)]HomeItem]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,11)">$INFO[Window(Home).Property(background.random.fixed),,.$INFO[ListItem.Property(item)]HomeItem]</value>
+		<value condition="String.IsEqual(Container(9000).ListItem.Thumb,12)">$INFO[Window(Home).Property(background.random.random),,.$INFO[ListItem.Property(item)]HomeItem]</value>
 		<value condition="String.IsEqual(Container(9000).ListItem.Property(BGType),7)">$INFO[Container(9034).ListItem.Title]</value>
 	</variable>
 	<variable name="DSPManagerHelpTextVar">
@@ -808,5 +815,74 @@
 	<variable name="RandomClubBagde">
 		<value condition="Skin.HasSetting(HomeMenuClubBadgeRandom)">$LOCALIZE[31975]</value>
 		<value condition="!Skin.HasSetting(HomeMenuClubBadgeRandom)">$LOCALIZE[31973]</value>
+	</variable>
+	<variable name="RandomClubBagde0Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+	</variable>
+	<variable name="RandomClubBagde1Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.1)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.1)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.1)]</value>
+	</variable>
+	<variable name="RandomClubBagde2Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.2)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.2)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.2)]</value>
+	</variable>
+	<variable name="RandomClubBagde3Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.3)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.3)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.3)]</value>
+	</variable>
+	<variable name="RandomClubBagde4Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.4)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.4)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.4)]</value>
+	</variable>
+	<variable name="RandomClubBagde5Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.5)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.5)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.5)]</value>
+	</variable>
+	<variable name="RandomClubBagde6Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.6)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.6)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.6)]</value>
+	</variable>
+	<variable name="RandomClubBagde7Var">
+		<value condition="!Skin.HasSetting(HomeMenuClubBadge.Random)">$INFO[Skin.String(HomeMenuClubBadge.6)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$INFO[Window(Home).Property(random.clubbadge.onload.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$INFO[Window(Home).Property(random.clubbadge.onload.6)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$INFO[Window(Home).Property(random.clubbadge.random.0)]</value>
+		<value condition="Skin.HasSetting(HomeMenuClubBadge.Random)+String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$INFO[Window(Home).Property(random.clubbadge.random.6)]</value>
+	</variable>
+	<variable name="ClubBadgeModeDescriptionVar">
+		<value condition="Container(90100).HasFocus(100)">$LOCALIZE[31184]</value>
+		<value condition="Container(90100).HasFocus(101)">$LOCALIZE[31185]</value>
+		<value condition="Container(90100).HasFocus(102)">$LOCALIZE[31186]</value>
+		<value condition="Container(90100).HasFocus(103)">$LOCALIZE[31187]</value>
+	</variable>
+	<variable name="ClubBadgeModeLabelVar">
+		<value condition="String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),0)">$LOCALIZE[31180]</value>
+		<value condition="String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),1)">$LOCALIZE[31181]</value>
+		<value condition="String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),2)">$LOCALIZE[31182]</value>
+		<value condition="String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$LOCALIZE[31183]</value>
+		<value>$LOCALIZE[31188]</value>
 	</variable>
 </includes>
