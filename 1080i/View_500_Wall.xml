@@ -23,7 +23,7 @@
 			<width>240</width>
 			<height>360</height>
 			<aspectratio>scale</aspectratio>
-			<texture border="1" colordiffuse="44FFFFFF">black.png</texture>
+			<texture border="1" colordiffuse="44132257">thfc_blue_block.png</texture>
 			<bordersize>2</bordersize>
 			<include>FocusFadeOutAnimation</include>
 		</control>
@@ -33,7 +33,7 @@
 			<width>240</width>
 			<height>240</height>
 			<aspectratio>scale</aspectratio>
-			<texture border="1" colordiffuse="44FFFFFF">black.png</texture>
+			<texture border="1" colordiffuse="44132257">thfc_blue_block.png</texture>
 			<bordersize>2</bordersize>
 			<include>FocusFadeOutAnimation</include>
 		</control>

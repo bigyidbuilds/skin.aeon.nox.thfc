@@ -42,8 +42,8 @@
 				<onup>61</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 			</control>
 			<control type="image">
 				<description>separator image</description>
@@ -71,7 +71,7 @@
 				<width>1256</width>
 				<height>120</height>
 				<font>font15_textbox</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>infotextbox</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
@@ -100,8 +100,8 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
@@ -128,9 +128,7 @@
 			<width>1136</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus border="3">listselect_fo.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
@@ -139,9 +137,7 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus border="3">listselect_fo.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
@@ -150,9 +146,7 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus border="3">listselect_fo.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 			<reverse>true</reverse>
@@ -163,9 +157,7 @@
 			<width>1316</width>
 			<height>90</height>
 			<font>font15</font>
-			<textcolor>grey2</textcolor>
 			<textoffsetx>30</textoffsetx>
-			<focusedcolor>white</focusedcolor>
 			<texturefocus border="3">listselect_fo.png</texturefocus>
 			<texturenofocus border="1">separator5.png</texturenofocus>
 		</control>
@@ -180,7 +172,7 @@
 			<width>1136</width>
 			<height>88</height>
 			<font>font15</font>
-			<textcolor>themecolor</textcolor>
+			<textcolor>windowlabel3</textcolor>
 			<textoffsetx>30</textoffsetx>
 		</control>
 		<control type="label" id="2">
@@ -189,6 +181,14 @@
 			<height>0</height>
 			<font />
 			<visible>false</visible>
+		</control>
+		<control type="colorbutton" id="15">
+			<description>Default Label</description>
+			<width>1136</width>
+			<height>88</height>
+			<font>font15</font>
+			<textcolor>windowlabel3</textcolor>
+			<textoffsetx>30</textoffsetx>
 		</control>
 		<include>Topbar</include>
 		<control type="group">

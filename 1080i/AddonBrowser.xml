@@ -117,7 +117,7 @@
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
 					<label>31026</label>
-					<textcolor>themecolor</textcolor>
+					<textcolor>windowlabel3</textcolor>
 				</control>
 				<control type="button" id="9">
 					<description>Check for repository updates</description>
@@ -147,7 +147,7 @@
 					<include>ButtonCommonValues</include>
 					<label>31039</label>
 					<enable>no</enable>
-					<disabledcolor>themecolor</disabledcolor>
+					<disabledcolor>disabled</disabledcolor>
 				</control>
 				<control type="button" id="5">
 					<description>Settings</description>

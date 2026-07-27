@@ -33,6 +33,7 @@
 	<include file="variables.xml" />
 	<include file="script-skinshortcuts-includes.xml" />
 	<include file="Includes_Settings.xml"/>
+	<include file="Includes_Slider.xml"/>
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	<constant name="MaxDepth">0.30</constant>
@@ -113,7 +114,7 @@
 			<font>font13_title</font>
 			<include>ButtonCommonValues</include>
 			<enable>no</enable>
-			<disabledcolor>themecolor</disabledcolor>
+			<disabledcolor>windowlabel3</disabledcolor>
 		</control>
 		<control type="button" id="2000">
 			<description>View As button</description>
@@ -315,7 +316,7 @@
 			<textoffsetx>15</textoffsetx>
 			<font>font13_title</font>
 			<label>31006</label>
-			<textcolor>themecolor</textcolor>
+			<textcolor>windowlabel3</textcolor>
 		</control>
 		<control type="button" id="2001">
 			<include>ButtonCommonValues</include>
@@ -329,7 +330,7 @@
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[31142]</label>
 			<enable>no</enable>
-			<disabledcolor>themecolor</disabledcolor>
+			<disabledcolor>disabled</disabledcolor>
 			<visible>Window.IsActive(SettingsCategory.xml)</visible>
 		</control>
 		<control type="button" id="20">
@@ -347,7 +348,7 @@
 			<include>ButtonCommonValues</include>
 			<label>31039</label>
 			<enable>no</enable>
-			<disabledcolor>themecolor</disabledcolor>
+			<disabledcolor>disabled</disabledcolor>
 			<visible>Player.HasMedia</visible>
 		</control>
 		<control type="button" id="616">

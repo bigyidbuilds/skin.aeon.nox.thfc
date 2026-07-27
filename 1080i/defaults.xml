@@ -77,19 +77,19 @@
 	<default type="spincontrol">
 		<left>0</left>
 		<top>0</top>
-		<textureup>android/numberpicker_up_normal_holo_dark.png</textureup>
-		<texturedown>android/numberpicker_down_normal_holo_dark.png</texturedown>
-		<textureupfocus>android/numberpicker_up_longpressed_holo_dark.png</textureupfocus>
-		<texturedownfocus>android/numberpicker_down_longpressed_holo_dark.png</texturedownfocus>
-		<texturedowndisabled colordiffuse="40FFFFFF">android/numberpicker_down_normal_holo_dark.png</texturedowndisabled>
-		<textureupdisabled colordiffuse="40FFFFFF">android/numberpicker_up_normal_holo_dark.png</textureupdisabled>
+		<textureup colordiffuse="slidernofocus">android/numberpicker_up_normal_holo_white.png</textureup>
+		<texturedown colordiffuse="slidernofocus">android/numberpicker_down_normal_holo_white.png</texturedown>
+		<textureupfocus colordiffuse="sliderfocus">android/numberpicker_up_normal_holo_white.png</textureupfocus>
+		<texturedownfocus colordiffuse="sliderfocus">android/numberpicker_down_normal_holo_white.png</texturedownfocus>
+		<texturedowndisabled colordiffuse="disabled">android/numberpicker_down_normal_holo_white.png</texturedowndisabled>
+		<textureupdisabled colordiffuse="disabled">android/numberpicker_up_normal_holo_white.png</textureupdisabled>
 		<align>right</align>
 		<width>40</width>
 		<height>25</height>
 		<font>font14</font>
 		<reverse>yes</reverse>
-		<textcolor>grey2</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<textcolor>windowlabelnofocus</textcolor>
+		<focusedcolor>windowlabelfocus</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<subtype>text</subtype>
 		<textoffsetx>0</textoffsetx>
@@ -106,15 +106,15 @@
 		<spinheight>25</spinheight>
 		<texturefocus border="1">listselect_fo.png</texturefocus>
 		<texturenofocus border="1">separator2.png</texturenofocus>
-		<textureup>android/numberpicker_up_normal_holo_dark.png</textureup>
-		<texturedown>android/numberpicker_down_normal_holo_dark.png</texturedown>
-		<textureupfocus>android/numberpicker_up_longpressed_holo_dark.png</textureupfocus>
-		<texturedownfocus>android/numberpicker_down_longpressed_holo_dark.png</texturedownfocus>
-		<texturedowndisabled colordiffuse="40FFFFFF">android/numberpicker_down_normal_holo_dark.png</texturedowndisabled>
-		<textureupdisabled colordiffuse="40FFFFFF">android/numberpicker_up_normal_holo_dark.png</textureupdisabled>
+		<textureup colordiffuse="slidernofocus">android/numberpicker_up_normal_holo_white.png</textureup>
+		<texturedown colordiffuse="slidernofocus">android/numberpicker_down_normal_holo_white.png</texturedown>
+		<textureupfocus colordiffuse="sliderfocus">android/numberpicker_up_normal_holo_white.png</textureupfocus>
+		<texturedownfocus colordiffuse="sliderfocus">android/numberpicker_down_normal_holo_white.png</texturedownfocus>
+		<texturedowndisabled colordiffuse="disabled">android/numberpicker_down_normal_holo_white.png</texturedowndisabled>
+		<textureupdisabled colordiffuse="disabled">android/numberpicker_up_normal_holo_white.png</textureupdisabled>
 		<font>font14</font>
-		<textcolor>grey2</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<textcolor>windowlabelnofocus</textcolor>
+		<focusedcolor>windowlabelfocus</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
@@ -138,8 +138,8 @@
 		<textureradiooffdisabled>radiobutton/dis_cross.png</textureradiooffdisabled>
 		<label>215</label>
 		<font>font14</font>
-		<textcolor>thfc_purple</textcolor>
-		<focusedcolor>thfc_blue</focusedcolor>
+		<textcolor>windowlabelnofocus</textcolor>
+		<focusedcolor>windowlabelfocus</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<textoffsetx>15</textoffsetx>
 		<aligny>center</aligny>
@@ -186,8 +186,8 @@
 		<textureslidernib>osd_slider_nibNF.png</textureslidernib>
 		<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 		<font>font14</font>
-		<textcolor>white</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<textcolor>windowlabelnofocus</textcolor>
+		<focusedcolor>windowlabelfocus</focusedcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -228,5 +228,13 @@
 	<default type="grouplist">
 		<top>0</top>
 		<itemgap>0</itemgap>
+	</default>
+	<default type="colorbutton">
+		<texturefocus border="1">listselect_fo.png</texturefocus>
+		<texturenofocus border="1">separator2.png</texturenofocus>
+		<font>font14</font>
+		<textcolor>windowlabelnofocus</textcolor>
+		<focusedcolor>windowlabelfocus</focusedcolor>
+		<disabledcolor>disabled</disabledcolor>
 	</default>
 </includes>

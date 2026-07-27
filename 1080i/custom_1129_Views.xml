@@ -11,7 +11,7 @@
 			<label></label>
 			<font>CloseButton</font>
 			<textcolor>grey</textcolor>
-			<focusedcolor>themecolor</focusedcolor>
+			<focusedcolor>windowlabel3</focusedcolor>
 			<onclick>Dialog.Close(1129)</onclick>
 			<texturefocus />
 			<texturenofocus />
@@ -24,7 +24,7 @@
 			<textoffsetx>15</textoffsetx>
 			<font>font13_title</font>
 			<label>31101</label>
-			<textcolor>themecolor</textcolor>
+			<textcolor>windowlabel3</textcolor>
 		</control>
 		<control type="list" id="9000">
 			<top>152</top>
@@ -42,7 +42,7 @@
 					<width>400</width>
 					<height>60</height>
 					<font>font13</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>windowlabelnofocus</textcolor>
 					<textoffsetx>15</textoffsetx>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
@@ -60,9 +60,9 @@
 					<textoffsetx>15</textoffsetx>
 					<font>font13</font>
 					<selectedcolor>selected</selectedcolor>
+					<textcolor>windowlabelfocus</textcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
-
 			</focusedlayout>
 			<content>
 				<item>

@@ -43,7 +43,7 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -68,7 +68,7 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>white</textcolor>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -144,8 +144,8 @@
 				<onup>61</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
@@ -171,7 +171,7 @@
 				<width>1316</width>
 				<height>839</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture>black.png</texture>
+				<texture>thfc_blue_block.png</texture>
 				<animation effect="fade" start="45" end="45" time="0" condition="true">conditional</animation>
 			</control>
 			<control type="textbox">
@@ -181,7 +181,7 @@
 				<width>1256</width>
 				<height>400</height>
 				<font>font15_textbox</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>white</textcolor>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				<label>$INFO[Container(9000).ListItem.Property(description)]</label>
 				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>

@@ -91,7 +91,8 @@
 						<height>41</height>
 						<align>center</align>
 						<font>IconTiny</font>
-						<textcolor>grey</textcolor>
+						<textcolor>white</textcolor>
+						<focusedcolor>thfc_gold</focusedcolor>
 						<shadowcolor>shadow</shadowcolor>
 						<visible>System.HasMediaDVD</visible>
 						<onclick>PlayDVD</onclick>
@@ -109,23 +110,24 @@
 						<height>41</height>
 						<label />
 						<font>thfc_font13_title</font>
-						<textcolor>themecolor</textcolor>
+						<textcolor>windowlabel3</textcolor>
 					</control>
 					<control type="label" id="9023">
 						<width>auto</width>
 						<height>41</height>
-						<label>$INFO[Weather.Temperature,,[COLOR grey]  |  [/COLOR]]</label>
+						<label>$INFO[Weather.Temperature,,[COLOR windowlabel2]  |  [/COLOR]]</label>
 						<font>h</font>
-						<textcolor>themecolor</textcolor>
+						<textcolor>windowlabel3</textcolor>
 						<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin)</visible>
 						<shadowcolor>shadow</shadowcolor>
 					</control>
 					<control type="label" id="9025">
+						<description>date and time</description>
 						<width>auto</width>
 						<height>41</height>
-						<label>$INFO[System.Date,[COLOR grey],  |  [/COLOR]]$INFO[System.Time]</label>
+						<label>$INFO[System.Date,[COLOR windowlabel2],  |  [/COLOR]]$INFO[System.Time]</label>
 						<font>thfc_font13_title</font>
-						<textcolor>themecolor</textcolor>
+						<textcolor>windowlabel3</textcolor>
 						<shadowcolor>shadow</shadowcolor>
 					</control>
 				</control>

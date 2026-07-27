@@ -135,8 +135,8 @@
 				<width>1316</width>
 				<height>839</height>
 				<aspectratio align="center">scale</aspectratio>
-				<texture>black.png</texture>
-				<animation effect="fade" start="45" end="45" time="0" condition="true">conditional</animation>
+				<texture>white-back.png</texture>
+				<animation effect="fade" start="75" end="75" time="0" condition="true">conditional</animation>
 			</control>
 			<control type="image">
 				<description>separator image</description>
@@ -167,7 +167,7 @@
 					<height>24</height>
 					<label>$LOCALIZE[13271]</label>
 					<align>right</align>
-					<textcolor>grey2</textcolor>
+					<textcolor>windowlabel3</textcolor>
 					<font>font12_title</font>
 				</control>
 				<control type="progress">
@@ -177,7 +177,8 @@
 					<width>380</width>
 					<height>24</height>
 					<info>System.CPUUsage</info>
-					<texturebg border="2">osd/texturebg2.png</texturebg>
+					<texturebg border="2">osd/texturebg3.png</texturebg>
+					<midtexture border="2">osd/midtexture2.png</midtexture>
 				</control>
 				<control type="label">
 					<description>Memory Text</description>
@@ -187,7 +188,7 @@
 					<height>24</height>
 					<label>$LOCALIZE[31309]</label>
 					<align>right</align>
-					<textcolor>grey2</textcolor>
+					<textcolor>windowlabel3</textcolor>
 					<font>font12_title</font>
 				</control>
 				<control type="progress">
@@ -196,7 +197,8 @@
 					<top>70</top>
 					<width>380</width>
 					<height>24</height>
-					<texturebg border="2">osd/texturebg2.png</texturebg>
+					<texturebg border="2">osd/texturebg3.png</texturebg>
+					<midtexture border="2">osd/midtexture2.png</midtexture>
 					<info>system.memory(used)</info>
 				</control>
 			</control>
@@ -216,7 +218,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(2))</visible>
 				</control>
@@ -226,7 +227,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(3))</visible>
 				</control>
@@ -236,7 +236,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(4))</visible>
 				</control>
@@ -246,7 +245,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(5))</visible>
 				</control>
@@ -256,7 +254,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(6))</visible>
 				</control>
@@ -266,7 +263,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(7))</visible>
 				</control>
@@ -276,7 +272,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(8))</visible>
 				</control>
@@ -286,7 +281,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(9))</visible>
 				</control>
@@ -296,7 +290,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(10))</visible>
 				</control>
@@ -306,7 +299,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(11))</visible>
 				</control>
@@ -316,7 +308,6 @@
 					<height>90</height>
 					<label />
 					<font>font15</font>
-					<shadowcolor>shadow</shadowcolor>
 					<texturenofocus border="1">separator5.png</texturenofocus>
 					<visible>!String.IsEmpty(Control.GetLabel(12))</visible>
 				</control>
@@ -329,8 +320,7 @@
 				<height max="720">auto</height>
 				<label />
 				<font>font15_textbox</font>
-				<textcolor>grey2</textcolor>
-				<shadowcolor>shadow</shadowcolor>
+				<textcolor>infotextbox</textcolor>
 				<pagecontrol>60</pagecontrol>
 				<visible>!String.IsEmpty(Control.GetLabel(30))</visible>
 			</control>
@@ -345,8 +335,8 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 			</control>
 		</control>
 		<include>Topbar</include>

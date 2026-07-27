@@ -59,7 +59,7 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.Genre)">Conditional</animation>
@@ -141,7 +141,7 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.Genre)">Conditional</animation>
@@ -209,7 +209,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -226,7 +226,7 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$VAR[EpisodeTitleVar]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="!String.EndsWith(Container.FolderName,$LOCALIZE[20387]) + String.IsEmpty(ListItem.Premiered)">Conditional</animation>
@@ -256,7 +256,7 @@
 							<height>116</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!String.EndsWith(Container.FolderName,$LOCALIZE[20387]) + ![String.IsEqual(ListItem.Label2,ListItem.Rating) + Skin.HasSetting(Enable.HideRatings)]</visible>
@@ -302,6 +302,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -347,7 +348,7 @@
 							<height>116</height>
 							<font>font30</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!String.EndsWith(Container.FolderName,$LOCALIZE[20387]) + ![String.IsEqual(ListItem.Label2,ListItem.Rating) + Skin.HasSetting(Enable.HideRatings)]</visible>
@@ -393,7 +394,7 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.Genre)">Conditional</animation>
@@ -413,7 +414,7 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -475,7 +476,7 @@
 							<width>790</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.Genre)">Conditional</animation>
@@ -495,7 +496,7 @@
 							<height>116</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -553,7 +554,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -561,7 +562,7 @@
 							<width>960</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -635,6 +636,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="label">
@@ -642,7 +644,7 @@
 							<width>960</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -700,7 +702,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -717,7 +719,7 @@
 							<width>905</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -728,7 +730,7 @@
 							<width>905</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -738,7 +740,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -764,6 +766,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -780,7 +783,7 @@
 							<width>905</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -791,7 +794,7 @@
 							<width>905</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -801,7 +804,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -818,7 +821,7 @@
 							<width>1040</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -870,7 +873,7 @@
 							<width>1040</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -916,7 +919,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default) + !Container.Content(studios)</visible>
 						</control>
 						<control type="image">
@@ -926,7 +929,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Label,flags/studios/,.png]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default) + Container.Content(studios)</visible>
 						</control>
 						<control type="image">
@@ -943,7 +946,7 @@
 							<width>935</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -987,6 +990,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default) + !Container.Content(studios)</visible>
 						</control>
 						<control type="image">
@@ -996,6 +1000,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Label,flags/studios/,.png]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default) + Container.Content(studios)</visible>
 						</control>
 						<control type="image">
@@ -1012,7 +1017,7 @@
 							<width>935</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1049,8 +1054,8 @@
 					<onright condition="Control.IsVisible(62) + !Control.IsVisible(8000)">62</onright>
 					<onright condition="Control.IsVisible(8000)">8000</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -1185,8 +1190,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container.Content(episodes) | Container.Content(videos)</visible>
@@ -1200,8 +1205,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>![Container.Content(episodes) | Container.Content(videos)]</visible>
@@ -1229,7 +1234,7 @@
 							<width>506</width>
 							<height>60</height>
 							<font>font14</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<textoffsetx>15</textoffsetx>
 							<label>$INFO[ListItem.Label]</label>
@@ -1349,7 +1354,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>!Container.Content(songs) + String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1389,7 +1394,7 @@
 							<width>810</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Artist]</label>
 						</control>
@@ -1446,6 +1451,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>!Container.Content(songs) + String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1485,7 +1491,7 @@
 							<width>810</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Artist]</label>
 						</control>
@@ -1535,7 +1541,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1552,7 +1558,7 @@
 							<width>905</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -1563,7 +1569,7 @@
 							<width>905</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -1573,7 +1579,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -1599,6 +1605,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1615,7 +1622,7 @@
 							<width>905</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -1626,7 +1633,7 @@
 							<width>905</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -1636,7 +1643,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -1655,7 +1662,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1672,7 +1679,7 @@
 							<width>1005</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1682,7 +1689,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -1708,6 +1715,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1724,7 +1732,7 @@
 							<width>1005</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1734,7 +1742,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -1750,8 +1758,8 @@
 					<onleft>50</onleft>
 					<onright>9002</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -1919,7 +1927,8 @@
 							<width>105</width>
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
-							<texture background="true" colordiffuse="windowiconfocus">$INFO[ListItem.Icon,views/list/]</texture>
+							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -1972,9 +1981,8 @@
 					<ondown>60</ondown>
 					<onleft>50</onleft>
 					<onright>9002</onright>
-					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -2055,7 +2063,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -2072,7 +2080,7 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -2083,7 +2091,7 @@
 							<width>985</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -2093,7 +2101,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2119,6 +2127,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -2135,7 +2144,7 @@
 							<width>985</width>
 							<height>70</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="slide" start="0,0" end="0,25" time="0" condition="String.IsEmpty(ListItem.AddonSummary)">Conditional</animation>
@@ -2146,7 +2155,7 @@
 							<width>985</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -2156,7 +2165,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2175,7 +2184,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
-							<colordiffuse>grey2</colordiffuse>
+							<colordiffuse>windowiconnofocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -2192,7 +2201,7 @@
 							<width>1005</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2202,7 +2211,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2228,6 +2237,7 @@
 							<height>105</height>
 							<aspectratio>keep</aspectratio>
 							<texture background="true">$INFO[ListItem.Icon,views/list/]</texture>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<visible>String.StartsWith(ListItem.Icon,Default)</visible>
 						</control>
 						<control type="image">
@@ -2244,7 +2254,7 @@
 							<width>1005</width>
 							<height>120</height>
 							<font>font30</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2254,7 +2264,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2270,8 +2280,8 @@
 					<onleft>50</onleft>
 					<onright>9002</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -2350,7 +2360,7 @@
 							<width>895</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2370,7 +2380,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2424,7 +2434,7 @@
 							<width>895</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2443,7 +2453,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2489,7 +2499,7 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2499,7 +2509,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2523,7 +2533,7 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2533,7 +2543,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2550,8 +2560,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -2640,7 +2650,7 @@
 							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2650,7 +2660,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2683,7 +2693,7 @@
 							<width>900</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2693,7 +2703,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2710,7 +2720,7 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2720,7 +2730,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2754,7 +2764,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -2771,8 +2781,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -2851,7 +2861,7 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2861,7 +2871,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>![String.IsEqual(ListItem.Label2,ListItem.Rating) + Skin.HasSetting(Enable.HideRatings)]</visible>
@@ -2886,7 +2896,7 @@
 							<width>1080</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabelfocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -2896,7 +2906,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>![String.IsEqual(ListItem.Label2,ListItem.Rating) + Skin.HasSetting(Enable.HideRatings)]</visible>
@@ -2914,8 +2924,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>

@@ -24,10 +24,12 @@
 	<color name="sliderfocus">FF132257</color>
 	<color name="windowlabelnofocus">FFA24FF9</color>
 	<color name="windowlabelfocus">FF132257</color>
+	<color name="windowlabel1">FF132257</color>
 	<color name="windowlabel2">FF05F975</color>
 	<color name="windowlabel3">FFFA6606</color>
 	<color name="windowiconnofocus">FFA24FF9</color>
 	<color name="windowiconfocus">FF132257</color>
+	<color name="infotextbox">FFFA6606</color>
 	<color name="thfc_blue">FF132257</color>
 	<color name="thfc_purple">FFA24FF9</color>
 	<color name="thfc_gold">FFF9E606</color>
