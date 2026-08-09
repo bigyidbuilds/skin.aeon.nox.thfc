@@ -78,7 +78,7 @@
 							<height>60</height>
 							<textoffsetx>15</textoffsetx>
 							<font>font14</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -87,7 +87,7 @@
 							<height>60</height>
 							<textoffsetx>15</textoffsetx>
 							<font>font14</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>white2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>right</align>
 							<label>$INFO[ListItem.Label2]</label>
@@ -103,7 +103,7 @@
 						<control type="image">
 							<width>630</width>
 							<height>60</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
 							<visible>Control.HasFocus(3)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -154,7 +154,7 @@
 							<height>60</height>
 							<font>font14</font>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey2</textcolor>
+							<textcolor>white2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -163,7 +163,7 @@
 							<height>60</height>
 							<font>font14</font>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey2</textcolor>
+							<textcolor>white2</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>right</align>
 							<label>$VAR[DialogSelectLabel2Var]</label>
@@ -180,7 +180,7 @@
 							<left>1</left>
 							<width>630</width>
 							<height>60</height>
-							<texture border="5">listselect_fo.png</texture>
+							<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
 							<visible>Control.HasFocus(6)</visible>
 							<include>VisibleFadeAnimation</include>
 						</control>
@@ -221,15 +221,27 @@
 					<description>Manual button</description>
 					<width>300</width>
 					<label>186</label>
-					<texturefocus border="5">button_fo.png</texturefocus>
+					<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+					<textcolor>white2</textcolor>
+					<focusedcolor>white</focusedcolor>
 				</control>
 				<control type="button" id="7">
 					<description>Cancel button</description>
 					<width>300</width>
 					<label />
-					<texturefocus border="5">button_fo.png</texturefocus>
+					<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+					<textcolor>white2</textcolor>
+					<focusedcolor>white</focusedcolor>
+				</control>
+				<control type="button" id="8">
+					<description>Add/Get More</description>
+					<width>300</width>
+					<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
+					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+					<textcolor>white2</textcolor>
+					<focusedcolor>white</focusedcolor>
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
@@ -243,8 +255,8 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>>
 				<animation effect="slide" start="0" end="157" time="0" tween="quadratic" condition="Control.IsVisible(3) + ![Control.IsVisible(5) | Control.IsVisible(7)]">Conditional</animation>
 			</control>
 		</control>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">6</defaultcontrol>
+	<include>DialogOpenCloseAnimation</include>
+	<controls>
+		<control type="group">
+			<centertop>50%</centertop>
+			<centerleft>50%</centerleft>
+			<width>1840</width>
+			<height>1000</height>
+			<control type="image">
+				<texture border="40">dialogs/default/bg.png</texture>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>86</top>
+				<width>1780</width>
+				<height>828</height>
+				<texture border="5">dialogs/default/inner.png</texture>
+			</control>
+			<control type="label" id="1">
+				<top>32</top>
+				<left>30</left>
+				<height>40</height>
+				<width>1780</width>
+				<font>font15_title</font>
+				<align>center</align>
+				<textcolor>dialogheader</textcolor>
+			</control>
+			<control type="panel" id="6">
+				<left>30</left>
+				<top>86</top>
+				<width>1780</width>
+				<height>828</height>
+				<ondown>7</ondown>
+				<onup>7</onup>
+				<scrolltime tween="quadratic" easing="out">300</scrolltime>
+				<itemlayout width="240" height="135">
+					<control type="image">
+						<left>10</left>
+						<top>6</top>
+						<width>220</width>
+						<height>123</height>
+						<texture>white-back.png</texture>
+						<colordiffuse>$INFO[Listitem.Label2]</colordiffuse>
+					</control>
+				</itemlayout>
+				<focusedlayout width="240" height="135">
+					<control type="image">
+						<left>10</left>
+						<top>6</top>
+						<width>220</width>
+						<height>123</height>
+						<texture>white-back.png</texture>
+						<colordiffuse>$INFO[Listitem.Label2]</colordiffuse>
+					</control>
+					<control type="image">
+						<width>240</width>
+						<height>135</height>
+						<texture border="10">thumbs/thumbnail_focused.png</texture>
+						<include>FocusFadeInAnimation</include>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="group">
+				<left>30</left>
+				<top>904</top>
+				<control type="grouplist">
+					<top>22</top>
+					<height>40</height>
+					<width>1400</width>
+					<orientation>horizontal</orientation>
+					<align>left</align>
+					<itemgap>20</itemgap>
+					<control type="label">
+						<width>auto</width>
+						<font>font15_title</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<textcolor>dialogheader</textcolor>
+						<label>$INFO[Container(6).Listitem.Label]</label>
+					</control>
+					<control type="label">
+						<width>auto</width>
+						<font>font15_title</font>
+						<align>right</align>
+						<aligny>center</aligny>
+						<textcolor>dialogheader</textcolor>
+						<label>$INFO[Container(6).Listitem.Label2,$LOCALIZE[31999],]</label>
+					</control>
+				</control>
+				<control type="button" id="7">
+					<top>12</top>
+					<left>1480</left>
+					<width>300</width>
+					<height>60</height>
+					<onup>6</onup>
+					<ondown>6</ondown>
+					<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
+					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+					<textcolor>white2</textcolor>
+					<focusedcolor>white</focusedcolor>
+				</control>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>1810</left>
+				<top>86</top>
+				<height>828</height>
+				<width>14</width>
+				<onleft>6</onleft>
+				<onright>9001</onright>
+				<ondown>60</ondown>
+				<onup>60</onup>
+				<showonepage>false</showonepage>
+				<texturesliderbackground />
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>>
+				<!-- <animation effect="slide" start="0" end="157" time="0" tween="quadratic" condition="Control.IsVisible(3) + ![Control.IsVisible(5) | Control.IsVisible(7)]">Conditional</animation> -->
+			</control>
+		</control>
+	</controls>
+</window>

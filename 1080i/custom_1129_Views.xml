@@ -98,6 +98,12 @@
 					<visible>String.Contains(Container.FolderPath,plugin.program.advanced.launcher)</visible>
 				</item>
 				<item>
+					<label>$LOCALIZE[31078]</label>
+					<onclick>Container.SetViewMode(55)</onclick>
+					<visible>Window.IsActive(favouritesbrowser)</visible>
+					<visible>Container.Content(favourites)</visible>
+				</item>
+				<item>
 					<label>BigList</label>
 					<onclick>Container.SetViewMode(510)</onclick>
 					<visible>Window.IsActive(videos)</visible>

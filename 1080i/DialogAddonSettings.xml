@@ -4,15 +4,15 @@
 	<coordinates>
 		<system>1</system>
 		<left>122</left>
-		<top>254</top>
-		<origin x="443" y="254">String.IsEqual(Skin.AspectRatio,21:9)</origin>
+		<top>140</top>
+		<origin x="443" y="140">String.IsEqual(Skin.AspectRatio,21:9)</origin>
 	</coordinates>
 	<include>DialogOpenCloseAnimation</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
 			<width>1674</width>
-			<height>600</height>
+			<height>800</height>
 			<texture border="40">dialogs/default/bg.png</texture>
 		</control>
 		<control type="label" id="2">
@@ -43,8 +43,8 @@
 				<height>480</height>
 				<onleft>9001</onleft>
 				<onright>5</onright>
-				<onup>3</onup>
-				<ondown>3</ondown>
+				<onup>20</onup>
+				<ondown>20</ondown>
 				<scrolltime>0</scrolltime>
 			</control>
 		</control>
@@ -63,20 +63,20 @@
 				<description>control area</description>
 				<width>960</width>
 				<height>480</height>
-				<pagecontrol>30</pagecontrol>
+				<pagecontrol>31</pagecontrol>
 				<onleft>3</onleft>
-				<onright>30</onright>
+				<onright>31</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 			</control>
-			<control type="scrollbar" id="30">
+			<control type="scrollbar" id="31">
 				<left>960</left>
 				<width>14</width>
 				<height>480</height>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<onleft>5</onleft>
 				<onright>9001</onright>
 				<showonepage>false</showonepage>
@@ -133,6 +133,64 @@
 				</control>
 			</control>
 		</control>
+		<control type="group">
+			<description>help text area</description>
+			<top>580</top>
+			<left>357</left>
+			<height>190</height>
+			<width>960</width>
+			<control type="image">
+				<texture border="5">dialogs/default/inner.png</texture>
+			</control>
+			<control type="textbox" id="6">
+				<top>5</top>
+				<left>5</left>
+				<height>180</height>
+				<width>950</width>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<visible>!Control.HasFocus(20)|!Control.HasFocus(30)</visible>
+			</control>
+			<control type="textbox">
+				<top>5</top>
+				<left>5</left>
+				<height>180</height>
+				<width>950</width>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<label>$VAR[AddonSettingsHelpVar]</label>
+				<visible>Control.HasFocus(20)|Control.HasFocus(30)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<description>level control</description>
+			<left>31</left>
+			<top>580</top>
+			<control type="label">
+				<width>310</width>
+				<height>60</height>
+				<font>font14</font>
+				<textcolor>dialogheader</textcolor>
+				<label>31189</label>
+			</control>
+			<control type="image">
+				<top>60</top>
+				<width>310</width>
+				<height>60</height>
+				<texture border="5">dialogs/default/inner.png</texture>
+			</control>
+			<control type="button" id="20">
+				<top>60</top>
+				<width>310</width>
+				<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>right</align>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onright>9001</onright>
+				<onleft>9001</onleft>
+				<onclick>SettingsLevelChange</onclick>
+			</control>
+		</control>
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<height>60</height>
@@ -149,7 +207,7 @@
 			<width>960</width>
 			<height>60</height>
 			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
-			<textcolor>white</textcolor>
+			<textcolor>white2</textcolor>
 			<focusedcolor>white</focusedcolor>
 		</control>
 		<control type="radiobutton" id="8">
@@ -157,7 +215,7 @@
 			<width>960</width>
 			<height>60</height>
 			<textwidth>880</textwidth>
-			<textcolor>white</textcolor>
+			<textcolor>white2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 		</control>
@@ -166,7 +224,7 @@
 			<width>960</width>
 			<height>60</height>
 			<reverse>true</reverse>
-			<textcolor>white</textcolor>
+			<textcolor>white2</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 		</control>
@@ -184,6 +242,9 @@
 			<font>font14_title</font>
 			<label />
 			<textoffsetx>15</textoffsetx>
+			<textcolor>white2</textcolor>
+			<focusedcolor>white</focusedcolor>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 		</control>
 		<control type="image" id="11">
 			<description>Default Seperator</description>
@@ -196,6 +257,15 @@
 			<width>960</width>
 			<height>60</height>
 			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+			<textcolor>white2</textcolor>
+			<focusedcolor>white</focusedcolor>
+		</control>
+		<control type="colorbutton" id="15">
+			<width>960</width>
+			<height>60</height>
+			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+			<textcolor>white2</textcolor>
+			<focusedcolor>white</focusedcolor>
 		</control>
 	</controls>
 </window>

@@ -487,8 +487,8 @@
 				<onup>50060</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(50060) + !Container.Scrolling">Conditional</animation>
 			</control>
 		</control>
@@ -637,6 +637,64 @@
 				<texturesliderbackground />
 				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
 				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(50060) + !Container.Scrolling">Conditional</animation>
+			</control>
+		</control>
+	</include>
+	<include name="FavouriteWall">
+		<control type="group">
+			<visible>Control.IsVisible(500) + !Window.IsActive(addoninformation)</visible>
+			<include>ViewAnimation</include>
+			<include>WallBackPanel</include>
+			<control type="panel" id="500">
+				<left>ViewIconsLeft</left>
+				<top>179</top>
+				<width>ViewIconsWidth</width>
+				<height>720</height>
+				<onleft>SetProperty(MediaMenu,True,home)</onleft>
+				<onleft>SetFocus(9050)</onleft>
+				<onright>50060</onright>
+				<onup>500</onup>
+				<ondown>500</ondown>
+				<pagecontrol>50060</pagecontrol>
+				<scrolltime tween="quadratic" easing="out">300</scrolltime>
+				<itemlayout height="240" width="240" condition="!Container.Content(genres)">
+					<control type="image">
+						<width>240</width>
+						<height>240</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="DefaultFavourite.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="2">thumbs/panel_border3.png</bordertexture>
+						<bordersize>2</bordersize>
+					</control>
+					<include>WallSquareOverlay</include>
+				</itemlayout>
+				<focusedlayout height="240" width="240" condition="!Container.Content(genres)">
+					<control type="image">
+						<width>240</width>
+						<height>240</height>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" fallback="DefaultFavourite.png">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="2">thumbs/panel_border3.png</bordertexture>
+						<bordersize>2</bordersize>
+					</control>
+					<include>WallSquareOverlay</include>
+					<include>WallSquareFocus</include>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="50060">
+				<left>ScrollbarIconsLeft</left>
+				<top>179</top>
+				<width>8</width>
+				<height>720</height>
+				<onleft>50</onleft>
+				<onright>noop</onright>
+				<ondown>50060</ondown>
+				<onup>50060</onup>
+				<showonepage>false</showonepage>
+				<texturesliderbackground />
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(50060) + !Container.Scrolling">Conditional</animation>
 			</control>
 		</control>

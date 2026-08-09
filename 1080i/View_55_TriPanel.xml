@@ -1235,4 +1235,210 @@
 			</control>
 		</control>
 	</include>
+	<include name="FavouriteTriPanel">
+		<control type="group">
+			<visible>Control.IsVisible(55) + !Window.IsActive(addoninformation)</visible>
+			<include>ViewAnimation</include>
+			<width>1920</width>
+			<centerleft>50%</centerleft>
+			<control type="group">
+				<left>1396</left>
+				<top>401</top>
+				<control type="image">
+					<description>background image</description>
+					<left>-32</left>
+					<top>780</top>
+					<width>512</width>
+					<height>752</height>
+					<texture border="40">panel_reflect.png</texture>
+				</control>
+				<control type="image">
+					<description>background image</description>
+					<left>-32</left>
+					<top>60</top>
+					<width>512</width>
+					<height>487</height>
+					<texture border="40">listpanel_back.png</texture>
+				</control>
+				<control type="grouplist">
+					<top>92</top>
+					<width>448</width>
+					<height>420</height>
+					<usecontrolcoords>true</usecontrolcoords>
+					<visible>Container.Content(favourites)</visible>
+					<control type="button">
+						<label>[COLOR labelheader]$LOCALIZE[15225]:[/COLOR][CR]$INFO[ListItem.Property(favourite.provider)]</label>
+						<width>448</width>
+						<include>ShowCaseInfoPanelButtonsValues</include>
+						<visible>!String.IsEmpty(ListItem.Property(favourite.provider))</visible>
+					</control>
+					<control type="button">
+						<label>[COLOR labelheader]$LOCALIZE[15217]:[/COLOR][CR]$INFO[ListItem.Property(favourite.action)]</label>
+						<width>448</width>
+						<include>ShowCaseInfoPanelButtonsValues</include>
+						<visible>!String.IsEmpty(ListItem.Property(favourite.action))</visible>
+					</control>
+					<control type="textbox">
+						<label>$VAR[MusicPlotVar]</label>
+						<left>15</left>
+						<top>15</top>
+						<width>418</width>
+						<height>300</height>
+						<font>font14_textbox</font>
+						<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+						<include>ShowCaseInfoPanelButtonsValues</include>
+					</control>
+				</control>
+			</control>
+			<control type="group">
+				<left>846</left>
+				<top>419</top>
+				<control type="image">
+					<width>570</width>
+					<height>570</height>
+					<aspectratio aligny="bottom" align="right">scale</aspectratio>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>532</top>
+					<width>540</width>
+					<height>570</height>
+					<aspectratio aligny="top" align="right">scale</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture diffuse="thumbs/thumb_reflect.png" flipy="true" background="true" fallback="DefaultFavourite.png">$INFO[ListItem.Icon]</texture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image">
+					<left>550</left>
+					<top>58</top>
+					<width>80</width>
+					<height>720</height>
+					<texture flipx="true" border="1">side_shadow.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<left>76</left>
+				<top>325</top>
+				<control type="image">
+					<description>background image</description>
+					<left>-32</left>
+					<top>932</top>
+					<width>870</width>
+					<height>904</height>
+					<texture border="40">panel_reflect.png</texture>
+				</control>
+				<control type="image">
+					<description>background image</description>
+					<left>-32</left>
+					<top>60</top>
+					<width>870</width>
+					<height>639</height>
+					<texture border="40">listpanel_back.png</texture>
+				</control>
+				<control type="list" id="55">
+					<top>92</top>
+					<width>806</width>
+					<height>575</height>
+					<onleft>SetProperty(MediaMenu,True,home)</onleft>
+					<onleft>SetFocus(9050)</onleft>
+					<onright>5560</onright>
+					<onup>55</onup>
+					<ondown>55</ondown>
+					<visible>Container.Content(favourites)</visible>
+					<viewtype label="31078">list</viewtype>
+					<pagecontrol>5560</pagecontrol>
+					<preloaditems>2</preloaditems>
+					<scrolltime tween="quadratic" easing="out">200</scrolltime>
+					<itemlayout height="70" width="806" condition="Container.Content(favourites)">
+						<control type="image">
+							<top>10</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<width>775</width>
+							<height>68</height>
+							<font>font15</font>
+							<textcolor>windowlabelnofocus</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>110</left>
+							<width>680</width>
+							<height>68</height>
+							<font>font15</font>
+							<align>right</align>
+							<textcolor>windowlabel2</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="70" width="806" condition="Container.Content(favourites)">
+						<control type="image">
+							<top>12</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
+						</control>
+						<control type="image">
+							<width>806</width>
+							<height>70</height>
+							<texture border="4">listselect_fo.png</texture>
+							<visible>Control.HasFocus(55)</visible>
+							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<width>775</width>
+							<height>68</height>
+							<font>font15</font>
+							<textcolor>windowlabelfocus</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+						</control>
+						<control type="label">
+							<left>110</left>
+							<width>680</width>
+							<height>68</height>
+							<font>font15</font>
+							<align>right</align>
+							<textcolor>windowlabel2</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<label>$INFO[ListItem.label2]</label>
+							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+						</control>
+					</focusedlayout>
+				</control>
+				<control type="scrollbar" id="5560">
+					<left>806</left>
+					<top>92</top>
+					<width>14</width>
+					<height>575</height>
+					<onup>5560</onup>
+					<ondown>5560</ondown>
+					<onleft>50</onleft>
+					<onright>9002</onright>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+				</control>
+				<control type="image">
+					<left>822</left>
+					<top>114</top>
+					<width>40</width>
+					<height>795</height>
+					<texture flipx="true" border="1">side_shadow.png</texture>
+				</control>
+			</control>
+		</control>
+	</include>
 </includes>

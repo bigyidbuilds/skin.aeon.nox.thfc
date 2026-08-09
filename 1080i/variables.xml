@@ -885,4 +885,15 @@
 		<value condition="String.IsEqual(Skin.String(HomeMenuClubBadge.Random.mode),3)">$LOCALIZE[31183]</value>
 		<value>$LOCALIZE[31188]</value>
 	</variable>
+	<variable name="MasterModeVar">
+		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
+		<value>$LOCALIZE[20046]</value>
+	</variable>
+	<variable name="FavouritesAddonNameVAR">
+		<value>$INFO[Window(favouritesbrowser).Property(favourite.$INFO[Container(50).ListItem.Label].addon)]</value>
+	</variable>
+	<variable name="AddonSettingsHelpVar">
+		<value condition="Control.HasFocus(30)">$LOCALIZE[10045]</value>
+		<value condition="Control.HasFocus(20)">$LOCALIZE[10047]</value>
+	</variable>
 </includes>

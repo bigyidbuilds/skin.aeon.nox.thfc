@@ -293,7 +293,7 @@
 			<onclick>$INFO[Container(9000).ListItem.Property(Path)]</onclick>
 			<icon fallback="special://skin/extras/icons/Favorites.png">$INFO[Skin.String(FavoritesHomeItem.Icon)]</icon>
 			<thumb>$INFO[Skin.String(FavoritesHomeItem.MultiFanart)]</thumb>
-			<property name="Path" fallback="ActivateWindow(Favourites)">$INFO[Skin.String(FavoritesHomeItem.Path)]</property>
+			<property name="Path" fallback="ActivateWindow(favouritesbrowser)">$INFO[Skin.String(FavoritesHomeItem.Path)]</property>
 			<property name="Item">Favorites</property>
 			<property name="BGType">$INFO[Skin.String(FavoritesHomeItem.BGType)]</property>
 			<property name="Widget">$INFO[Skin.String(FavoritesHomeItem.Widget)]</property>

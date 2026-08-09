@@ -127,18 +127,18 @@
 						<usecontrolcoords>true</usecontrolcoords>
 						<control type="group">
 							<height>90</height>
-						<control type="button">
-							<width>329</width>
-							<label>[COLOR labelheader]$LOCALIZE[12013]:[/COLOR][CR]$INFO[ListItem.AddonInstallDate]</label>
-							<include>SettingsPanelButtonsValues</include>
+							<control type="button">
+								<width>329</width>
+								<label>[COLOR labelheader]$LOCALIZE[12013]:[/COLOR][CR]$INFO[ListItem.AddonInstallDate]</label>
+								<include>SettingsPanelButtonsValues</include>
+							</control>
+							<control type="button">
+								<left>329</left>
+								<width>329</width>
+								<label>[COLOR labelheader]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
+								<include>SettingsPanelButtonsValues</include>
+							</control>
 						</control>
-						<control type="button">
-							<left>329</left>
-							<width>329</width>
-							<label>[COLOR labelheader]$LOCALIZE[146][/COLOR][CR]$INFO[ListItem.AddonType]</label>
-							<include>SettingsPanelButtonsValues</include>
-						</control>
-					</control>
 						<control type="button">
 							<label>[COLOR labelheader]$LOCALIZE[560]:[/COLOR][CR]$INFO[ListItem.Property(Addon.ID)]</label>
 							<include>SettingsPanelButtonsValues</include>
@@ -156,7 +156,7 @@
 							<height>auto</height>
 							<font>font15_textbox</font>
 							<align>justify</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<label>$INFO[ListItem.AddonDescription,[COLOR labelheader]$LOCALIZE[21821]: [/COLOR][CR]]</label>
 						</control>
 						<control type="image">
@@ -173,7 +173,7 @@
 							<height>auto</height>
 							<font>font15_textbox</font>
 							<align>justify</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel3</textcolor>
 							<label>$INFO[ListItem.AddonNews,[COLOR labelheader]$LOCALIZE[24054]: [/COLOR][CR]]</label>
 							<visible>!String.IsEmpty(ListItem.AddonNews)</visible>
 						</control>
@@ -205,8 +205,8 @@
 						<onup>60</onup>
 						<showonepage>false</showonepage>
 						<texturesliderbackground>-</texturesliderbackground>
-						<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-						<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+						<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+						<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					</control>
 				</control>
 			</control>
@@ -239,7 +239,7 @@
 					<top>55</top>
 					<width>1181</width>
 					<height>50</height>
-					<textcolor>grey2</textcolor>
+					<textcolor>disabled</textcolor>
 					<textoffsetx>15</textoffsetx>
 					<font>font15</font>
 					<label>$INFO[ListItem.AddonBroken]</label>

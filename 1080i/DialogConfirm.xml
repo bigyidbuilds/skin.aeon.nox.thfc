@@ -75,36 +75,42 @@
 			<width>856</width>
 			<orientation>horizontal</orientation>
 			<align>center</align>
-			<itemgap>14</itemgap>
+			<itemgap>12</itemgap>
 			<control type="button" id="11">
 				<description>Yes button</description>
-				<width>287</width>
+				<width>277</width>
 				<height>60</height>
 				<label>107</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<texturefocus border="5">button_fo.png</texturefocus>
+				<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
 			</control>
 			<control type="button" id="10">
 				<description>No button</description>
-				<width>287</width>
+				<width>277</width>
 				<height>60</height>
 				<label>106</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<texturefocus border="5">button_fo.png</texturefocus>
+				<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>		
 			</control>
 			<control type="button" id="12">
 				<description>Settings button</description>
-				<width>287</width>
+				<width>277</width>
 				<height>60</height>
 				<label>106</label>
 				<font>font15_title</font>
 				<align>center</align>
-				<texturefocus border="5">button_fo.png</texturefocus>
+				<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>	
 			</control>
 		</control>
 	</controls>

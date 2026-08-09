@@ -1130,6 +1130,7 @@ msgstr ""
 
 ####### Added for mod to THFC ######
 
+
 #: /1080i/custom_1135_HomeClubBadgeCustomizer.xml
 msgctxt "#31180"
 msgid "Randomize once on skin load all identical"
@@ -1172,6 +1173,11 @@ msgstr ""
 
 msgctxt "#31188"
 msgid "No setting set"
+msgstr ""
+
+#: /1080i/DialogAddonSettings.xml
+msgctxt "#31189""
+msgid "Settings Level"
 msgstr ""
 
 msgctxt "#31965"
@@ -1331,9 +1337,9 @@ msgctxt "#31998"
 msgid "Select from a list of available modes for the randomization of the club badges"
 msgstr ""
 
-#: /1080i/SkinSettings.xml
+#: /1080i/DialogColorPicker.xml
 msgctxt "#31999"
-msgid ""
+msgid "Hex Code: "
 msgstr ""
 
 

@@ -35,7 +35,7 @@
 			<height>60</height>
 			<font>font14</font>
 			<textoffsetx>15</textoffsetx>
-			<textcolor>dialogcontrollabel</textcolor>
+			<textcolor>white2</textcolor>
 			<focusedcolor>dialogcontrollabel</focusedcolor>
 			<texturefocus border="1" >thfc_blue_block.png</texturefocus>
 			<texturenofocus border="5">button_middle3.png</texturenofocus>
