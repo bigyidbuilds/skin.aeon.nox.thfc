@@ -12,7 +12,7 @@
 			<control type="image" id="0">
 				<width>1340</width>
 				<height>542</height>
-				<texture border="40,100,40,100" colordiffuse="whitethfc_blue">dialog_back.png</texture>
+				<texture border="40">dialogs/default/bg.png</texture>
 			</control>
 			<control type="label" id="311">
 				<left>30</left>
@@ -22,7 +22,7 @@
 				<align>center</align>
 				<textoffsetx>15</textoffsetx>
 				<font>font15_title</font>
-				<textcolor>grey3</textcolor>
+				<textcolor>dialogheader</textcolor>
 			</control>
 			<control type="edit" id="312">
 				<left>30</left>
@@ -31,7 +31,7 @@
 				<height>50</height>
 				<align>center</align>
 				<font>font15</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>dialogheader</textcolor>
 				<texturefocus />
 				<texturenofocus />
 			</control>
@@ -143,7 +143,7 @@
 					<control type="togglebutton" id="304">
 						<description>Symbols</description>
 						<label>@#!*</label>
-						<altlabel>[COLOR=themecolor]@#!*[/COLOR]</altlabel>
+						<altlabel>[COLOR=selected]@#!*[/COLOR]</altlabel>
 						<onup>309</onup>
 						<ondown>303</ondown>
 						<width>160</width>
@@ -237,7 +237,7 @@
 					<control type="togglebutton" id="303">
 						<description>Caps</description>
 						<label>20179</label>
-						<altlabel>[COLOR=themecolor]$LOCALIZE[20179][/COLOR]</altlabel>
+						<altlabel>[COLOR=selected]$LOCALIZE[20179][/COLOR]</altlabel>
 						<onup>307</onup>
 						<ondown>302</ondown>
 						<include>Objects_DoubleKeyOff</include>
@@ -322,7 +322,7 @@
 					<control type="togglebutton" id="302">
 						<description>Shift</description>
 						<label>$LOCALIZE[20178]</label>
-						<altlabel>[COLOR=themecolor]$LOCALIZE[20178][/COLOR]</altlabel>
+						<altlabel>[COLOR=selected]$LOCALIZE[20178][/COLOR]</altlabel>
 						<onup>303</onup>
 						<ondown>300</ondown>
 						<include>Objects_DoubleKeyOff</include>
@@ -415,8 +415,8 @@
 						<left>126</left>
 						<width>480</width>
 						<height>80</height>
-						<texturefocus border="4">button_middle_focus.png</texturefocus>
-						<texturenofocus border="4">thumbs/panel_border.png</texturenofocus>
+						<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
+						<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 						<label>$LOCALIZE[20182]</label>
 						<onup>160</onup>
 						<ondown condition="!Control.IsVisible(5000)">100</ondown>
@@ -448,8 +448,8 @@
 						<left>567</left>
 						<width>240</width>
 						<height>80</height>
-						<texturefocus border="4">button_middle_focus.png</texturefocus>
-						<texturenofocus border="4">thumbs/panel_border.png</texturenofocus>
+						<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
+						<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 						<label>20181</label>
 						<onup>170</onup>
 						<ondown condition="!Control.IsVisible(5000)">110</ondown>

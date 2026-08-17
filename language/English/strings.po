@@ -1176,7 +1176,7 @@ msgid "No setting set"
 msgstr ""
 
 #: /1080i/DialogAddonSettings.xml
-msgctxt "#31189""
+msgctxt "#31189"
 msgid "Settings Level"
 msgstr ""
 

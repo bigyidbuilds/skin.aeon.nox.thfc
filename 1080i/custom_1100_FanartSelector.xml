@@ -41,7 +41,7 @@
 					<height>38</height>
 					<font>font13</font>
 					<textoffsetx></textoffsetx>
-					<textcolor>grey2</textcolor>
+					<textcolor>windowlabelnofocus</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>
@@ -68,7 +68,7 @@
 					<height>38</height>
 					<font>font13</font>
 					<textoffsetx></textoffsetx>
-					<textcolor>white</textcolor>
+					<textcolor>windowlabelfocus</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
 					<label>$INFO[ListItem.Label]</label>

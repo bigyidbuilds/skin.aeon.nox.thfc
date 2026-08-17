@@ -171,6 +171,8 @@
 		<left>0</left>
 		<top>0</top>
 		<orientation>horizontal</orientation>
+		<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+		<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 	</default>
 	<default type="sliderex">
 		<left>0</left>

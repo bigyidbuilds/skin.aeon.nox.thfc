@@ -12,7 +12,7 @@
 			<control type="image">
 				<width>300</width>
 				<height>543</height>
-				<texture border="40,100,40,100">dialog_back.png</texture>
+				<texture border="40">dialogs/default/bg.png</texture>
 			</control>
 			<control type="label" id="1">
 				<left>30</left>
@@ -21,7 +21,7 @@
 				<height>50</height>
 				<textoffsetx>15</textoffsetx>
 				<font>font15_title</font>
-				<textcolor>grey3</textcolor>
+				<textcolor>dialogheader</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>20</scrollspeed>
 			</control>
@@ -32,7 +32,7 @@
 				<height>50</height>
 				<align>center</align>
 				<font>font15_title</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>dialogheader</textcolor>
 			</control>
 			<control type="group">
 				<left>30</left>

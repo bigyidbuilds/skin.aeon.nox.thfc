@@ -36,16 +36,11 @@
 			<textoffsetx>15</textoffsetx>
 			<font>font14</font>
 			<label>1021</label>
-			<textcolor>grey3</textcolor>
+			<textcolor>dialogheader</textcolor>
 		</control>
 		<control type="group">
 			<left>30</left>
 			<top>132</top>
-			<control type="image">
-				<width>788</width>
-				<height>182</height>
-				<texture border="5">dialogs/default/inner.png</texture>
-			</control>
 			<control type="list" id="10">
 				<left>1</left>
 				<top>2</top>
@@ -61,14 +56,14 @@
 					<control type="image">
 						<width>786</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="5">dialogs/default/inner.png</texture>
 					</control>
 					<control type="label">
 						<width>735</width>
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey2</textcolor>
+						<textcolor>white2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<info>ListItem.Label</info>
 					</control>
@@ -77,12 +72,13 @@
 					<control type="image">
 						<width>786</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="5">dialogs/default/inner.png</texture>
+						<visible>!Control.HasFocus(10)</visible>
 					</control>
 					<control type="image">
 						<width>786</width>
 						<height>60</height>
-						<texture border="5">listselect_fo.png</texture>
+						<texture border="5">dialogs/default/inner_focus.png</texture>
 						<visible>Control.HasFocus(10)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
@@ -102,8 +98,8 @@
 				<width>8</width>
 				<height>180</height>
 				<texturesliderbackground>scrollbar/texturesliderbackground3.png</texturesliderbackground>
-				<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<onleft>10</onleft>
 				<onright>9000</onright>
 				<showonepage>false</showonepage>
@@ -113,11 +109,6 @@
 		<control type="group">
 			<left>832</left>
 			<top>132</top>
-			<control type="image">
-				<width>312</width>
-				<height>182</height>
-				<texture border="5">dialogs/default/inner.png</texture>
-			</control>
 			<control type="grouplist" id="9000">
 				<left>1</left>
 				<top>2</top>
@@ -130,29 +121,27 @@
 					<width>310</width>
 					<label>1024</label>
 					<font>font14</font>
+					<include>DialogButton</include>
 				</control>
 				<control type="button" id="13">
 					<description>Add Path Button</description>
 					<width>310</width>
 					<label>15019</label>
 					<font>font14</font>
+					<include>DialogButton</include>
 				</control>
 				<control type="button" id="14">
 					<description>Remove Path Button</description>
 					<width>310</width>
 					<label>1210</label>
 					<font>font14</font>
+					<include>DialogButton</include>
 				</control>
 			</control>
 		</control>
 		<control type="group">
 			<left>1156</left>
 			<top>132</top>
-			<control type="image">
-				<width>312</width>
-				<height>316</height>
-				<texture border="5">dialogs/default/inner.png</texture>
-			</control>
 			<control type="grouplist" id="9001">
 				<left>1</left>
 				<top>2</top>
@@ -165,12 +154,14 @@
 					<width>310</width>
 					<label>186</label>
 					<font>font15</font>
+					<include>DialogButton</include>
 				</control>
 				<control type="button" id="19">
 					<description>Cancel Button</description>
 					<width>310</width>
 					<label>222</label>
 					<font>font15</font>
+					<include>DialogButton</include>
 				</control>
 			</control>
 		</control>
@@ -184,7 +175,7 @@
 				<textoffsetx>15</textoffsetx>
 				<font>font14</font>
 				<label>1022</label>
-				<textcolor>grey3</textcolor>
+				<textcolor>dialogheader</textcolor>
 			</control>
 			<control type="edit" id="12">
 				<description>Name Button</description>
@@ -198,7 +189,7 @@
 				<onleft>12</onleft>
 				<onright>19</onright>
 				<ondown>9001</ondown>
-				<texturefocus border="5">button_fo.png</texturefocus>
+				<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 				<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 			</control>
 		</control>

@@ -4,7 +4,6 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,54,55,57,500</views>
 	<menucontrol>9051</menucontrol>
-	<!-- <onload>RunScript(script.aeon.nox.thfc,mode=loadaction&amp;method=favourites)</onload> -->
 	<onload>SetProperty(Window.HasSettings,True,home)</onload>
 	<onload>ClearProperty(MediaMenu,Home)</onload>
 	<onunload>ClearProperty(Window.HasSettings,Home)</onunload>

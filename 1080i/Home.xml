@@ -191,11 +191,6 @@
 					<focusedlayout height="87" width="300">
 						<control type="group">
 							<visible>Control.HasFocus(9010)</visible>
-							<!-- <control type="image">
-								<width>300</width>
-								<height>41</height>
-								<texture>listselect_fo.png</texture>
-							</control> -->
 							<control type="label">
 								<width>300</width>
 								<height>41</height>
@@ -301,25 +296,23 @@
 					<description>big ## icon 35</description>
 					<width>98</width>
 					<left>-840</left>
-					<texture fallback="badges/badge_1.png">$VAR[RandomClubBagde0Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge1.png">$VAR[RandomClubBagde0Var]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="875,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 				<control type="image">
 					<description>big ## icon 285</description>
 					<width>98</width>
 					<left>-340</left>
-					<texture fallback="badges/badge_2.png">$VAR[RandomClubBagde1Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge2.png">$VAR[RandomClubBagde1Var]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="625,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 				<control type="image">
 					<description>big ## icon 535</description>
 					<width>98</width>
 					<left>160</left>
-					<texture fallback="badges/badge_3.png">$VAR[RandomClubBagde2Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge3.png">$VAR[RandomClubBagde2Var]</texture>
 					<aspectratio>keep</aspectratio>
 					<animation effect="slide" start="0" end="-210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
 					<animation effect="slide" start="0" end="375,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
@@ -328,7 +321,7 @@
 					<description>left center badge big ## icon 785</description>
 					<width>98</width>
 					<left>660</left>
-					<texture fallback="badges/badge_4.png">$VAR[RandomClubBagde3Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge4.png">$VAR[RandomClubBagde3Var]</texture>
 					<aspectratio>keep</aspectratio>
 					<animation effect="slide" start="0" end="-70,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
 					<animation effect="slide" start="0" end="125,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
@@ -337,7 +330,7 @@
 					<description>right center badge big ##  icon 1035</description>
 					<width>98</width>
 					<left>1160</left>
-					<texture fallback="badges/badge_5.png">$VAR[RandomClubBagde4Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge5.png">$VAR[RandomClubBagde4Var]</texture>
 					<aspectratio>keep</aspectratio>
 					<animation effect="slide" start="0" end="70,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
 					<animation effect="slide" start="0" end="-125,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
@@ -346,7 +339,7 @@
 					<description>big ## icon 1285</description>
 					<width>98</width>
 					<left>1660</left>
-					<texture fallback="badges/badge_6.png">$VAR[RandomClubBagde5Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge6.png">$VAR[RandomClubBagde5Var]</texture>
 					<aspectratio>keep</aspectratio>
 					<animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation>
 					<animation effect="slide" start="0" end="-375,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
@@ -355,18 +348,16 @@
 					<description>big ## icon 1535</description>
 					<width>98</width>
 					<left>2160</left>
-					<texture fallback="badges/badge_7.png">$VAR[RandomClubBagde6Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge7.png">$VAR[RandomClubBagde6Var]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="-625,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 				<control type="image">
 					<description>big ## icon 1785</description>
 					<width>98</width>
 					<left>2660</left>
-					<texture fallback="badges/badge_8.png">$VAR[RandomClubBagde7Var]</texture>
+					<texture fallback="resource://resource.images.footballbadges/tottenhamhotspur/badge8.png">$VAR[RandomClubBagde7Var]</texture>
 					<aspectratio>keep</aspectratio>
-					<!-- <animation effect="slide" start="0" end="210,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(biggergap)">Conditional</animation> -->
 					<animation effect="slide" start="0" end="-875,0" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(mainmenuicons)">Conditional</animation>
 				</control>
 			</control>
