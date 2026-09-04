@@ -25,6 +25,13 @@
 				<bordersize>1,1,2,1</bordersize>
 				<aspectratio>keep</aspectratio>
 			</control>
+			<control type="image">
+				<left>140</left>
+				<top>34</top>
+				<width>630</width>
+				<height>100</height>
+				<texture border="5">dialogs/default/inner.png</texture>
+			</control>
 			<control type="fadelabel" id="401">
 				<description>Line 1 Label</description>
 				<left>140</left>
@@ -33,7 +40,7 @@
 				<height>50</height>
 				<font>font15_title</font>
 				<textoffsetx>15</textoffsetx>
-				<textcolor>themecolor</textcolor>
+				<textcolor>white</textcolor>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>
@@ -45,7 +52,7 @@
 				<height>30</height>
 				<font>font15</font>
 				<textoffsetx>15</textoffsetx>
-				<textcolor>grey2</textcolor>
+				<textcolor>white2</textcolor>
 				<scrollout>false</scrollout>
 				<pauseatend>2000</pauseatend>
 			</control>

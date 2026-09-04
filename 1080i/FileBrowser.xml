@@ -122,16 +122,15 @@
 							<width>320</width>
 							<height>180</height>
 							<aspectratio>scale</aspectratio>
-							<texture border="1" colordiffuse="44FFFFFF">black.png</texture>
+							<texture border="1" colordiffuse="44132257">thfc_blue_block.png</texture>
 							<bordersize>2</bordersize>
 						</control>
 						<control type="image">
 							<top>120</top>
 							<width>320</width>
 							<height>60</height>
-							<texture>black.png</texture>
+							<texture border="1" colordiffuse="88132257">thfc_blue_block.png</texture>
 							<bordersize>2</bordersize>
-							<colordiffuse>88ffffff</colordiffuse>
 						</control>
 						<control type="label">
 							<top>120</top>
@@ -140,7 +139,7 @@
 							<font>font14</font>
 							<align>center</align>
 							<textoffsetx>15</textoffsetx>
-							<textcolor>grey2</textcolor>
+							<textcolor>white2</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
@@ -157,7 +156,7 @@
 							<width>320</width>
 							<height>180</height>
 							<aspectratio>scale</aspectratio>
-							<texture border="1" colordiffuse="44FFFFFF">black.png</texture>
+							<texture border="1" colordiffuse="44132257">thfc_blue_block.png</texture>
 							<bordersize>2</bordersize>
 							<include>FocusFadeOutAnimation</include>
 						</control>
@@ -165,9 +164,8 @@
 							<top>120</top>
 							<width>320</width>
 							<height>60</height>
-							<texture>black.png</texture>
+							<texture border="1" colordiffuse="88132257">thfc_blue_block.png</texture>
 							<bordersize>2</bordersize>
-							<colordiffuse>88ffffff</colordiffuse>
 						</control>
 						<control type="label">
 							<top>120</top>
@@ -183,7 +181,7 @@
 						<control type="image">
 							<width>320</width>
 							<height>180</height>
-							<texture border="10">thumbs/thumbnail_focused.png</texture>
+							<texture border="10" colordiffuse="dialogbuttonfocus">thumbs/thumbnail_focused.png</texture>
 							<include>FocusFadeInAnimation</include>
 						</control>
 					</focusedlayout>
@@ -194,8 +192,8 @@
 					<width>14</width>
 					<height>540</height>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-					<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<onleft>450</onleft>
 					<onright>9000</onright>
 					<showonepage>false</showonepage>
@@ -225,12 +223,6 @@
 					<bordersize>1</bordersize>
 					<visible>String.Contains(Control.GetLabel(416),*)</visible>
 				</control>
-				<control type="image">
-					<top>314</top>
-					<width>536</width>
-					<height>242</height>
-					<texture border="5">dialogs/default/inner.png</texture>
-				</control>
 				<control type="grouplist" id="9000">
 					<left>1</left>
 					<top>316</top>
@@ -245,34 +237,26 @@
 						<description>OK button</description>
 						<width>534</width>
 						<label>186</label>
-						<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="414">
 						<description>Cancel button</description>
 						<label>222</label>
 						<width>534</width>
-						<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="415">
 						<description>Create folder button</description>
 						<label>119</label>
 						<width>534</width>
-						<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<include>DialogButton</include>
 					</control>
 					<control type="radiobutton" id="416">
 						<description>Flip Image button</description>
 						<radioposx>460</radioposx>
 						<width>534</width>
 						<label>749</label>
-						<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
-						<textcolor>white</textcolor>
-						<focusedcolor>white</focusedcolor>
+						<include>DialogButton</include>
 					</control>
 				</control>
 			</control>

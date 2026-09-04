@@ -33,7 +33,7 @@
 		<aligny>top</aligny>
 		<textoffsety>3</textoffsety>
 		<font>IconSmall</font>
-		<textcolor>grey</textcolor>
+		<textcolor>dialogheader</textcolor>
 		<focusedcolor>white</focusedcolor>
 		<texturenofocus />
 		<shadowcolor>ff000000</shadowcolor>
@@ -55,14 +55,14 @@
 		<textoffsetx>0</textoffsetx>
 		<align>center</align>
 		<font>font15</font>
-		<textcolor>grey</textcolor>
-		<focusedcolor>white</focusedcolor>
+		<textcolor>dialogheader</textcolor>
+		<focusedcolor>dialogheader</focusedcolor>
 	</include>
 	<include name="ButtonInfo">
 		<width>100%</width>
 		<height>76.5</height>
 		<font>font15</font>
-		<textcolor>grey</textcolor>
+		<textcolor>dialogheader</textcolor>
 		<selectedcolor>selected</selectedcolor>
 		<textoffsetx>36</textoffsetx>
 	</include>
@@ -284,6 +284,14 @@
 		<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
 		<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 		<textcolor>white2</textcolor>
+		<focusedcolor>white</focusedcolor>
+	</include>
+	<include name="DialogToggleButton">
+		<texturefocus border="5">dialogs/default/inner_focus.png</texturefocus>
+		<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
+		<alttexturefocus border="5">dialogs/default/inner_focus.png</alttexturefocus>
+		<alttexturenofocus border="5">dialogs/default/inner.png</alttexturenofocus>
+		<textcolor>grey2</textcolor>
 		<focusedcolor>white</focusedcolor>
 	</include>
 </includes>

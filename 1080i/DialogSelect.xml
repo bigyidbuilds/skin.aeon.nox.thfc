@@ -225,6 +225,7 @@
 					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 					<textcolor>white2</textcolor>
 					<focusedcolor>white</focusedcolor>
+					<visible>!String.IsEmpty(Control.GetLabel(5))</visible>
 				</control>
 				<control type="button" id="7">
 					<description>Cancel button</description>
@@ -234,6 +235,7 @@
 					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 					<textcolor>white2</textcolor>
 					<focusedcolor>white</focusedcolor>
+					<visible>!String.IsEmpty(Control.GetLabel(7))</visible>
 				</control>
 				<control type="button" id="8">
 					<description>Add/Get More</description>
@@ -242,6 +244,7 @@
 					<texturenofocus border="5">dialogs/default/inner.png</texturenofocus>
 					<textcolor>white2</textcolor>
 					<focusedcolor>white</focusedcolor>
+					<visible>!String.IsEmpty(Control.GetLabel(8))</visible>
 				</control>
 			</control>
 			<control type="scrollbar" id="60">
@@ -255,8 +258,8 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+ 				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<animation effect="slide" start="0" end="157" time="0" tween="quadratic" condition="Control.IsVisible(3) + ![Control.IsVisible(5) | Control.IsVisible(7)]">Conditional</animation>
 			</control>
 		</control>

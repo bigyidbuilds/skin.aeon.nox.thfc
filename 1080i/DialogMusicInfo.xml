@@ -58,7 +58,7 @@
 						<width>738</width>
 						<height>30</height>
 						<font>font14</font>
-						<textcolor>grey</textcolor>
+						<textcolor>white2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>15</textoffsetx>
@@ -83,7 +83,7 @@
 					<control type="image">
 						<width>738</width>
 						<height>90</height>
-						<texture border="4">listselect_fo.png</texture>
+						<texture border="4" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
 						<visible>Control.HasFocus(9002)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
@@ -101,6 +101,7 @@
 						<width>738</width>
 						<height>45</height>
 						<font>font14</font>
+						<textcolor>labelheader</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9002)">Conditional</animation>
@@ -517,21 +518,21 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+ 				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<animation effect="slide" start="0" end="157" time="0" tween="quadratic" condition="Control.IsVisible(3) + !Control.IsVisible(5)">Conditional</animation>
 			</control>
 			<!-- right group -->
 			<control type="group">
 				<left>782</left>
 				<top>88</top>
-				<control type="image">
+<!-- 				<control type="image">
 					<left>-1</left>
 					<top>-2</top>
 					<width>312</width>
 					<height>632</height>
 					<texture border="5">dialogs/default/inner.png</texture>
-				</control>
+				</control> -->
 				<control type="image">
 					<width>310</width>
 					<height>310</height>
@@ -553,7 +554,7 @@
 						<width>310</width>
 						<height>60</height>
 						<aspectratio aligny="top">keep</aspectratio>
-						<colordiffuse>grey2</colordiffuse>
+						<colordiffuse>disabled</colordiffuse>
 						<visible>String.IsEmpty(ListItem.UserRating) + !String.IsEqual(ListItem.DBType,artist)</visible>
 						<texture>flags/rating/0.png</texture>
 					</control>
@@ -562,9 +563,9 @@
 						<width>310</width>
 						<height>60</height>
 						<aspectratio aligny="top">keep</aspectratio>
-						<colordiffuse>grey2</colordiffuse>
+						<colordiffuse>disabled</colordiffuse>
 						<visible>!String.IsEmpty(ListItem.UserRating) + !String.IsEqual(ListItem.DBType,artist)</visible>
-						<texture colordiffuse="themecolor">$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
+						<texture >$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 					</control>
 					<control type="label" id="203">
 						<description>Rating value</description>
@@ -577,6 +578,7 @@
 						<width>310</width>
 						<label>$LOCALIZE[21888]</label>
 						<altlabel>$LOCALIZE[29915]</altlabel>
+						<include>DialogToggleButton</include>
 						<onclick>SetProperty(Discography,True,musicinformation)</onclick>
 						<altclick>ClearProperty(Discography,musicinformation)</altclick>
 						<usealttexture>!String.IsEmpty(Window(musicinformation).Property(Discography))</usealttexture>
@@ -587,26 +589,31 @@
 						<label>38023</label>
 						<width>310</width>
 						<label>222</label>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="12">
 						<description>Get Fanart / Album Info button</description>
 						<width>310</width>
 						<label>10523</label>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="10">
 						<description>Get Thumb button</description>
 						<width>310</width>
 						<label>13405</label>
 						<enable>!Skin.HasSetting(KioskMode.Enabled)</enable>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="6">
 						<description>Refresh</description>
 						<width>310</width>
 						<label>$LOCALIZE[184]</label>
 						<enable>!Skin.HasSetting(KioskMode.Enabled)</enable>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="207">
 						<description>Extras</description>
+						<include>DialogButton</include>
 						<width>310</width>
 						<label>$LOCALIZE[31014]</label>
 						<onclick>SetProperty(Info.DBID,$INFO[ListItem.DBID],movieinformation)</onclick>

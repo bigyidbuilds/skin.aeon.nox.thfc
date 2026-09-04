@@ -139,18 +139,18 @@
 		<value>$INFO[System.CurrentWindow]</value>
 	</variable>
 	<variable name="BreadcrumbsVar">
-		<value condition="Window.IsActive(videos) + Container.Filtered">$VAR[BreadcrumbsFillerVar]$INFO[Container.FolderName]$INFO[Control.GetLabel(10),[COLOR grey3] | ,: $LOCALIZE[587][/COLOR]]</value>
-		<value condition="Window.IsActive(videos) + !String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100])">$VAR[BreadcrumbsFillerVar]$INFO[Container.FolderName]$INFO[Control.GetLabel(10),[COLOR grey3] | ,[/COLOR]]</value>
+		<value condition="Window.IsActive(videos) + Container.Filtered">$VAR[BreadcrumbsFillerVar]$INFO[Container.FolderName]$INFO[Control.GetLabel(10),[COLOR windowlabel3] | ,: $LOCALIZE[587][/COLOR]]</value>
+		<value condition="Window.IsActive(videos) + !String.IsEqual(Control.GetLabel(10),$LOCALIZE[16100])">$VAR[BreadcrumbsFillerVar]$INFO[Container.FolderName]$INFO[Control.GetLabel(10),[COLOR windowlabel3] | ,[/COLOR]]</value>
 		<value condition="Window.IsActive(videos)">$VAR[BreadcrumbsFillerVar]$INFO[Container.FolderName]</value>
 		<value condition="Window.IsActive(addoninformation) + !Window.IsActive(textviewer)">$VAR[BreadcrumbsFillerVar]$INFO[ListItem.AddonName]</value>
 		<value condition="Window.IsActive(textviewer)">$VAR[BreadcrumbsFillerVar]</value>
-		<value condition="Window.IsActive(script-globalsearch.xml)">$INFO[System.AddonTitle(script.globalsearch)]$INFO[Window.Property(GlobalSearch.SearchString),:[COLOR themecolor] ,[/COLOR]]$INFO[Control.GetLabel(899)]</value>
+		<value condition="Window.IsActive(script-globalsearch.xml)">$INFO[System.AddonTitle(script.globalsearch)]$INFO[Window.Property(GlobalSearch.SearchString),:[COLOR windowlabel2] ,[/COLOR]]$INFO[Control.GetLabel(899)]</value>
 		<value condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">$VAR[BreadcrumbsFillerVar,, $LOCALIZE[19069]]</value>
 		<value condition="Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)">$VAR[BreadcrumbsFillerVar,, $LOCALIZE[19163]]</value>
 		<value condition="Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)">$VAR[BreadcrumbsFillerVar,, $LOCALIZE[19040]]</value>
 		<value condition="Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)">$VAR[BreadcrumbsFillerVar,, $LOCALIZE[137]]</value>
-		<value condition="Window.IsActive(eventlog)">$LOCALIZE[14111]$INFO[Control.GetLabel(21),[COLOR grey3] | , [/COLOR]]</value>
-		<value condition="Window.IsActive(SettingsCategory.xml)">$INFO[Control.GetLabel(2),$LOCALIZE[5]: ]$INFO[Control.GetLabel(20),[COLOR grey3] | , [/COLOR]]</value>
+		<value condition="Window.IsActive(eventlog)">$LOCALIZE[14111]$INFO[Control.GetLabel(21),[COLOR windowlabel3] | , [/COLOR]]</value>
+		<value condition="Window.IsActive(SettingsCategory.xml)">$INFO[Control.GetLabel(2),$LOCALIZE[5]: ]$INFO[Control.GetLabel(20),[COLOR windowlabel3] | , [/COLOR]]</value>
 		<value>$VAR[BreadcrumbsFillerVar]$INFO[Container.FolderName]</value>
 	</variable>
 	<variable name="LibraryStatsVar">
@@ -716,18 +716,18 @@
 	 -->
 	<variable name="VideoInfoDetailsLabelVar">
 		<value condition="Control.HasFocus(900171)">$LOCALIZE[207] - $LOCALIZE[31175]</value>
-		<value condition="ControlGroup(9001).HasFocus(50)">$LOCALIZE[206]$INFO[Container(50).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90019)">$ADDON[script.extendedinfo 32041]$INFO[Container(90019).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90020)">$ADDON[script.extendedinfo 32040]$INFO[Container(90020).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90021)">$ADDON[script.extendedinfo 32038]$INFO[Container(90021).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90022)">$ADDON[script.extendedinfo 32039]$INFO[Container(90022).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90011)">$LOCALIZE[31111]$INFO[Container(90011).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90012)">$INFO[ListItem.Director,$LOCALIZE[31112] ]$INFO[Container(90012).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90013)">$INFO[ListItem.Writer,$LOCALIZE[31113] ]$INFO[Container(90013).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90014)">$INFO[ListItem.Studio,$LOCALIZE[31114] ]$INFO[Container(90014).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90015)">$LOCALIZE[31115]$INFO[Container(90015).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90016)">$LOCALIZE[33054]$INFO[Container(90016).NumItems, [COLOR grey3](,)[/COLOR]]</value>
-		<value condition="ControlGroup(9001).HasFocus(90018)">$INFO[ListItem.Set]$INFO[Container(90018).NumItems, [COLOR grey3](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(50)">$LOCALIZE[206]$INFO[Container(50).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90019)">$ADDON[script.extendedinfo 32041]$INFO[Container(90019).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90020)">$ADDON[script.extendedinfo 32040]$INFO[Container(90020).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90021)">$ADDON[script.extendedinfo 32038]$INFO[Container(90021).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90022)">$ADDON[script.extendedinfo 32039]$INFO[Container(90022).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90011)">$LOCALIZE[31111]$INFO[Container(90011).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90012)">$INFO[ListItem.Director,$LOCALIZE[31112] ]$INFO[Container(90012).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90013)">$INFO[ListItem.Writer,$LOCALIZE[31113] ]$INFO[Container(90013).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90014)">$INFO[ListItem.Studio,$LOCALIZE[31114] ]$INFO[Container(90014).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90015)">$LOCALIZE[31115]$INFO[Container(90015).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90016)">$LOCALIZE[33054]$INFO[Container(90016).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
+		<value condition="ControlGroup(9001).HasFocus(90018)">$INFO[ListItem.Set]$INFO[Container(90018).NumItems, [COLOR windowlabel2](,)[/COLOR]]</value>
 	</variable>
 	<variable name="EpisodeCountVar">
 		<value condition="!Integer.IsGreater(ListItem.Season,9) + !Integer.IsGreater(ListItem.Episode,9)">$INFO[ListItem.Season,S0]$INFO[ListItem.Episode,E0]</value>

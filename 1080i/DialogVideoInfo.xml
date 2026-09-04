@@ -15,7 +15,7 @@
 				<width>729</width>
 				<height>1080</height>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture background="true" fallback="black.png">$VAR[PosterVar]</texture>
+				<texture background="true" fallback="white-back.png">$VAR[PosterVar]</texture>
 			</control>
 		</control>
 		<control type="group">
@@ -27,7 +27,7 @@
 			<control type="image">
 				<right>0</right>
 				<height>100%</height>
-				<texture>black.png</texture>
+				<texture>white-back.png</texture>
 				<visible>String.IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
@@ -55,7 +55,7 @@
 						<right>30</right>
 						<height>60</height>
 						<font>font30_title_bold</font>
-						<textcolor>grey</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Title]</label>
 					</control>
@@ -63,7 +63,7 @@
 						<right>30</right>
 						<height>30</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Tagline]</label>
 						<visible>!String.IsEmpty(ListItem.Tagline)</visible>
@@ -72,7 +72,7 @@
 						<right>30</right>
 						<height>30</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[Window(Home).Property(NextAired.Status)]</label>
 						<visible>String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(Window(Home).Property(NextAired.Status))</visible>
@@ -81,7 +81,7 @@
 						<right>30</right>
 						<height>30</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.TvShowTitle]</label>
 						<visible>String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.TvShowTitle)</visible>
@@ -90,7 +90,7 @@
 						<right>30</right>
 						<height>30</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<scroll>true</scroll>
 						<label>$INFO[ListItem.Artist]</label>
 						<visible>String.IsEqual(ListItem.DBType,musicvideo) + !String.IsEmpty(ListItem.Artist)</visible>
@@ -113,7 +113,7 @@
 						<height>90</height>
 						<label>$INFO[ListItem.Year]</label>
 						<font>font35_title_bold</font>
-						<textcolor>grey</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<visible>!String.IsEqual(ListItem.DBType,episode)</visible>
 					</control>
 					<control type="label">
@@ -121,7 +121,7 @@
 						<height>90</height>
 						<label>$VAR[EpisodeCountVar]</label>
 						<font>font35_title_bold</font>
-						<textcolor>grey</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<visible>String.IsEqual(ListItem.DBType,episode)</visible>
 					</control>
 					<control type="image">
@@ -144,7 +144,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Studio]</label>
 							<font>font10</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 							<wrapmultiline>true</wrapmultiline>
 							<visible>String.IsEmpty(Control.GetLabel(800011))</visible>
 						</control>
@@ -156,7 +156,7 @@
 					</control>
 					<control type="image">
 						<width>150</width>
-						<colordiffuse>grey</colordiffuse>
+						<colordiffuse>windowiconfocus</colordiffuse>
 						<include>MediaFlagVars</include>
 						<texture fallback="flags/mpaa/NR.png">$VAR[RatingFlagVar]</texture>
 					</control>
@@ -176,7 +176,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Duration(mins)]</label>
 							<font>font48_bold</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 						<control type="label">
 							<top>52</top>
@@ -185,7 +185,7 @@
 							<align>center</align>
 							<label>[LOWERCASE]$LOCALIZE[12391][/LOWERCASE]</label>
 							<font>font12</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 					</control>
 					<control type="image">
@@ -203,7 +203,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.Rating]</label>
 							<font>font48_bold</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 						<control type="label">
 							<top>52</top>
@@ -212,7 +212,7 @@
 							<align>center</align>
 							<label>[LOWERCASE]$VAR[RatingAndVotesVar][/LOWERCASE]</label>
 							<font>font12</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 					</control>
 					<control type="image">
@@ -231,7 +231,7 @@
 							<align>center</align>
 							<label>$INFO[ListItem.UserRating]</label>
 							<font>font48_bold</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 						<control type="label">
 							<top>52</top>
@@ -240,7 +240,7 @@
 							<align>center</align>
 							<label>[LOWERCASE]$LOCALIZE[31146][/LOWERCASE]</label>
 							<font>font12</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 					</control>
 					<control type="image">
@@ -260,7 +260,7 @@
 							<label>$INFO[ListItem.Top250,#]</label>
 							<font>font48_bold</font>
 							<wrapmultiline>true</wrapmultiline>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 						<control type="label">
 							<top>52</top>
@@ -269,7 +269,7 @@
 							<align>center</align>
 							<label>[LOWERCASE]$LOCALIZE[13409][/LOWERCASE]</label>
 							<font>font12</font>
-							<textcolor>grey</textcolor>
+							<textcolor>dialogheader</textcolor>
 						</control>
 					</control>
 					<control type="image">
@@ -355,7 +355,7 @@
 						<include>SettingsFadeAnimation</include>
 						<control type="image">
 							<width>198</width>
-							<colordiffuse>grey</colordiffuse>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<include>MediaFlagVars</include>
 							<texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
 							<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
@@ -371,7 +371,7 @@
 								<label>$INFO[ListItem.Property(TotalSeasons)]</label>
 								<font>font48_bold</font>
 								<wrapmultiline>true</wrapmultiline>
-								<textcolor>grey</textcolor>
+								<textcolor>dialogheader</textcolor>
 							</control>
 							<control type="label">
 								<top>52</top>
@@ -380,7 +380,7 @@
 								<align>center</align>
 								<label>[LOWERCASE]$VAR[OneOrMoreSeasonsVar][/LOWERCASE]</label>
 								<font>font12</font>
-								<textcolor>grey</textcolor>
+								<textcolor>dialogheader</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -390,7 +390,7 @@
 						</control>
 						<control type="image">
 							<width>198</width>
-							<colordiffuse>grey</colordiffuse>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<include>MediaFlagVars</include>
 							<texture>$INFO[ListItem.AudioCodec,flags/audio/,.png]</texture>
 							<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
@@ -406,7 +406,7 @@
 								<label>$INFO[ListItem.Property(TotalEpisodes)]</label>
 								<font>font48_bold</font>
 								<wrapmultiline>true</wrapmultiline>
-								<textcolor>grey</textcolor>
+								<textcolor>dialogheader</textcolor>
 							</control>
 							<control type="label">
 								<top>52</top>
@@ -415,7 +415,7 @@
 								<align>center</align>
 								<label>[LOWERCASE]$VAR[OneOrMoreEpisodesVar][/LOWERCASE]</label>
 								<font>font12</font>
-								<textcolor>grey</textcolor>
+								<textcolor>dialogheader</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -425,7 +425,7 @@
 						</control>
 						<control type="image">
 							<width>198</width>
-							<colordiffuse>grey</colordiffuse>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<include>MediaFlagVars</include>
 							<texture>$INFO[ListItem.AudioChannels,flags/channels/,.png]</texture>
 							<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
@@ -441,7 +441,7 @@
 								<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 								<font>font48_bold</font>
 								<wrapmultiline>true</wrapmultiline>
-								<textcolor>grey</textcolor>
+								<textcolor>dialogheader</textcolor>
 							</control>
 							<control type="label">
 								<top>52</top>
@@ -450,7 +450,7 @@
 								<align>center</align>
 								<label>[LOWERCASE]$LOCALIZE[16101][/LOWERCASE]</label>
 								<font>font12</font>
-								<textcolor>grey</textcolor>
+								<textcolor>dialogheader</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -460,7 +460,7 @@
 						</control>
 						<control type="image">
 							<width>198</width>
-							<colordiffuse>grey</colordiffuse>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<include>MediaFlagVars</include>
 							<texture>$VAR[SourceFlagVar,flags/video/,.png]</texture>
 						</control>
@@ -471,7 +471,7 @@
 						</control>
 						<control type="image">
 							<width>198</width>
-							<colordiffuse>grey</colordiffuse>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<include>MediaFlagVars</include>
 							<texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
 						</control>
@@ -482,7 +482,7 @@
 						</control>
 						<control type="image">
 							<width>198</width>
-							<colordiffuse>grey</colordiffuse>
+							<colordiffuse>windowiconfocus</colordiffuse>
 							<include>MediaFlagVars</include>
 							<texture>flags/cc.png</texture>
 							<visible>!String.IsEmpty(ListItem.SubtitleLanguage)</visible>
@@ -528,7 +528,7 @@
 							<height>400</height>
 							<font>font15_textbox2</font>
 							<label>$INFO[ListItem.Plot]</label>
-							<textcolor>white</textcolor>
+							<textcolor>dialogheader</textcolor>
 							<pagecontrol />
 							<animation effect="fade" start="0" end="100" time="500" tween="sine" easing="inout">VisibleChange</animation>
 							<animation effect="fade" start="100" end="78" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(900171)">Conditional</animation>
@@ -632,7 +632,7 @@
 						<right>0</right>
 						<height>90</height>
 						<font>font15</font>
-						<textcolor>grey</textcolor>
+						<textcolor>dialogheader</textcolor>
 						<label>$VAR[VideoInfoDetailsLabelVar]</label>
 					</control>
 					<control type="button">
@@ -858,7 +858,7 @@
 						<height>60</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey</textcolor>
+						<textcolor>white2</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>15</textoffsetx>
@@ -873,7 +873,7 @@
 					<control type="image">
 						<width>1058</width>
 						<height>60</height>
-						<texture border="4">listselect_fo.png</texture>
+						<texture border="4" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
 						<visible>Control.HasFocus(9002)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
@@ -881,7 +881,7 @@
 						<width>1058</width>
 						<height>60</height>
 						<font>font15</font>
-						<textcolor>white</textcolor>
+						<textcolor>labelheader</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9002)">Conditional</animation>
@@ -1253,8 +1253,8 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+ 				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<animation effect="slide" start="0" end="157" time="0" tween="quadratic" condition="Control.IsVisible(3) + !Control.IsVisible(5)">Conditional</animation>
 			</control>
 		</control>

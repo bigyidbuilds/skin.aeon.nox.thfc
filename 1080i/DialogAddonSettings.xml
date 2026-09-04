@@ -148,7 +148,8 @@
 				<height>180</height>
 				<width>950</width>
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
-				<visible>!Control.HasFocus(20)|!Control.HasFocus(30)</visible>
+				<visible>!Control.HasFocus(20)</visible>
+				<visible>!Control.HasFocus(30)</visible>
 			</control>
 			<control type="textbox">
 				<top>5</top>
@@ -266,6 +267,7 @@
 			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 			<textcolor>white2</textcolor>
 			<focusedcolor>white</focusedcolor>
+			<textoffsetx>15</textoffsetx>
 		</control>
 	</controls>
 </window>

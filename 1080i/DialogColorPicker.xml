@@ -35,27 +35,27 @@
 				<ondown>7</ondown>
 				<onup>7</onup>
 				<scrolltime tween="quadratic" easing="out">300</scrolltime>
-				<itemlayout width="240" height="135">
+				<itemlayout width="222" height="135">
 					<control type="image">
 						<left>10</left>
 						<top>6</top>
-						<width>220</width>
+						<width>202</width>
 						<height>123</height>
 						<texture>white-back.png</texture>
 						<colordiffuse>$INFO[Listitem.Label2]</colordiffuse>
 					</control>
 				</itemlayout>
-				<focusedlayout width="240" height="135">
+				<focusedlayout width="222" height="135">
 					<control type="image">
 						<left>10</left>
 						<top>6</top>
-						<width>220</width>
+						<width>202</width>
 						<height>123</height>
 						<texture>white-back.png</texture>
 						<colordiffuse>$INFO[Listitem.Label2]</colordiffuse>
 					</control>
 					<control type="image">
-						<width>240</width>
+						<width>222</width>
 						<height>135</height>
 						<texture border="10">thumbs/thumbnail_focused.png</texture>
 						<include>FocusFadeInAnimation</include>
