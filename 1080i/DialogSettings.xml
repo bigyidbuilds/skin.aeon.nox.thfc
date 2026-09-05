@@ -53,8 +53,8 @@
 				<width>14</width>
 				<height>540</height>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+ 				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<onleft>5</onleft>
 				<onright>9001</onright>
 				<showonepage>false</showonepage>
@@ -62,12 +62,21 @@
 			</control>
 			<control type="button" id="7">
 				<description>Default Button</description>
+				<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
 			</control>
 			<control type="radiobutton" id="8">
 				<description>Default RadioButton</description>
+				<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
 			</control>
 			<control type="spincontrolex" id="9">
 				<description>Default SpinControlex</description>
+				<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
 				<reverse>yes</reverse>
 			</control>
 			<control type="edit" id="11">
@@ -76,9 +85,15 @@
 			</control>
 			<control type="edit" id="12">
 				<description>Default Edit</description>
+				<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
 			</control>
 			<control type="sliderex" id="13">
 				<description>Default Slider</description>
+				<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
+				<textcolor>white2</textcolor>
+				<focusedcolor>white</focusedcolor>
 			</control>
 			<control type="label" id="14">
 				<description>Default label</description>
@@ -91,14 +106,6 @@
 			<control type="group">
 				<left>1182</left>
 				<top>88</top>
-				<control type="image">
-					<left>-1</left>
-					<top>-2</top>
-					<width>312</width>
-					<height>542</height>
-					<texture border="5">dialogs/default/inner.png</texture>
-					<animation effect="fade" start="100" end="50" time="400" condition="Window.isActive(fullscreenvideo)">Conditional</animation>
-				</control>
 				<control type="grouplist" id="9001">
 					<onup>9001</onup>
 					<onleft>6</onleft>
@@ -108,16 +115,19 @@
 						<description>Ok Button</description>
 						<width>310</width>
 						<label>186</label>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="29">
 						<description>Cancel Button</description>
 						<width>310</width>
 						<label>222</label>
+						<include>DialogButton</include>
 					</control>
 					<control type="button" id="30">
 						<description>Clear Button</description>
 						<width>310</width>
 						<label>192</label>
+						<include>DialogButton</include>
 					</control>
 				</control>
 			</control>

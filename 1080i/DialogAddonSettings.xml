@@ -200,7 +200,7 @@
 			<font>font14</font>
 			<texturefocus border="1" colordiffuse="dialogbuttonfocus">listselect_fo.png</texturefocus>
 			<textoffsetx>20</textoffsetx>
-			<textcolor>white</textcolor>
+			<textcolor>white2</textcolor>
 			<focusedcolor>white</focusedcolor>
 		</control>
 		<control type="button" id="7">
