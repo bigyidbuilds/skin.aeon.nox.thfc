@@ -40,7 +40,7 @@
 				<height>40</height>
 				<textoffsetx>15</textoffsetx>
 				<font>font13_title</font>
-				<textcolor>grey2</textcolor>
+				<textcolor>dialogheader</textcolor>
 				<align>right</align>
 				<aligny>top</aligny>
 				<textoffsety>-4</textoffsety>
@@ -50,7 +50,7 @@
 				<left>80</left>
 				<width>270</width>
 				<height>37</height>
-				<texturebg border="2">osd/texturebg2.png</texturebg>
+				<texturebg border="2">osd/texturebg3.png</texturebg>
 				<lefttexture />
 				<midtexture border="2">osd/midtexture.png</midtexture>
 				<righttexture />
@@ -81,8 +81,8 @@
 				<width>120</width>
 				<align>center</align>
 				<font>IconMedium</font>
-				<textcolor>grey</textcolor>
-				<focusedcolor>white</focusedcolor>
+				<textcolor>windowlabelnofocus</textcolor>
+				<focusedcolor>windowlabelfocus</focusedcolor>
 				<texturenofocus />
 				<shadowcolor>ff000000</shadowcolor>
 			</control>

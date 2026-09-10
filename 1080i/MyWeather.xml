@@ -36,7 +36,7 @@
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>grey</textcolor>
+						<textcolor>windowiconnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -44,24 +44,24 @@
 				</itemlayout>
 				<focusedlayout height="90" width="356">
 					<control type="image">
+						<width>356</width>
+						<height>88</height>
+						<texture border="4">listselect_fo.png</texture>
+						<visible>Control.HasFocus(9000)</visible>
+						<include>VisibleFadeAnimation</include>
+					</control>
+					<control type="image">
 						<top>30</top>
 						<width>356</width>
 						<height>60</height>
 						<texture border="1">separator2.png</texture>
-					</control>
-					<control type="image">
-						<width>356</width>
-						<height>90</height>
-						<texture border="4">listselect_fo.png</texture>
-						<visible>Control.HasFocus(9000)</visible>
-						<include>VisibleFadeAnimation</include>
 					</control>
 					<control type="label">
 						<width>356</width>
 						<height>90</height>
 						<font>font15</font>
 						<textoffsetx>20</textoffsetx>
-						<textcolor>white</textcolor>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
@@ -142,8 +142,8 @@
 				<onup>61</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+ 				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
@@ -185,7 +185,7 @@
 						<height>45</height>
 						<font>font15_title</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
+						<textcolor>windowlabel1</textcolor>
 						<label>$INFO[Window.Property(Location)]</label>
 					</control>
 					<control type="label">
@@ -195,7 +195,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey3</textcolor>
+						<textcolor>windowlabel1</textcolor>
 						<label>$INFO[Window.Property(Updated),$LOCALIZE[31301]: ]</label>
 					</control>
 					<control type="label">
@@ -206,7 +206,7 @@
 						<font>WeatherTemp</font>
 						<align>right</align>
 						<label>$INFO[Window.Property(Current.Temperature)]</label>
-						<textcolor>grey</textcolor>
+						<textcolor>windowlabel1</textcolor>
 					</control>
 					<control type="label">
 						<description>current temp Value Units</description>
@@ -215,7 +215,7 @@
 						<height>290</height>
 						<font>font16</font>
 						<label>$INFO[System.TemperatureUnits]</label>
-						<textcolor>grey</textcolor>
+						<textcolor>windowlabel1</textcolor>
 					</control>
 					<control type="label">
 						<description>current condition label</description>
@@ -226,7 +226,7 @@
 						<wrapmultiline>true</wrapmultiline>
 						<font>font15</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>grey</textcolor>
+						<textcolor>windowlabel1</textcolor>
 					</control>
 					<control type="image">
 						<description>separator image</description>
@@ -330,7 +330,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -341,7 +341,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -352,7 +352,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(HighTemp),[COLOR red],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR blue],[/COLOR]]</label>
 								<textoffsetx>15</textoffsetx>
@@ -360,15 +360,15 @@
 						</itemlayout>
 						<focusedlayout height="300" width="329">
 							<control type="image">
+								<width>329</width>
+								<height>295</height>
+								<texture border="4">listselect_fo.png</texture>
+							</control>
+							<control type="image">
 								<left>327</left>
 								<width>2</width>
 								<height>300</height>
 								<texture border="1">separator3.png</texture>
-							</control>
-							<control type="image">
-								<width>329</width>
-								<height>300</height>
-								<texture border="4">listselect_fo.png</texture>
 							</control>
 							<control type="image">
 								<description>current weather icon</description>
@@ -383,6 +383,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -393,6 +394,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -403,6 +405,7 @@
 								<height>60</height>
 								<font>font15</font>
 								<align>center</align>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(HighTemp),[COLOR red],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR blue],[/COLOR]]</label>
 								<textoffsetx>15</textoffsetx>
@@ -515,7 +518,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>labelheader</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -526,7 +529,7 @@
 								<width>475</width>
 								<height>56</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -537,7 +540,7 @@
 								<height>70</height>
 								<font>font15</font>
 								<align>right</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(HighTemperature),[COLOR red],[/COLOR]]$INFO[ListItem.Property(LowTemperature), | [COLOR blue],[/COLOR]]</label>
 								<textoffsetx>15</textoffsetx>
@@ -548,7 +551,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(WindSpeed),$LOCALIZE[383]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -559,7 +562,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<align>right</align>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(WindDirection)]</label>
@@ -587,7 +590,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>labelheader</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -609,7 +612,7 @@
 								<height>70</height>
 								<font>font15</font>
 								<align>right</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(HighTemperature),[COLOR red],[/COLOR]]$INFO[ListItem.Property(LowTemperature), | [COLOR blue],[/COLOR]]</label>
 								<textoffsetx>15</textoffsetx>
@@ -803,7 +806,7 @@
 								<width>438</width>
 								<height>60</height>
 								<font>font15</font>
-								<textcolor>labelheader</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<align>center</align>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
@@ -816,7 +819,7 @@
 								<height>342</height>
 								<align>center</align>
 								<font>font15_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel3</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2][CR]$INFO[ListItem.Property(TemperatureHeading),,: ]$INFO[ListItem.Property(Temperature)][CR]$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ][CR]$INFO[ListItem.Property(Precipitation),$LOCALIZE[1448]: ][CR]$INFO[ListItem.Property(Wind),$LOCALIZE[404]: ][CR]$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 							</control>
@@ -842,7 +845,7 @@
 								<width>438</width>
 								<height>60</height>
 								<font>font15</font>
-								<textcolor>labelheader</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<align>center</align>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
@@ -855,7 +858,7 @@
 								<height>342</height>
 								<align>center</align>
 								<font>font15_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel3</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2][CR]$INFO[ListItem.Property(TemperatureHeading),,: ]$INFO[ListItem.Property(Temperature)][CR]$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ][CR]$INFO[ListItem.Property(Precipitation),$LOCALIZE[1448]: ][CR]$INFO[ListItem.Property(Wind),$LOCALIZE[404]: ][CR]$INFO[ListItem.Property(Humidity),$LOCALIZE[406]: ]</label>
 							</control>
@@ -1170,7 +1173,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>labelheader</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1181,7 +1184,7 @@
 								<width>475</width>
 								<height>56</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1192,7 +1195,7 @@
 								<height>70</height>
 								<font>font15</font>
 								<align>right</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(Temperature)]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1203,7 +1206,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1214,7 +1217,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 								<align>right</align>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(ChancePrecipitation)]</label>
@@ -1223,15 +1226,15 @@
 						</itemlayout>
 						<focusedlayout height="168" width="658">
 							<control type="image">
+								<width>657</width>
+								<height>164</height>
+								<texture border="4">listselect_fo.png</texture>
+							</control>
+							<control type="image">
 								<top>108</top>
 								<width>658</width>
 								<height>60</height>
 								<texture border="1">separator2.png</texture>
-							</control>
-							<control type="image">
-								<width>658</width>
-								<height>168</height>
-								<texture border="4">listselect_fo.png</texture>
 							</control>
 							<control type="image">
 								<description>current weather icon</description>
@@ -1247,7 +1250,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>labelheader</textcolor>
+								<textcolor>windowlabelfocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1258,7 +1261,7 @@
 								<width>475</width>
 								<height>56</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Label2]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1269,7 +1272,7 @@
 								<height>70</height>
 								<font>font15</font>
 								<align>right</align>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel2focus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(Temperature)]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1280,7 +1283,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfofocus</textcolor>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(FeelsLike),$LOCALIZE[402]: ]</label>
 								<textoffsetx>15</textoffsetx>
@@ -1291,7 +1294,7 @@
 								<width>475</width>
 								<height>70</height>
 								<font>font15</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel2focus</textcolor>
 								<align>right</align>
 								<selectedcolor>selected</selectedcolor>
 								<label>$INFO[ListItem.Property(ChancePrecipitation)]</label>
@@ -1944,7 +1947,7 @@
 			<height>90</height>
 			<font>font13_title</font>
 			<textoffsetx>15</textoffsetx>
-			<textcolor>grey2</textcolor>
+			<textcolor>dialogheader</textcolor>
 			<align>right</align>
 			<aligny>top</aligny>
 			<textoffsety>-2</textoffsety>
@@ -1972,7 +1975,7 @@
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
 					<label>31006</label>
-					<textcolor>themecolor</textcolor>
+					<textcolor>windowlabel3</textcolor>
 				</control>
 				<control type="spincontrolex" id="3">
 					<description>change location button</description>
@@ -1991,7 +1994,7 @@
 					<textoffsetx>15</textoffsetx>
 					<font>font13_title</font>
 					<label>31026</label>
-					<textcolor>themecolor</textcolor>
+					<textcolor>windowlabel3</textcolor>
 				</control>
 				<control type="button" id="2">
 					<description>Refresh button</description>
@@ -2021,7 +2024,7 @@
 					<include>ButtonCommonValues</include>
 					<label>31039</label>
 					<enable>no</enable>
-					<disabledcolor>themecolor</disabledcolor>
+					<disabledcolor>disabled</disabledcolor>
 					<visible>Player.HasMedia</visible>
 				</control>
 				<control type="button" id="616">

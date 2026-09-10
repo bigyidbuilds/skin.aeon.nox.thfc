@@ -178,7 +178,7 @@
 					<height>24</height>
 					<info>System.CPUUsage</info>
 					<texturebg border="2">osd/texturebg3.png</texturebg>
-					<midtexture border="2">osd/midtexture2.png</midtexture>
+					<!-- <midtexture border="2">osd/midtexture2.png</midtexture> -->
 				</control>
 				<control type="label">
 					<description>Memory Text</description>
@@ -198,7 +198,7 @@
 					<width>380</width>
 					<height>24</height>
 					<texturebg border="2">osd/texturebg3.png</texturebg>
-					<midtexture border="2">osd/midtexture2.png</midtexture>
+					<!-- <midtexture border="2">osd/midtexture2.png</midtexture> -->
 					<info>system.memory(used)</info>
 				</control>
 			</control>

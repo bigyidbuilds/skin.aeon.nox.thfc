@@ -330,7 +330,7 @@
 			<include>ButtonCommonValues</include>
 			<label>$LOCALIZE[31142]</label>
 			<enable>no</enable>
-			<disabledcolor>disabled</disabledcolor>
+			<disabledcolor>windowlabel3</disabledcolor>
 			<visible>Window.IsActive(SettingsCategory.xml)</visible>
 		</control>
 		<control type="button" id="20">
@@ -348,7 +348,7 @@
 			<include>ButtonCommonValues</include>
 			<label>31039</label>
 			<enable>no</enable>
-			<disabledcolor>disabled</disabledcolor>
+			<disabledcolor>windowlabel3</disabledcolor>
 			<visible>Player.HasMedia</visible>
 		</control>
 		<control type="button" id="616">

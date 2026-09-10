@@ -15,48 +15,48 @@
 				<height>166</height>
 				<texture border="40">dialogs/default/bg.png</texture>
 			</control>
-			<control type="image">
-				<left>30</left>
+			<control type="label" id="30">
+				<description>Header Label</description>
+				<left>32</left>
 				<top>32</top>
-				<width>740</width>
-				<height>102</height>
-				<texture border="5">dialogs/default/inner.png</texture>
+				<width>738</width>
+				<height>50</height>
+				<font>font15_title</font>
+				<textcolor>dialogheader</textcolor>
+				<align>center</align>
+        		<aligny>center</aligny>
 			</control>
 			<control type="progress" id="32">
 				<description>progress control</description>
 				<left>32</left>
-				<top>33</top>
+				<top>83</top>
 				<width>738</width>
-				<height>100</height>
-				<texturebg border="2">osd/texturebg2.png</texturebg>
+				<height>50</height>
 				<lefttexture />
-				<midtexture border="2">osd/midtexture.png</midtexture>
 				<righttexture />
 				<overlaytexture />
 				<colordiffuse>44FFFFFF</colordiffuse>
 			</control>
-			<control type="label">
-				<description>Header Label</description>
-				<top>32</top>
-				<width>800</width>
-				<height>50</height>
-				<font>font13</font>
-				<textcolor>dialogheader</textcolor>
-				<textoffsetx>50</textoffsetx>
-				<label>$INFO[Control.GetLabel(30)]$INFO[Control.GetLabel(32),: ,%]</label>
-			</control>
 			<control type="label" id="31">
 				<description>Title Label</description>
 				<top>82</top>
-				<width>800</width>
+				<left>32</left>
+				<width>638</width>
 				<height>50</height>
 				<font>font13</font>
-				<textcolor>grey2</textcolor>
-				<textoffsetx>50</textoffsetx>
+				<textcolor>dialogheader</textcolor>
+				<scroll>true</scroll>
+				<textoffsetx>10</textoffsetx>
 			</control>
-			<control type="label" id="30">
-				<description>Header Label</description>
-				<include>HiddenObject</include>
+			<control type="label">
+				<top>82</top>
+				<left>668</left>
+				<width>100</width>
+				<height>50</height>
+				<font>font13</font>
+				<textcolor>dialogheader</textcolor>
+				<label>$INFO[Control.GetLabel(32),,%]</label>
+				<align>right</align>
 			</control>
 		</control>
 	</controls>

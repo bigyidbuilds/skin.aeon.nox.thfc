@@ -75,7 +75,7 @@
 							<width>655</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>windowlabel3</textcolor>
+							<textcolor>windowlabelinfonofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -85,24 +85,24 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="810">
 						<control type="image">
-							<top>60</top>
-							<width>810</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>810</width>
 							<height>120</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>60</top>
+							<width>810</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>15</left>
@@ -129,7 +129,7 @@
 							<width>655</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>windowlabel3</textcolor>
+							<textcolor>windowlabelinfofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -139,7 +139,7 @@
 							<height>120</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2focus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -214,8 +214,8 @@
 					<onleft>50</onleft>
 					<onright>51</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -294,7 +294,7 @@
 							<width>655</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>windowlabel3</textcolor>
+							<textcolor>windowlabelinfonofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -304,24 +304,24 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonVersion]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="120" width="810">
 						<control type="image">
-							<top>60</top>
-							<width>810</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>810</width>
 							<height>120</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(51)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>60</top>
+							<width>810</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>15</left>
@@ -358,7 +358,7 @@
 							<width>655</width>
 							<height>60</height>
 							<font>font15</font>
-							<textcolor>windowlabel3</textcolor>
+							<textcolor>windowlabelinfofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonSummary]</label>
 						</control>
@@ -368,7 +368,7 @@
 							<height>60</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2focus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.AddonVersion]</label>
 						</control>
@@ -385,8 +385,8 @@
 					<onleft>51</onleft>
 					<onright>noop</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -398,7 +398,7 @@
 			<height>90</height>
 			<font>font13_title</font>
 			<textoffsetx>15</textoffsetx>
-			<textcolor>grey2</textcolor>
+			<textcolor>dialogheader</textcolor>
 			<aligny>top</aligny>
 			<textoffsety>-2</textoffsety>
 			<label>$LOCALIZE[31957]</label>
@@ -411,11 +411,11 @@
 			<height>90</height>
 			<font>font13_title</font>
 			<textoffsetx>15</textoffsetx>
-			<textcolor>grey2</textcolor>
+			<textcolor>dialogheader</textcolor>
 			<align>right</align>
 			<aligny>top</aligny>
 			<textoffsety>-2</textoffsety>
-			<label>$INFO[Container(51).NumItems,, $LOCALIZE[31025]]$INFO[Container(51).CurrentPage,[COLOR grey3] | ,]$INFO[Container(51).NumPages,/,[/COLOR]]</label>
+			<label>$INFO[Container(51).NumItems,, $LOCALIZE[31025]]$INFO[Container(51).CurrentPage,[COLOR windowlabel3] | ,]$INFO[Container(51).NumPages,/,[/COLOR]]</label>
 			<animation effect="slide" start="0,-90" end="0,0" delay="800" time="480" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="slide" end="0,-90" start="0,0" time="480" condition="Window.Next(home)">WindowClose</animation>
 		</control>
