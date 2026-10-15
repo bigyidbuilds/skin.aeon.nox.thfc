@@ -74,7 +74,7 @@
 					<height>100</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>white2</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
@@ -94,17 +94,17 @@
 			</itemlayout>
 			<focusedlayout height="100" width="628">
 				<control type="image">
+					<width>629</width>
+					<height>100</height>
+					<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
+					<visible>Control.HasFocus(90100)</visible>
+					<include>VisibleFadeAnimation</include>
+				</control>
+				<control type="image">
 					<top>40</top>
 					<width>628</width>
 					<height>60</height>
 					<texture border="1">separator2.png</texture>
-					<include>VisibleFadeAnimation</include>
-				</control>
-				<control type="image">
-					<width>629</width>
-					<height>100</height>
-					<texture border="5">listselect_fo.png</texture>
-					<visible>Control.HasFocus(90100)</visible>
 					<include>VisibleFadeAnimation</include>
 				</control>
 				<control type="label">
@@ -138,56 +138,56 @@
 					<label>$LOCALIZE[13404]</label>
 					<icon>overlays/showcase/resumable.png</icon>
 					<onclick>Skin.SetBool(Disable.Resumable)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">radiobutton/cross.png</property>
 					<visible>!Skin.HasSetting(Disable.Resumable)</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[13404]</label>
 					<icon>overlays/showcase/resumable.png</icon>
 					<onclick>Skin.Reset(Disable.Resumable)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">radiobutton/tick.png</property>
 					<visible>Skin.HasSetting(Disable.Resumable)</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16102]</label>
 					<icon>overlays/showcase/1/OverlayWatched.png</icon>
 					<onclick>ClearProperty(OverlayWatched,Home)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">radiobutton/cross.png</property>
 					<visible>!String.IsEmpty(Window(Home).Property(OverlayWatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16102]</label>
 					<icon>overlays/showcase/1/OverlayWatched.png</icon>
 					<onclick>SetProperty(OverlayWatched,True,home)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">radiobutton/tick.png</property>
 					<visible>String.IsEmpty(Window(Home).Property(OverlayWatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16101]</label>
 					<icon>overlays/showcase/1/OverlayUnwatched.png</icon>
 					<onclick>ClearProperty(OverlayUnwatched,Home)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">radiobutton/cross.png</property>
 					<visible>!String.IsEmpty(Window(Home).Property(OverlayUnwatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[16101]</label>
 					<icon>overlays/showcase/1/OverlayUnwatched.png</icon>
 					<onclick>SetProperty(OverlayUnwatched,True,home)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">radiobutton/tick.png</property>
 					<visible>String.IsEmpty(Window(Home).Property(OverlayUnwatched))</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[31109]</label>
 					<icon>dialogs/settings/circle.png</icon>
 					<onclick>Skin.Reset(Disable.UnwatchedIcon)</onclick>
-					<property name="Radio">android/btn_radio_on_holo_dark.png</property>
+					<property name="Radio">radiobutton/cross.png</property>
 					<visible>Skin.HasSetting(Disable.UnwatchedIcon)</visible>
 				</item>
 				<item>
 					<label>$LOCALIZE[31109]</label>
 					<icon>dialogs/settings/circle.png</icon>
 					<onclick>Skin.SetBool(Disable.UnwatchedIcon)</onclick>
-					<property name="Radio">android/btn_radio_off_holo_dark.png</property>
+					<property name="Radio">radiobutton/tick.png</property>
 					<visible>!Skin.HasSetting(Disable.UnwatchedIcon)</visible>
 				</item>
 			</content>
@@ -203,8 +203,8 @@
 			<onup>60</onup>
 			<showonepage>false</showonepage>
 			<texturesliderbackground />
-			<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-			<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+			<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+			<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 		</control>
 	</controls>
 </window>

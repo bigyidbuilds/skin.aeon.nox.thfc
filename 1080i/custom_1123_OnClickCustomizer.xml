@@ -59,23 +59,23 @@
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>white2</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="628">
 				<control type="image">
-					<width>628</width>
+					<width>629</width>
 					<height>60</height>
-					<texture border="1">separator2.png</texture>
+					<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
+					<visible>Control.HasFocus(90100)</visible>
 					<include>VisibleFadeAnimation</include>
 				</control>
 				<control type="image">
-					<width>629</width>
+					<width>628</width>
 					<height>60</height>
-					<texture border="5">listselect_fo.png</texture>
-					<visible>Control.HasFocus(90100)</visible>
+					<texture border="1">separator2.png</texture>
 					<include>VisibleFadeAnimation</include>
 				</control>
 				<control type="label">

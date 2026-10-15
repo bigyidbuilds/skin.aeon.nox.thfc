@@ -199,17 +199,17 @@
 							<width>90</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>labelheader</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label fallback="• • • •">$INFO[ListItem.Year]</label>
 							<visible>!ListItem.IsParentFolder</visible>
+							<textcolor>windowlabelnofocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
 							<width>620</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -219,7 +219,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings) | [String.IsEqual(ListItem.Label2, ListItem.Rating) + String.IsEqual(Container.SortMethod,$LOCALIZE[563])]</visible>
@@ -235,17 +235,17 @@
 					</itemlayout>
 					<focusedlayout height="70" width="806" condition="Container.Content(movies)">
 						<control type="image">
-							<top>12</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>12</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -256,6 +256,7 @@
 							<label fallback="• • • •">$INFO[ListItem.Year]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
 							<visible>!ListItem.IsParentFolder</visible>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -265,6 +266,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -276,6 +278,7 @@
 							<label>$INFO[ListItem.Label2]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings) | [String.IsEqual(ListItem.Label2, ListItem.Rating) + String.IsEqual(Container.SortMethod,$LOCALIZE[563])]</visible>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabel2focus</textcolor>
 						</control>
 						<control type="image">
 							<left>742</left>
@@ -298,7 +301,7 @@
 							<width>90</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>labelheader</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label fallback="• • • •">$INFO[ListItem.Year]</label>
 							<visible>!ListItem.IsParentFolder</visible>
@@ -308,7 +311,7 @@
 							<width>565</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -318,7 +321,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings)</visible>
@@ -356,17 +359,17 @@
 					</itemlayout>
 					<focusedlayout height="70" width="806" condition="Container.Content(tvshows)">
 						<control type="image">
-							<top>12</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
+							<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+							<top>12</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -377,6 +380,7 @@
 							<label fallback="• • • •">$INFO[ListItem.Year]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
 							<visible>!ListItem.IsParentFolder</visible>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -386,6 +390,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -397,6 +402,7 @@
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings)</visible>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabel2focus</textcolor>
 						</control>
 						<control type="image">
 							<left>742</left>
@@ -440,7 +446,7 @@
 							<width>730</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<textoffsetx>15</textoffsetx>
@@ -451,7 +457,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings)</visible>
@@ -467,17 +473,17 @@
 					</itemlayout>
 					<focusedlayout height="70" width="806" condition="Container.Content(episodes)">
 						<control type="image">
-							<top>10</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>10</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<width>730</width>
@@ -487,6 +493,7 @@
 							<label>$INFO[ListItem.Label]</label>
 							<textoffsetx>15</textoffsetx>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -498,6 +505,7 @@
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings)</visible>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabel2focus</textcolor>
 						</control>
 						<control type="image">
 							<left>742</left>
@@ -520,7 +528,7 @@
 							<width>600</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -530,7 +538,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 						</control>
@@ -567,17 +575,17 @@
 					</itemlayout>
 					<focusedlayout height="70" width="806" condition="Container.Content(seasons)">
 						<control type="image">
-							<top>12</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>12</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -587,6 +595,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -597,6 +606,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabel2focus</textcolor>
 						</control>
 						<control type="image">
 							<left>742</left>
@@ -853,7 +863,7 @@
 							<width>90</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>labelheader</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label fallback="• • • •">$INFO[ListItem.Year]</label>
 							<visible>!String.IsEmpty(ListItem.Album)</visible>
@@ -863,24 +873,24 @@
 							<width>620</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="70" width="806" condition="Container.Content(albums)">
 						<control type="image">
-							<top>10</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>10</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -891,6 +901,7 @@
 							<label fallback="• • • •">$INFO[ListItem.Year]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
 							<visible>!String.IsEmpty(ListItem.Album)</visible>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -900,6 +911,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 					</focusedlayout>
 					<itemlayout height="70" width="806" condition="!Container.Content(albums)">
@@ -924,24 +936,24 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
 					</itemlayout>
 					<focusedlayout height="70" width="806" condition="!Container.Content(albums)">
 						<control type="image">
-							<top>12</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>12</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -959,7 +971,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2focus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
@@ -1141,7 +1153,7 @@
 							<width>90</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>labelheader</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Year]</label>
 						</control>
@@ -1150,7 +1162,7 @@
 							<width>620</width>
 							<height>68</height>
 							<font>font15</font>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabelnofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
@@ -1160,7 +1172,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>grey2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings)</visible>
@@ -1168,17 +1180,17 @@
 					</itemlayout>
 					<focusedlayout height="70" width="806">
 						<control type="image">
-							<top>12</top>
-							<width>806</width>
-							<height>60</height>
-							<texture border="1">separator2.png</texture>
-						</control>
-						<control type="image">
 							<width>806</width>
 							<height>70</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(55)</visible>
 							<include>VisibleFadeAnimation</include>
+						</control>
+						<control type="image">
+							<top>12</top>
+							<width>806</width>
+							<height>60</height>
+							<texture border="1">separator2.png</texture>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -1188,6 +1200,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Year]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -1197,6 +1210,7 @@
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabelfocus</textcolor>
 						</control>
 						<control type="label">
 							<left>110</left>
@@ -1208,6 +1222,7 @@
 							<label>$INFO[ListItem.Rating]</label>
 							<visible>!Skin.HasSetting(Enable.HideRatings)</visible>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>
+							<textcolor>windowlabel2focus</textcolor>
 						</control>
 					</focusedlayout>
 				</control>
@@ -1375,7 +1390,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.Label2]</label>
 						</control>
@@ -1410,7 +1425,7 @@
 							<height>68</height>
 							<font>font15</font>
 							<align>right</align>
-							<textcolor>windowlabel2</textcolor>
+							<textcolor>windowlabel2focus</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<label>$INFO[ListItem.label2]</label>
 							<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(55)">Conditional</animation>

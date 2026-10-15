@@ -160,7 +160,7 @@
 						<label>13018</label>
 						<label2/>
 						<icon/>
-						<onclick>InhibitIdleShutdown(false</onclick>
+						<onclick>InhibitIdleShutdown(false)</onclick>
 						<visible>System.HasShutdown + System.IsInhibit</visible>
 					</item>
 					<item id="12">
@@ -179,6 +179,14 @@
 						<icon/>
 						<onclick>ActivateWindow(favouritesbrowser)</onclick>
 						<visible>true</visible>
+					</item>
+					<item id="14">
+						<description>restart app</description>
+						<label>31191</label>
+						<label2/>
+						<icon/>
+						<onclick>RestartApp</onclick>
+						<visible>System.Platform.Linux|System.Platform.Windows</visible>
 					</item>
 				</content>
 			</control>

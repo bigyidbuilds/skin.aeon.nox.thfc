@@ -456,7 +456,7 @@
 					<height>37</height>
 					<texturebg border="2">osd/texturebg.png</texturebg>
 					<lefttexture />
-					<midtexture border="2">osd/midtexture_cache.png</midtexture>
+					<midtexture border="2">osd/midtexture2.png</midtexture>
 					<righttexture />
 					<overlaytexture />
 					<info>Player.ProgressCache</info>
@@ -477,8 +477,7 @@
 					<height>20</height>
 					<font>font13_title</font>
 					<textoffsetx>10</textoffsetx>
-					<textcolor>dialogheader</textcolor>
-					<shadowcolor>shadow</shadowcolor>
+					<textcolor>white</textcolor>
 					<scroll>true</scroll>
 					<scrollspeed>20</scrollspeed>
 					<scrollout>false</scrollout>

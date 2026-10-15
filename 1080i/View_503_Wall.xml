@@ -49,7 +49,7 @@
 						<control type="image">
 							<width>320</width>
 							<height>460</height>
-							<texture border="1" colordiffuse="66FFFFFF">black.png</texture>
+							<texture border="1" colordiffuse="44132257">thfc_blue_block.png</texture>
 							<bordersize>20</bordersize>
 						</control>
 					</control>

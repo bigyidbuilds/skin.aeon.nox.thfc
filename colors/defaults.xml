@@ -20,6 +20,10 @@
 	<color name="disabled">FFF9E606</color>
 	<color name="labelheader">FFA24FF9</color>
 	<color name="shadow">AA000000</color>
+	<color name="dialoglabelfocus">FFFFFFFF</color>
+	<color name="dialoglabelnofocus">7FFFFFFF</color>
+	<color name="dialoglabel2focus">FFA24FF9</color>
+	<color name="dialoglabel2nofocus">7FA24FF9</color>
 	<color name="slidernofocus">FF05F975</color>
 	<color name="sliderfocus">FF132257</color>
 	<color name="windowlabelnofocus">7F132257</color>
@@ -39,4 +43,7 @@
 	<color name="thfc_gold">FFF9E606</color>
 	<color name="thfc_green">FF05F975</color>
 	<color name="thfc_orange">FFFA6606</color>
+	<color name="ratingstars">FFF9E606</color>
+	<color name="ratingstarsbg">7FF9E606</color>
+	<color name="ratingstarsnf">BFF9E606</color>
 </colors>

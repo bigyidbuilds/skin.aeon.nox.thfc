@@ -60,23 +60,23 @@
 					<height>60</height>
 					<textoffsetx>15</textoffsetx>
 					<font>font14</font>
-					<textcolor>grey2</textcolor>
+					<textcolor>white2</textcolor>
 					<selectedcolor>selected</selectedcolor>
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="628">
 				<control type="image">
-					<width>628</width>
+					<width>629</width>
 					<height>60</height>
-					<texture border="1">separator2.png</texture>
+					<texture border="5" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
+					<visible>Control.HasFocus(90100)</visible>
 					<include>VisibleFadeAnimation</include>
 				</control>
 				<control type="image">
-					<width>629</width>
+					<width>628</width>
 					<height>60</height>
-					<texture border="5">listselect_fo.png</texture>
-					<visible>Control.HasFocus(90100)</visible>
+					<texture border="1">separator2.png</texture>
 					<include>VisibleFadeAnimation</include>
 				</control>
 				<control type="label">
@@ -284,8 +284,8 @@
 			<onup>60</onup>
 			<showonepage>false</showonepage>
 			<texturesliderbackground />
-			<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-			<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+			<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+			<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 		</control>
 	</controls>
 </window>

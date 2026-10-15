@@ -1185,6 +1185,11 @@ msgctxt "#31190"
 msgid "Premiered"
 msgstr ""
 
+#: /1080i/Dialog/DialogButtonMenu.xml
+msgctxt "#31191"
+msgid "Restart Kodi"
+msgid ""
+
 msgctxt "#31965"
 msgid "Set club badges in Main menu bar"
 msgstr ""

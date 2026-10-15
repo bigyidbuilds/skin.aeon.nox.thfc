@@ -87,14 +87,14 @@
 								<height>45</height>
 								<label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
 								<font>font16_title_bold</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 							</control>
 							<control type="image">
 								<top>40</top>
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>grey</colordiffuse>
+								<colordiffuse>ratingstarsbg</colordiffuse>
 								<texture fallback="flags/rating/0.0.png">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -103,7 +103,7 @@
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>themecolor</colordiffuse>
+								<colordiffuse>ratingstarsnf</colordiffuse>
 								<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -114,7 +114,7 @@
 								<label>$INFO[ListItem.Duration(mins),, $LOCALIZE[31162]]$INFO[ListItem.Genre,[COLOR=themecolor] - [/COLOR]]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey2</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -123,7 +123,7 @@
 								<label>$VAR[BigListPlotVar]</label>
 								<autoscroll>false</autoscroll>
 								<font>font14_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -135,11 +135,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout width="1808" height="217" condition="Container.Content(movies)">
-						<control type="image">
-							<width>1725</width>
-							<height>217</height>
-							<texture border="5">separator2.png</texture>
-						</control>
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
@@ -155,6 +150,11 @@
 							<animation type="UnFocus" reversible="false">
 								<effect type="fade" end="0" start="100" time="0" tween="sine" easing="in" />
 							</animation>
+						</control>
+						<control type="image">
+							<width>1725</width>
+							<height>217</height>
+							<texture border="5">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>12</left>
@@ -180,6 +180,7 @@
 								<height>45</height>
 								<label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
 								<font>font16_title_bold</font>
+								<textcolor>windowlabelfocus</textcolor>
 							</control>
 							<control type="image">
 								<top>40</top>
@@ -188,13 +189,14 @@
 								<aspectratio>keep</aspectratio>
 								<texture fallback="flags/rating/0.0.png">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.UserRating)</visible>
+								<colordiffuse>ratingstarsbg</colordiffuse>
 							</control>
 							<control type="image">
 								<top>40</top>
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>themecolor</colordiffuse>
+								<colordiffuse>ratingstars</colordiffuse>
 								<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -205,6 +207,7 @@
 								<label>$INFO[ListItem.Duration(mins),, $LOCALIZE[31162]]$INFO[ListItem.Genre,[COLOR=themecolor] - [/COLOR]]</label>
 								<align>right</align>
 								<font>font14</font>
+								<textcolor>windowlabel2focus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -213,6 +216,7 @@
 								<label>$VAR[BigListPlotVar]</label>
 								<font>font14_textbox</font>
 								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+								<textcolor>windowlabelinfofocus</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -247,7 +251,7 @@
 								<height>45</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font16_title_bold</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 							</control>
 							<control type="label">
 								<top>45</top>
@@ -255,7 +259,7 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Genre]</label>
 								<font>font14</font>
-								<textcolor>grey2</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 							</control>
 							<control type="label">
 								<top>55</top>
@@ -264,7 +268,7 @@
 								<label>$INFO[ListItem.Premiered]$INFO[ListItem.Studio,[COLOR=themecolor] - [/COLOR]]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey2</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -273,7 +277,7 @@
 								<label>$VAR[BigListPlotVar]</label>
 								<autoscroll>false</autoscroll>
 								<font>font14_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -293,11 +297,6 @@
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
-							<texture border="5">separator2.png</texture>
-						</control>
-						<control type="image">
-							<width>1725</width>
-							<height>217</height>
 							<texture border="4">listselect_fo.png</texture>
 							<visible>Control.HasFocus(510)</visible>
 							<include>VisibleFadeAnimation</include>
@@ -310,6 +309,11 @@
 							<animation type="UnFocus" reversible="false">
 								<effect type="fade" end="0" start="100" time="0" tween="sine" easing="in" />
 							</animation>
+						</control>
+						<control type="image">
+							<width>1725</width>
+							<height>217</height>
+							<texture border="5">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>12</left>
@@ -335,6 +339,7 @@
 								<height>45</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font16_title_bold</font>
+								<textcolor>windowlabelfocus</textcolor>
 							</control>
 							<control type="label">
 								<top>45</top>
@@ -342,7 +347,7 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Genre]</label>
 								<font>font14</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfofocus</textcolor>
 							</control>
 							<control type="label">
 								<top>55</top>
@@ -351,7 +356,7 @@
 								<label>$INFO[ListItem.Premiered]$INFO[ListItem.Studio,[COLOR=themecolor] - [/COLOR]]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel2focus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -360,6 +365,7 @@
 								<label>$VAR[BigListPlotVar]</label>
 								<font>font14_textbox</font>
 								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+								<textcolor>windowlabelinfofocus</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -399,14 +405,14 @@
 								<height>45</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font16_title_bold</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 							</control>
 							<control type="image">
 								<top>40</top>
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>grey</colordiffuse>
+								<colordiffuse>ratingstarsbg</colordiffuse>
 								<texture fallback="flags/rating/0.0.png">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -415,7 +421,7 @@
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>themecolor</colordiffuse>
+								<colordiffuse>ratingstarsnf</colordiffuse>
 								<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -426,7 +432,7 @@
 								<label>$INFO[ListItem.Duration(mins),, $LOCALIZE[31162][COLOR=themecolor] - [/COLOR]]$INFO[ListItem.Premiered]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey2</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -435,7 +441,7 @@
 								<label>$VAR[BigListPlotVar]</label>
 								<autoscroll>false</autoscroll>
 								<font>font14_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -447,11 +453,6 @@
 						</control>
 					</itemlayout>
 					<focusedlayout width="1808" height="217" condition="Container.Content(episodes)">
-						<control type="image">
-							<width>1725</width>
-							<height>217</height>
-							<texture border="5">separator2.png</texture>
-						</control>
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
@@ -467,6 +468,11 @@
 							<animation type="UnFocus" reversible="false">
 								<effect type="fade" end="0" start="100" time="0" tween="sine" easing="in" />
 							</animation>
+						</control>
+						<control type="image">
+							<width>1725</width>
+							<height>217</height>
+							<texture border="5">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>12</left>
@@ -492,6 +498,7 @@
 								<height>45</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font16_title_bold</font>
+								<textcolor>windowlabelfocus</textcolor>
 							</control>
 							<control type="image">
 								<top>40</top>
@@ -500,13 +507,14 @@
 								<aspectratio>keep</aspectratio>
 								<texture fallback="flags/rating/0.0.png">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.UserRating)</visible>
+								<colordiffuse>ratingstarsbg</colordiffuse>
 							</control>
 							<control type="image">
 								<top>40</top>
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>themecolor</colordiffuse>
+								<colordiffuse>ratingstarsnf</colordiffuse>
 								<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -517,7 +525,7 @@
 								<label>$INFO[ListItem.Duration(mins),, $LOCALIZE[31162][COLOR=themecolor] - [/COLOR]]$INFO[ListItem.Premiered]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabel2focus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -526,6 +534,7 @@
 								<label>$VAR[BigListPlotVar]</label>
 								<font>font14_textbox</font>
 								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
+								<textcolor>windowlabelinfofocus</textcolor>
 							</control>
 						</control>
 						<control type="image">
@@ -548,8 +557,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -619,7 +628,7 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font16_title_bold</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 							</control>
 							<control type="label">
 								<top>45</top>
@@ -636,7 +645,7 @@
 								<label>$INFO[ListItem.Property(Artist_YearsActive)]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey2</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -645,7 +654,7 @@
 								<label>$VAR[OtherPlotVar]</label>
 								<autoscroll>false</autoscroll>
 								<font>font14_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 						</control>
@@ -654,14 +663,14 @@
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
-							<texture border="5">separator2.png</texture>
+							<texture border="4">listselect_fo.png</texture>
+							<visible>Control.HasFocus(510)</visible>
+							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
-							<texture border="4">listselect_fo.png</texture>
-							<visible>Control.HasFocus(510)</visible>
-							<include>VisibleFadeAnimation</include>
+							<texture border="5">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>12</left>
@@ -679,6 +688,7 @@
 							<control type="label">
 								<width>1470</width>
 								<height>50</height>
+								<textcolor>windowlabelfocus</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 								<font>font16_title_bold</font>
 							</control>
@@ -695,6 +705,7 @@
 								<height>35</height>
 								<label>$INFO[ListItem.Property(Artist_YearsActive)]</label>
 								<align>right</align>
+								<textcolor>windowlabel2focus</textcolor>
 								<font>font14</font>
 							</control>
 							<control type="textbox">
@@ -702,7 +713,7 @@
 								<width>1480</width>
 								<height>108</height>
 								<label>$VAR[OtherPlotVar]</label>
-								<font>font14_textbox</font>
+								<font>windowlabelinfofocus</font>
 								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 								<visible>!ListItem.IsParentFolder</visible>
 							</control>
@@ -732,14 +743,14 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
 								<font>font16_title_bold</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelnofocus</textcolor>
 							</control>
 							<control type="image">
 								<top>40</top>
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>grey</colordiffuse>
+								<colordiffuse>ratingstarsbg</colordiffuse>
 								<texture fallback="flags/rating/0.0.png">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -748,7 +759,7 @@
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>themecolor</colordiffuse>
+								<colordiffuse>ratingstarsnf</colordiffuse>
 								<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -759,7 +770,7 @@
 								<label>$INFO[ListItem.Genre]</label>
 								<align>right</align>
 								<font>font14</font>
-								<textcolor>grey2</textcolor>
+								<textcolor>windowlabel2nofocus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -768,7 +779,7 @@
 								<label>$VAR[OtherPlotVar]</label>
 								<autoscroll>false</autoscroll>
 								<font>font14_textbox</font>
-								<textcolor>grey</textcolor>
+								<textcolor>windowlabelinfonofocus</textcolor>
 								<visible>!ListItem.IsParentFolder</visible>
 							</control>
 						</control>
@@ -777,14 +788,14 @@
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
-							<texture border="5">separator2.png</texture>
+							<texture border="4">listselect_fo.png</texture>
+							<visible>Control.HasFocus(510)</visible>
+							<include>VisibleFadeAnimation</include>
 						</control>
 						<control type="image">
 							<width>1725</width>
 							<height>217</height>
-							<texture border="4">listselect_fo.png</texture>
-							<visible>Control.HasFocus(510)</visible>
-							<include>VisibleFadeAnimation</include>
+							<texture border="5">separator2.png</texture>
 						</control>
 						<control type="image">
 							<left>12</left>
@@ -804,6 +815,7 @@
 								<height>50</height>
 								<label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
 								<font>font16_title_bold</font>
+								<textcolor>windowlabelfocus</textcolor>
 							</control>
 							<control type="image">
 								<top>40</top>
@@ -812,13 +824,14 @@
 								<aspectratio>keep</aspectratio>
 								<texture fallback="flags/rating/0.0.png">$INFO[ListItem.Rating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + String.IsEmpty(ListItem.UserRating)</visible>
+								<colordiffuse>ratingstarsbg</colordiffuse>
 							</control>
 							<control type="image">
 								<top>40</top>
 								<width>180</width>
 								<height>70</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>themecolor</colordiffuse>
+								<colordiffuse>ratingstars</colordiffuse>
 								<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 								<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 							</control>
@@ -829,6 +842,7 @@
 								<label>$INFO[ListItem.Genre]</label>
 								<align>right</align>
 								<font>font14</font>
+								<textcolor>windowlabel2focus</textcolor>
 							</control>
 							<control type="textbox">
 								<top>95</top>
@@ -838,6 +852,7 @@
 								<font>font14_textbox</font>
 								<autoscroll time="3500" delay="4000" repeat="5000">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 								<visible>!ListItem.IsParentFolder</visible>
+								<textcolor>windowlabelinfofocus</textcolor>
 							</control>
 						</control>
 					</focusedlayout>
@@ -853,8 +868,8 @@
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
 					<texturesliderbackground />
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar2.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar2.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<animation effect="fade" start="100" end="0" time="500" delay="500" condition="!Control.HasFocus(51060) + !Container.Scrolling">Conditional</animation>

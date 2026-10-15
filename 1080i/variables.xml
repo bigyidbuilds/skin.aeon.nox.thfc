@@ -696,9 +696,9 @@
 		<value>$INFO[ListItem.Icon,views/list/]</value>
 	</variable>
 	<variable name="StarRatingDiffuseVar">
-		<value condition="ListItem.IsSelected | ListItem.IsPlaying">selected</value>
-		<value condition="!String.IsEmpty(ListItem.UserRating)">themecolor</value>
-		<value>white</value>
+		<value condition="ListItem.IsSelected | ListItem.IsPlaying">disabled</value>
+		<value condition="!String.IsEmpty(ListItem.UserRating)">windowiconfocus</value>
+		<value>windowiconnofocus</value>
 	</variable>
 	<variable name="HomeNowPlayingThumbVar">
 		<value condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(musicvideos)] + !String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>

@@ -77,7 +77,7 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>windowlabelnofocus</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
@@ -87,14 +87,14 @@
 					<control type="image">
 						<width>821</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="5">listselect_fo.png</texture>
+						<visible>Control.HasFocus(20)</visible>
+						<include>VisibleFadeAnimation</include>
 					</control>
 					<control type="image">
 						<width>821</width>
 						<height>60</height>
-						<texture border="5">listselect_fo.png</texture>
-						<visible>Control.HasFocus(20)</visible>
-						<include>VisibleFadeAnimation</include>
+						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="label">
 						<width>821</width>
@@ -111,7 +111,7 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>windowlabelfocus</textcolor>
+						<textcolor>windowlabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
@@ -195,7 +195,7 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>windowlabelnofocus</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>
@@ -205,14 +205,14 @@
 					<control type="image">
 						<width>821</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="5">listselect_fo.png</texture>
+						<visible>Control.HasFocus(21)</visible>
+						<include>VisibleFadeAnimation</include>
 					</control>
 					<control type="image">
 						<width>821</width>
 						<height>60</height>
-						<texture border="5">listselect_fo.png</texture>
-						<visible>Control.HasFocus(21)</visible>
-						<include>VisibleFadeAnimation</include>
+						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="label">
 						<width>821</width>
@@ -229,7 +229,7 @@
 						<height>60</height>
 						<font>font14</font>
 						<textoffsetx>15</textoffsetx>
-						<textcolor>windowlabelfocus</textcolor>
+						<textcolor>windowlabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<label>$INFO[ListItem.Label2]</label>

@@ -55,8 +55,8 @@
 		<textoffsetx>0</textoffsetx>
 		<align>center</align>
 		<font>font15</font>
-		<textcolor>dialogheader</textcolor>
-		<focusedcolor>dialogheader</focusedcolor>
+		<textcolor>windowlabelnofocus</textcolor>
+		<focusedcolor>windowlabelfocus</focusedcolor>
 	</include>
 	<include name="ButtonInfo">
 		<width>100%</width>

@@ -53,7 +53,7 @@
 						<width>1058</width>
 						<height>60</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>dialoglabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>15</textoffsetx>
@@ -63,7 +63,7 @@
 						<height>60</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey</textcolor>
+						<textcolor>dialoglabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<textoffsetx>15</textoffsetx>
@@ -73,20 +73,20 @@
 					<control type="image">
 						<width>1058</width>
 						<height>60</height>
-						<texture border="1">separator2.png</texture>
+						<texture border="4" colordiffuse="dialogbuttonfocus">listselect_fo.png</texture>
+						<visible>Control.HasFocus(5)</visible>
+						<include>VisibleFadeAnimation</include>
 					</control>
 					<control type="image">
 						<width>1058</width>
 						<height>60</height>
-						<texture border="4">listselect_fo.png</texture>
-						<visible>Control.HasFocus(5)</visible>
-						<include>VisibleFadeAnimation</include>
+						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="label">
 						<width>1058</width>
 						<height>60</height>
 						<font>font15</font>
-						<textcolor>white</textcolor>
+						<textcolor>dialoglabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5)">Conditional</animation>
@@ -97,7 +97,7 @@
 						<height>60</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>white</textcolor>
+						<textcolor>dialoglabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5)">Conditional</animation>
@@ -116,8 +116,8 @@
 				<onup>60</onup>
 				<showonepage>false</showonepage>
 				<texturesliderbackground />
-				<texturesliderbar colordiffuse="55ffffff" border="4">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="4">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<animation effect="slide" start="0" end="157" time="0" tween="quadratic" condition="Control.IsVisible(3) + !Control.IsVisible(5)">Conditional</animation>
 			</control>
 		</control>

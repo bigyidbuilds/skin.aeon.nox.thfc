@@ -49,8 +49,7 @@
 					<label>$VAR[LibraryStatsVar]</label>
 					<textoffsetx>15</textoffsetx>
 					<font>thfc_font13_title</font>
-					<textcolor>themecolor</textcolor>
-					<shadowcolor>shadow</shadowcolor>
+					<textcolor>white</textcolor>
 				</control>
 				<control type="grouplist" id="9020">
 					<right>140</right>
@@ -116,7 +115,7 @@
 						<width>auto</width>
 						<height>41</height>
 						<label>$INFO[Weather.Temperature,,[COLOR windowlabel2]  |  [/COLOR]]</label>
-						<font>h</font>
+						<font>font13_title</font>
 						<textcolor>windowlabel3</textcolor>
 						<visible>Weather.IsFetched + !String.IsEmpty(Weather.Plugin)</visible>
 						<shadowcolor>shadow</shadowcolor>
@@ -151,7 +150,7 @@
 				<effect type="zoom" start="100" end="130" center="CenterWidth,CenterHeight" time="300" tween="cubic" easing="in" />
 			</animation>
 			<control type="group" id="9001">
-				<top>159</top>
+				<top>166</top>
 				<include condition="system.getbool(lookandfeel.enablerssfeeds)">SubMenuAnimation</include>
 				<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
 				<animation effect="slide" start="1870,0" end="0,0" delay="200" time="480" condition="Window.Previous(startup)">WindowOpen</animation>

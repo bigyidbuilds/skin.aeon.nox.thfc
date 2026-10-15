@@ -119,9 +119,8 @@
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
-					<texturesliderbackground>scrollbar/texturesliderbackground3.png</texturesliderbackground>
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar3.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -150,9 +149,8 @@
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
-					<texturesliderbackground>scrollbar/texturesliderbackground3.png</texturesliderbackground>
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar3.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -182,9 +180,8 @@
 					<onleft>50</onleft>
 					<onright>SetProperty(MediaMenu,True,home)</onright>
 					<onright>SetFocus(9050)</onright>
-					<texturesliderbackground>scrollbar/texturesliderbackground3.png</texturesliderbackground>
-					<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar3.png</texturesliderbar>
-					<texturesliderbarfocus border="1">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+					<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 				</control>
@@ -214,7 +211,7 @@
 				</control>
 				<control type="image">
 					<left>13.5</left>
-					<colordiffuse>grey2</colordiffuse>
+					<colordiffuse>windowiconfocus</colordiffuse>
 					<include>MediaFlagVars</include>
 					<texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
 					<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
@@ -222,7 +219,7 @@
 				</control>
 				<control type="image">
 					<left>176.5</left>
-					<colordiffuse>grey2</colordiffuse>
+					<colordiffuse>windowiconfocus</colordiffuse>
 					<include>MediaFlagVars</include>
 					<texture>$INFO[ListItem.AudioCodec,flags/audio/,.png]</texture>
 					<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
@@ -230,7 +227,7 @@
 				</control>
 				<control type="image">
 					<left>339</left>
-					<colordiffuse>grey2</colordiffuse>
+					<colordiffuse>windowiconfocus</colordiffuse>
 					<include>MediaFlagVars</include>
 					<texture>$INFO[ListItem.AudioChannels,flags/channels/,.png]</texture>
 					<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
@@ -238,7 +235,7 @@
 				</control>
 				<control type="image">
 					<left>506</left>
-					<colordiffuse>grey2</colordiffuse>
+					<colordiffuse>windowiconfocus</colordiffuse>
 					<include>MediaFlagVars</include>
 					<texture>$VAR[SourceFlagVar,flags/video/,.png]</texture>
 					<visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
@@ -348,7 +345,7 @@
 						<width>90</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>windowlabelinfonofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<visible>!ListItem.IsParentFolder</visible>
@@ -358,7 +355,7 @@
 						<width>620</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -368,7 +365,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Skin.HasSetting(Enable.HideRatings) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
@@ -384,23 +381,24 @@
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="Container.Content(movies) | Container.Content(musicvideos)">
 					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
-					<control type="image">
 						<width>806</width>
 						<height>68</height>
 						<texture border="4">listselect_fo.png</texture>
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelinfofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -411,6 +409,7 @@
 						<width>620</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -421,6 +420,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
+						<textcolor>windowlabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Skin.HasSetting(Enable.HideRatings) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
@@ -447,7 +447,7 @@
 						<width>90</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>windowlabelinfonofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<visible>!ListItem.IsParentFolder</visible>
@@ -457,7 +457,7 @@
 						<width>565</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -467,7 +467,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Skin.HasSetting(Enable.HideRatings) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
@@ -498,7 +498,7 @@
 							<font>font12_title</font>
 							<align>center</align>
 							<label>$VAR[ListOverlayEpisodesVar]</label>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<textoffsetx>18</textoffsetx>
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
 						</control>
@@ -506,17 +506,17 @@
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="Container.Content(tvshows)">
 					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
-					<control type="image">
 						<width>806</width>
 						<height>68</height>
 						<texture border="4">listselect_fo.png</texture>
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
+					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="label">
 						<left>15</left>
@@ -524,6 +524,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<selectedcolor>selected</selectedcolor>
+						<textcolor>windowlabelinfofocus</textcolor>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
 						<visible>!ListItem.IsParentFolder</visible>
@@ -533,6 +534,7 @@
 						<width>565</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -544,6 +546,7 @@
 						<font>font15</font>
 						<align>right</align>
 						<selectedcolor>selected</selectedcolor>
+						<textcolor>windowlabel2focus</textcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Skin.HasSetting(Enable.HideRatings) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -574,7 +577,7 @@
 							<font>font12_title</font>
 							<align>center</align>
 							<label>$VAR[ListOverlayEpisodesVar]</label>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2focus</textcolor>
 							<textoffsetx>18</textoffsetx>
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
 						</control>
@@ -592,7 +595,7 @@
 						<width>600</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -602,7 +605,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 					</control>
@@ -632,7 +635,7 @@
 							<font>font12_title</font>
 							<align>center</align>
 							<label>$VAR[ListOverlayEpisodesVar]</label>
-							<textcolor>grey3</textcolor>
+							<textcolor>windowlabel2nofocus</textcolor>
 							<textoffsetx>18</textoffsetx>
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
 						</control>
@@ -640,17 +643,17 @@
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="Container.Content(seasons)">
 					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
-					<control type="image">
 						<width>806</width>
 						<height>68</height>
 						<texture border="4">listselect_fo.png</texture>
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
+					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
 					</control>
 					<control type="label">
 						<left>15</left>
@@ -658,6 +661,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<selectedcolor>selected</selectedcolor>
+						<textcolor>windowlabelfocus</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
 					</control>
@@ -667,6 +671,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
+						<textcolor>windowlabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20453]]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -697,7 +702,7 @@
 							<font>font12_title</font>
 							<align>center</align>
 							<label>$VAR[ListOverlayEpisodesVar]</label>
-							<textcolor>white</textcolor>
+							<textcolor>windowlabel2focus</textcolor>
 							<textoffsetx>18</textoffsetx>
 							<visible>Integer.IsGreater(ListItem.Property(UnWatchedEpisodes),0)</visible>
 						</control>
@@ -714,7 +719,7 @@
 						<width>730</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>15</textoffsetx>
@@ -725,7 +730,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Skin.HasSetting(Enable.HideRatings) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
@@ -741,23 +746,24 @@
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="Container.Content(episodes)">
 					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
-					<control type="image">
 						<width>806</width>
 						<height>68</height>
 						<texture border="4">listselect_fo.png</texture>
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
 					<control type="label">
 						<width>730</width>
 						<height>68</height>
 						<font>font15</font>
 						<selectedcolor>selected</selectedcolor>
+						<textcolor>windowlabelfocus</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<textoffsetx>15</textoffsetx>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -768,6 +774,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
+						<textcolor>windowlabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Rating]</label>
 						<visible>!Skin.HasSetting(Enable.HideRatings) | String.IsEqual(Container.SortMethod,$LOCALIZE[563])</visible>
@@ -801,9 +808,8 @@
 				<ondown>50160</ondown>
 				<onleft>50</onleft>
 				<onright>62</onright>
-				<texturesliderbackground>scrollbar/texturesliderbackground3.png</texturesliderbackground>
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 				<animation effect="slide" end="0,-170" time="120" condition="!Skin.HasSetting(nohighlist)">Conditional</animation>
@@ -846,7 +852,7 @@
 					<width>650</width>
 					<height>55</height>
 					<aspectratio align="left">keep</aspectratio>
-					<colordiffuse>themecolor</colordiffuse>
+					<colordiffuse>disabled</colordiffuse>
 					<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 					<visible>!ListItem.IsParentFolder + !String.IsEmpty(ListItem.UserRating)</visible>
 				</control>
@@ -856,7 +862,7 @@
 					<width>650</width>
 					<height>55</height>
 					<aspectratio align="left">keep</aspectratio>
-					<colordiffuse>grey2</colordiffuse>
+					<colordiffuse>windowlabelinfofocus</colordiffuse>
 					<texture fallback="flags/rating/0.png">$INFO[ListItem.Rating,rating,.png]</texture>
 					<visible>!ListItem.IsParentFolder</visible>
 				</control>
@@ -864,7 +870,7 @@
 					<top>-52</top>
 					<width>650</width>
 					<height>60</height>
-					<colordiffuse>grey2</colordiffuse>
+					<!-- <colordiffuse>grey2</colordiffuse> -->
 					<texture border="1">separator2.png</texture>
 				</control>
 				<control type="button">
@@ -960,7 +966,7 @@
 						<width>90</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<visible>!String.IsEmpty(ListItem.Album)</visible>
@@ -970,18 +976,12 @@
 						<width>620</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="Container.Content(albums)">
-					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
 					<control type="image">
 						<width>806</width>
 						<height>68</height>
@@ -989,11 +989,18 @@
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
 					<control type="label">
 						<left>15</left>
 						<width>90</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• • • •">$INFO[ListItem.Year]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -1004,6 +1011,7 @@
 						<width>620</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -1021,7 +1029,7 @@
 						<width>60</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>labelheader</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• •">$INFO[ListItem.TrackNumber]</label>
 						<visible>!ListItem.IsParentFolder</visible>
@@ -1031,7 +1039,7 @@
 						<width>545</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Title]</label>
 						<visible>!ListItem.IsParentFolder</visible>
@@ -1041,7 +1049,7 @@
 						<width>545</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<visible>String.IsEmpty(ListItem.Title)</visible>
@@ -1052,7 +1060,7 @@
 						<width>180</width>
 						<height>34</height>
 						<aspectratio>keep</aspectratio>
-						<colordiffuse>grey3</colordiffuse>
+						<colordiffuse>windowiconnofocus</colordiffuse>
 						<texture>flags/rating/0.png</texture>
 						<visible>!ListItem.IsParentFolder + ![ListItem.IsPlaying | ListItem.IsSelected] + String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
@@ -1062,7 +1070,7 @@
 						<width>180</width>
 						<height>34</height>
 						<aspectratio>keep</aspectratio>
-						<colordiffuse>themecolor</colordiffuse>
+						<colordiffuse>windowiconnofocus</colordiffuse>
 						<texture>$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 						<visible>!ListItem.IsParentFolder + ![ListItem.IsPlaying | ListItem.IsSelected] + !String.IsEmpty(ListItem.UserRating)</visible>
 					</control>
@@ -1072,18 +1080,12 @@
 						<width>180</width>
 						<height>34</height>
 						<aspectratio>keep</aspectratio>
-						<colordiffuse>selected</colordiffuse>
+						<colordiffuse>windowiconnofocus</colordiffuse>
 						<texture fallback="flags/rating/0.png">$INFO[ListItem.UserRating,flags/rating/,.png]</texture>
 						<visible>!ListItem.IsParentFolder + [ListItem.IsPlaying | ListItem.IsSelected]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="Container.Content(songs)">
-					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
 					<control type="image">
 						<width>806</width>
 						<height>68</height>
@@ -1091,11 +1093,18 @@
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
 					<control type="label">
 						<left>15</left>
 						<width>60</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label fallback="• •">$INFO[ListItem.TrackNumber]</label>
 						<visible>!ListItem.IsParentFolder</visible>
@@ -1106,6 +1115,7 @@
 						<width>545</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Title]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -1117,6 +1127,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<selectedcolor>selected</selectedcolor>
+						<textcolor>windowlabelfocus</textcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
 						<visible>String.IsEmpty(ListItem.Title)</visible>
@@ -1145,7 +1156,7 @@
 						<width>775</width>
 						<height>68</height>
 						<font>font15</font>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabelnofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -1155,18 +1166,12 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
-						<textcolor>grey2</textcolor>
+						<textcolor>windowlabel2nofocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="68" width="806" condition="![Container.Content(albums) | Container.Content(songs)]">
-					<control type="image">
-						<top>8</top>
-						<width>806</width>
-						<height>60</height>
-						<texture border="1">separator2.png</texture>
-					</control>
 					<control type="image">
 						<width>806</width>
 						<height>68</height>
@@ -1174,11 +1179,18 @@
 						<visible>Control.HasFocus(501)</visible>
 						<include>VisibleFadeAnimation</include>
 					</control>
+					<control type="image">
+						<top>8</top>
+						<width>806</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
 					<control type="label">
 						<left>15</left>
 						<width>775</width>
 						<height>68</height>
 						<font>font15</font>
+						<textcolor>windowlabelfocus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.Label]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -1189,6 +1201,7 @@
 						<height>68</height>
 						<font>font15</font>
 						<align>right</align>
+						<textcolor>windowlabel2focus</textcolor>
 						<selectedcolor>selected</selectedcolor>
 						<label>$INFO[ListItem.label2]</label>
 						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(501)">Conditional</animation>
@@ -1204,9 +1217,8 @@
 				<ondown>50160</ondown>
 				<onleft>50</onleft>
 				<onright>62</onright>
-				<texturesliderbackground>scrollbar/texturesliderbackground3.png</texturesliderbackground>
-				<texturesliderbar colordiffuse="55ffffff" border="1">scrollbar/texturesliderbar3.png</texturesliderbar>
-				<texturesliderbarfocus border="1">scrollbar/texturesliderbar3.png</texturesliderbarfocus>
+				<texturesliderbar colordiffuse="slidernofocus" border="1">scrollbar/texturesliderbar2_75.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="sliderfocus" border="1">scrollbar/texturesliderbar2_100.png</texturesliderbarfocus>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
 			</control>
